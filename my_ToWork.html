@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>我的待办</title>
+	<link rel="stylesheet" href="css/framework7.ios.colors.min.css">
+	<link rel="stylesheet" href="css/framework7.ios.min.css">
+	<link rel="stylesheet" type="text/css" href="font/iconfont.css" />
+	<link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+<div class="panel-overlay"></div>
+<div class="statusbar-overlay"></div>
+<div class="views">
+	<div id="ToWork" class="view">
+		<div class="pages">
+			<div data-page="ToWork" class="page navbar-fixed">
+				<!--导航-->
+				<div class="navbar">
+					<div class="navbar-inner">
+				        <div class="left">
+				        	<a class="back">
+				        		<i class="iconfont icon-zuo"></i>
+				        	</a>
+				        </div>
+				        <div class="center">我的待办</div>   
+				        <div class="right"></div>
+				    </div>
+				</div>
+				<!--内容-->
+				<div class="page-content">
+					<ul>
+						<li>
+							<a href="#">
+								<i class="iconfont icon-xinxi_ fleft color-iblue"></i>
+								<div class="details">
+									<p>广东省国际大宗商品价格监测日报</p>
+									<p class="task_num">
+										<span><em>实审/应审：</em>0/1</span>
+										<span><em>实报/应报：</em>0/1</span>
+									</p>
+									<p><em>剩余时间：</em>3小时29分</p>
+									<p>报告期：2016-12-16<em>(第139期)</em></p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="iconfont icon-xinxi_ fleft color-dgreen"></i>
+								<div class="details">
+									<p>广东省国际大宗商品价格监测日报</p>
+									<p class="task_num">
+										<span><em>实审/应审：</em>0/1</span>
+										<span><em>实报/应报：</em>0/1</span>
+									</p>
+									<p><em>剩余时间：</em>3小时29分</p>
+									<p>报告期：2016-12-16<em>(第139期)</em></p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="iconfont icon-xinxi_ fleft color-iblue"></i>
+								<div class="details">
+									<p>广东省国际大宗商品价格监测日报</p>
+									<p class="task_num">
+										<span><em>实审/应审：</em>0/1</span>
+										<span><em>实报/应报：</em>0/1</span>
+									</p>
+									<p><em>剩余时间：</em>3小时29分</p>
+									<p>报告期：2016-12-16<em>(第139期)</em></p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="iconfont icon-xinxi_ fleft color-dgreen"></i>
+								<div class="details">
+									<p>广东省国际大宗商品价格监测日报</p>
+									<p class="task_num">
+										<span><em>实审/应审：</em>0/1</span>
+										<span><em>实报/应报：</em>0/1</span>
+									</p>
+									<p><em>剩余时间：</em>3小时29分</p>
+									<p>报告期：2016-12-16<em>(第139期)</em></p>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!--结束-->
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="js/framework7.min.js"></script>
+<script type="text/javascript" src="js/my-app.js"></script>
+<script>
+	window.onload = function(){
+		var deviceWidth = document.documentElement.clientWidth;
+		if(deviceWidth > 750) deviceWidth = 750;
+		document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+	}
+</script>
+</body>
+</html>

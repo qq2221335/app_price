@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>通知公告搜索</title>
+	<link rel="stylesheet" href="css/framework7.ios.colors.min.css">
+	<link rel="stylesheet" href="css/framework7.ios.min.css">
+	<link rel="stylesheet" type="text/css" href="font/iconfont.css" />
+	<link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+<div class="panel-overlay"></div>
+<div class="statusbar-overlay"></div>
+<div class="views">
+	<div id="Notice_Search" class="view">
+		<div class="pages">
+			<div data-page="Notice_Search" class="page navbar-fixed">
+				<!--导航-->
+				<div class="navbar">
+					<form class="searchbar searchbar-init">
+                        <a href="" class="back"><i class="iconfont icon-zuo"></i></a>
+                        <div class="searchbar-input">
+                            <input id="more_application" type="search" placeholder="请输入关键字">
+                            <a href="#" class="searchbar-clear"></a>
+                        </div>
+                        <span>查询</span>
+                	</form>	
+				</div>
+				<!--内容-->
+				<div class="page-content">
+					
+					<div class="his_Search">
+						<div class="clearfloat head_title">
+							<span class="fleft">历史搜索</span>
+							<i class="iconfont icon-shanchu fright"></i>
+						</div>
+						<ul class="clearfloat">
+							<li>价格监测</li>
+							<li>价格监测</li>
+							<li>价格监测</li>
+							<li>价格监测</li>
+							<li>价格监测</li>
+							<li>价格监测</li>
+							<li>价格监测</li>
+							<li>价格监测</li>
+							
+						</ul>
+					</div>
+					<div class="find_Search">
+						<div class="clearfloat head_title">
+							<span class="fleft">搜索发现</span>
+							<i class="iconfont icon-shanchu fright"></i>
+						</div>
+						<ul class="clearfloat">
+							<li>价格监测</li>
+							<li>监测系统分析</li>
+							<li>元旦春节期间市场</li>
+							<li>价格</li>
+							<li>元旦春节期间市场</li>
+							
+						</ul>
+					</div>
+				</div>
+				<!--结束-->
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="js/framework7.min.js"></script>
+<script type="text/javascript" src="js/my-app.js"></script>
+<script>
+	window.onload = function(){
+		var deviceWidth = document.documentElement.clientWidth;
+		if(deviceWidth > 750) deviceWidth = 750;
+		document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+	}
+</script>
+</body>
+</html>

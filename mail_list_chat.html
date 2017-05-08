@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>个人聊天</title>
+	<link rel="stylesheet" href="css/framework7.ios.colors.min.css">
+	<link rel="stylesheet" href="css/framework7.ios.min.css">
+	<link rel="stylesheet" type="text/css" href="font/iconfont.css" />
+	<link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+<div class="panel-overlay"></div>
+<div class="statusbar-overlay"></div>
+<div class="views">
+	<div id="Mail_list_chat" class="view">
+		<div class="pages">
+			<div data-page="Mail_list_chat" class="page navbar-fixed">
+				<!--导航-->
+				<div class="navbar">
+					<div class="navbar-inner">
+				        <div class="left">
+				        	<a class="back">
+				        		<i class="iconfont icon-zuo"></i>
+				        	</a>
+				        </div>
+				        <div class="center">通讯录</div>   
+				        <div class="right"><i class="iconfont icon-plus"></i></div>
+				    </div>
+				</div>
+				<!--内容-->
+				<div class="page-content">
+					<div class="chat_con"></div>
+					<div class="edit clearfloat ">
+						<input id="editInput"  placeholder="内容" type="text"/>
+						<div class="button">发送</div>
+					</div>
+				</div>
+				<!--结束-->
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="js/framework7.min.js"></script>
+<script type="text/javascript" src="js/my-app.js"></script>
+<script>
+	window.onload = function(){
+		var deviceWidth = document.documentElement.clientWidth;
+		if(deviceWidth > 750) deviceWidth = 750;
+		document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+	
+		
+		var Einput = document.getElementById('editInput')
+		Einput.onfocus = function(){
+			
+		}
+	}
+	
+</script>
+</body>
+</html>
