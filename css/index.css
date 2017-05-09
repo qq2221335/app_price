@@ -64,7 +64,6 @@ p{margin: 0;padding: 0;}
 /*Farm_food 农副产品*/
 /*#Farm_food .navbar{background-color: #1682dd;color: #fff;}
 #Farm_food .navbar a{color: #fff;}*/
-#Farm_food .navbar .back i{font-size: .4rem;}
 #Farm_food .page-content{overflow: hidden;}
 #Farm_food .page-content .searchbar_form{position:relative; width: 100%;background-color: #fff;height: .7rem;padding: .1rem 0;}
 #Farm_food .page-content .searchbar_form input {display: block;height: .7rem;padding:0 2%;font-size: 14px;width: 90%;margin: 0 auto;background-color: #e5e5e5;border-radius: 5px;border: none;outline: none;}
@@ -74,12 +73,38 @@ p{margin: 0;padding: 0;}
 #Farm_food .page-content .col-25{height: 100%;overflow: auto;}
 #Farm_food .page-content .col-75{height: 100%;overflow: auto;}
 #Farm_food .page-content .col-25 ul li{font-size: .25rem; text-align: left;padding:.25rem;background-color: #FFFFFF;border-bottom: 1px solid #c4c4c4;}
-#Farm_food .page-content .col-25 ul li.select {padding:.25rem .25rem .25rem .15rem;border-left: .1rem solid #1682dd;background-color: initial;border-bottom: none;}
+#Farm_food .page-content .col-25 ul li.select {color: #1682dd; padding:.25rem .25rem .25rem .15rem;border-left: .1rem solid #1682dd;background-color: initial;border-bottom: none;}
 #Farm_food .page-content .col-25 ul li:last-child{border: none;}
 #Farm_food .page-content .col-75 .row{background-color: #fff;padding-bottom: .5rem;justify-content: inherit;}
 #Farm_food .page-content .col-75 .row li{text-align: center;}
 #Farm_food .page-content .col-75 .row li img{display: block;height: 1.3rem;width: 1.3rem;margin:0 auto;padding: .5rem 0 .2rem;}
 #Farm_food .page-content .col-75 .row li  p{font-size: .25rem;}
+
+/*Farm_foodDetail 农贸产品详细*/
+#Farm_foodDetail .navbar .right{font-size: .28rem;}
+#Farm_foodDetail .navbar .right span{border-radius: 5px; display: inline-block;padding:0 .1rem 0 .2rem;background-color: #fff;color: #333;}
+#Farm_foodDetail .navbar .right  i{margin-left: .1rem;}
+#Farm_foodDetail .detail_box{padding: 15px 10px;background-color: #fff;}
+#Farm_foodDetail .detail_box .row{border: 1px solid #E9E9E9;}
+#Farm_foodDetail .detail_box h1{font-size: .45rem;margin-bottom: .1rem;font-weight: normal;}
+#Farm_foodDetail .detail_box h1:first-child{letter-spacing: 3px;}
+#Farm_foodDetail .detail_box h1:last-child{color: red;margin-bottom: 0;}
+#Farm_foodDetail .detail_box h1 span:last-child {font-size: 0.25rem;}
+#Farm_foodDetail .detail_box h4{font-size: .25rem;margin-bottom: .1rem;font-weight: normal;}
+#Farm_foodDetail .detail_box .col-60{padding: 10px 0 10px 15px;}
+#Farm_foodDetail .detail_box .col-40 img{display: block;width:2.3rem;height: 1.75rem;padding: 10px 15px 10px 0;}
+#Farm_foodDetail .detail_box .col-50{padding:3px 10px;font-size: .3rem;text-align: left;letter-spacing: 2px;}
+#Farm_foodDetail .detail_box .row .col-50:nth-child(3){border-top: 1px solid #E9E9E9;border-right: 1px solid #E9E9E9;}
+#Farm_foodDetail .detail_box .row .col-50:nth-child(4){border-top: 1px solid #E9E9E9;color: red;}
+#Farm_foodDetail .detail_box .row .col-50:nth-child(5){border-right: 1px solid #E9E9E9;border-top: 1px solid #E9E9E9;}
+#Farm_foodDetail .detail_box .row .col-50:nth-child(6){letter-spacing: 0px;border-top: 1px solid #E9E9E9;}
+#Farm_foodDetail .detail_box .Chart{border: 1px solid #E9E9E9;height: 3.5rem;margin-top: 10px;}
+#Farm_foodDetail .Framfood_new{background-color: #fff;margin-top: 15px;padding: 15px 10px;}
+#Farm_foodDetail .Framfood_new h1{margin-bottom:15px; text-align:center;font-size: .3rem;color: #1682dd;}
+#Farm_foodDetail .Framfood_new ul li{padding-left: 10px; margin-bottom:5px;margin-left: 5px; color:#999; font-size: .23rem;position: relative;}
+#Farm_foodDetail .Framfood_new ul li a{color: #999999;}
+#Farm_foodDetail .Framfood_new ul li i:before{display: block;width: 5px;height: 5px; position: absolute;left: 0;top: -4px;}
+
 
 /*Report 报表页面*/
 #All_Report  .navbar .back i{font-size: .4rem;}
@@ -176,10 +201,30 @@ p{margin: 0;padding: 0;}
 #Mail_list .list-block  .item-title p:last-child{color:#999;font-size: .2rem;margin-top: .1rem;}
 
 /*Mail_list_chat 个人聊天页面*/
-#Mail_list_chat  .chat_con{background-color: #fff;height: calc( 100% - 44px );}
-#Mail_list_chat .edit {padding:8px 0px 7px;position: absolute;bottom: 0;left: 0;width: 100%;}
-#Mail_list_chat .edit input{margin-left:8px;border-radius: 5px; border: none;display:inline-block;width: 70%;height: 29px;padding: 0 5px;float: left;}
-#Mail_list_chat .edit .button{width: 20%;float: right;margin-right:8px;}
+#Mail_list_chat .toolbar-inner .button{align-self: initial; margin-right:8px;height: 28px;background-color: #1682dd;color: #fff;}
+
+
+
+/*#Mail_message  消息页面*/
+#Mail_message .navbar .right{font-size: .28rem;font-weight: bold;}
+#Mail_message .page-content{overflow: hidden;}
+#Mail_message .page-content .searchbar_form{position:relative; width: 100%;background-color: #fff;height: .7rem;padding: .1rem 0;}
+#Mail_message .page-content .searchbar_form input {display: block;height: .7rem;padding:0 2%;font-size: 14px;width: 90%;margin: 0 auto;background-color: #e5e5e5;border-radius: 5px;border: none;outline: none;}
+#Mail_message .page-content .searchbar_form label{font-size: .25rem; z-index: 2;position: absolute;left: 51%;margin-left: -3%;color: #B2B2B2;top:.3rem;font-weight: normal;color: #333;}
+#Mail_message .page-content .searchbar_form i{font-size:.25rem;position: absolute;top:.29rem;left: 51%;margin-left: -8%;color: #333;}
+#Mail_message .page-content ul.message_list{height: calc( 100% - 1rem - 5px);overflow: auto;margin-top: 5px;}
+#Mail_message  .message_list li{padding: .2rem;background-color: #fff;margin-bottom: 1px;}
+#Mail_message  .message_list li .Ticon{border-radius: 50%;background-color: #e5f3fe; position: relative;width: 1rem;height: 1rem;}
+#Mail_message  .message_list li .Ticon i{font-size: .7rem; color: #3da7ff;position: absolute;top: 0;left: .16rem;}
+#Mail_message  .message_list li .details p{font-size: .28rem;margin-left: 1.3rem;}
+#Mail_message  .message_list li .details p:nth-child(1) .PName{font-size: 1.2em;}
+#Mail_message  .message_list li .details p:nth-child(1) .fright{font-size:0.8em;line-height: 2em;color: #999;}
+#Mail_message  .message_list li .details p:last-child{margin-top:.1rem;font-size:.25rem;color: #999;width: 70%;}
+
+
+
+
+
 /*小于375宽度*/
 @media screen and (max-width: 375px) {
    

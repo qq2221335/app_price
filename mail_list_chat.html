@@ -18,7 +18,7 @@
 <div class="views">
 	<div id="Mail_list_chat" class="view">
 		<div class="pages">
-			<div data-page="Mail_list_chat" class="page navbar-fixed">
+			<div data-page="Mail_list_chat" class="page navbar-fixed toolbar-fixed">
 				<!--导航-->
 				<div class="navbar">
 					<div class="navbar-inner">
@@ -32,31 +32,61 @@
 				    </div>
 				</div>
 				<!--内容-->
-				<div class="page-content">
-					<div class="chat_con"></div>
-					<div class="edit clearfloat ">
-						<input id="editInput"  placeholder="内容" type="text"/>
-						<div class="button">发送</div>
-					</div>
-				</div>
+				<div class="page-content messages-content">
+	              	<div class="messages messages-auto-layout">
+		                <div class="messages-date">Sunday, Feb 9 <span>12:58</span></div>
+		                <div class="message message-sent message-first">
+		                  <div class="message-text">Hello</div>
+		                </div>
+		                <div class="message message-sent message-last message-with-tail">
+		                  <div class="message-text">How are you?</div>
+		                </div>
+		                <div class="message message-received message-with-avatar message-last message-with-tail message-first">
+		                  <div class="message-name">Kate</div>
+		                  <div class="message-text">I am fine, thanks</div>
+		                  <div style="background-image:url(http://lorempixel.com/output/people-q-c-100-100-9.jpg)" class="message-avatar"></div>
+		                </div>
+		                <div class="messages-date">Sunday, Feb 3 <span>11:58</span></div>
+		                <div class="message message-sent message-first">
+		                  <div class="message-text">Nice photo?</div>
+		                </div>
+		                <div class="message message-received message-with-avatar message-last message-with-tail message-first">
+		                  <div class="message-name">Kate</div>
+		                  <div class="message-text">Wow, awesome!</div>
+		                  <div style="background-image:url(http://lorempixel.com/output/people-q-c-100-100-9.jpg)" class="message-avatar"></div>
+		            	</div>
+	              	</div>
+            	</div>
 				<!--结束-->
+				<div class="toolbar messagebar">
+		            <div class="toolbar-inner edit">
+		            	<textarea placeholder="Message" class="textInput"></textarea>
+		            	<a href="#" class="link button">发送</a>
+		            </div>
+	            </div>
 			</div>
 		</div>
 	</div>
 </div>
 <script type="text/javascript" src="js/framework7.min.js"></script>
 <script type="text/javascript" src="js/my-app.js"></script>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 <script>
 	window.onload = function(){
 		var deviceWidth = document.documentElement.clientWidth;
 		if(deviceWidth > 750) deviceWidth = 750;
 		document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
-	
 		
-		var Einput = document.getElementById('editInput')
-		Einput.onfocus = function(){
-			
-		}
+		
+//		var bfscrolltop = document.body.scrollTop;//获取软键盘唤起前浏览器滚动部分的高度
+//	    $(".textInput").focus(function(){//在这里‘input.inputframe’是我的底部输入栏的输入框，当它获取焦点时触发事件
+//	        interval = setInterval(function(){//设置一个计时器，时间设置与软键盘弹出所需时间相近
+//	        document.body.scrollTop = document.body.scrollHeight;//获取焦点后将浏览器内所有内容高度赋给浏览器滚动部分高度
+//	        },95)
+//	    }).blur(function(){//设定输入框失去焦点时的事件
+//	        clearInterval(interval);//清除计时器
+//	        document.body.scrollTop = bfscrolltop;将软键盘唤起前的浏览器滚动部分高度重新赋给改变后的高度
+//	    });
 	}
 	
 </script>
