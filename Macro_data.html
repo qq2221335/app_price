@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>宏观数据</title>
+	<link rel="stylesheet" href="css/framework7.ios.colors.min.css">
+	<link rel="stylesheet" href="css/framework7.ios.min.css">
+	<link rel="stylesheet" type="text/css" href="font/iconfont.css" />
+	<link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+<div class="panel-overlay"></div>
+<div class="statusbar-overlay"></div>
+<div class="views">
+	<div id="Macro_data" class="view">
+		<div class="pages">
+			<div data-page="Macro_data" class="page navbar-fixed">
+				<!--导航-->
+				<div class="navbar">
+					<div class="navbar-inner">
+				        <div class="left">
+				        	<a class="back">
+				        		<i class="iconfont icon-zuo"></i>		        		
+				        	</a>
+				        	<span>宏观数据</span>
+				        </div>
+				        <div class="center">
+				        	<span class="btn">
+				        		GDP<i class="iconfont icon-11"></i>
+				        	</span>
+				        </div>   
+				        <div class="right">
+				        	<span class="btn">区域对比</span>
+				        </div>
+				    </div>
+				</div>
+				<!--内容-->
+				<div class="page-content">					
+					<div class="searchbar_form">
+					    <label for="q" id="q_label">搜索</label>
+					    <input id="q"  type="text">
+					    <i class="iconfont icon-llhomesearch" id="q_i"></i>
+					</div>
+					<div class="part1">
+						<div class="buttons-row">
+							<a href="#" class="button">
+								<span>广东</span>
+								<i class="iconfont icon-xia"></i>
+							</a>
+							<a href="#" class="button">
+								<span>国内</span>
+								<i class="iconfont icon-xia"></i>
+							</a>
+							<a href="#" class="button">
+								<span>国家</span>
+								<i class="iconfont icon-xia"></i>
+							</a>
+						</div>						
+					</div>
+					<div class="chart">
+							
+					</div>
+					<div class="data_list">
+						<ul>
+							<li>
+								<div class="iconf">
+									<i class="iconfont icon-kuanyi-guanqian-yuebao"></i>
+								</div>
+								<div class="item_content">
+									<div class="item_title">
+										<p class="noturnline">广东</p>
+										<p class="noturnline">日期:2017年第4季度</p>
+									</div>
+								</div>
+								<div class="index">
+									<div>
+										<span>经济指标:</span>
+										<span>8.30</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="iconf">
+									<i class="iconfont icon-kuanyi-guanqian-yuebao"></i>
+								</div>
+								<div class="item_content">
+									<div class="item_title">
+										<p class="noturnline">广东</p>
+										<p class="noturnline">日期:2017年第4季度</p>
+									</div>
+								</div>
+								<div class="index">
+									<div>
+										<span>经济指标:</span>
+										<span>8.30</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="iconf">
+									<i class="iconfont icon-kuanyi-guanqian-yuebao"></i>
+								</div>
+								<div class="item_content">
+									<div class="item_title">
+										<p class="noturnline">广东</p>
+										<p class="noturnline">日期:2017年第4季度</p>
+									</div>
+								</div>
+								<div class="index">
+									<div>
+										<span>经济指标:</span>
+										<span>8.30</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="iconf">
+									<i class="iconfont icon-kuanyi-guanqian-yuebao"></i>
+								</div>
+								<div class="item_content">
+									<div class="item_title">
+										<p class="noturnline">广东</p>
+										<p class="noturnline">日期:2017年第4季度</p>
+									</div>
+								</div>
+								<div class="index">
+									<div>
+										<span>经济指标:</span>
+										<span>8.30</span>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!--结束-->
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="js/framework7.min.js"></script>
+<script type="text/javascript" src="js/my-app.js"></script>
+<script>
+	window.onload = function(){
+		var deviceWidth = document.documentElement.clientWidth;
+		if(deviceWidth > 750) deviceWidth = 750;
+		document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+		
+		
+		document.getElementById('q').onfocus = function(){		
+			document.getElementById('q_label').style.display = 'none';
+            document.getElementById('q_i').style.display = 'none';		
+		}
+		document.getElementById('q').onblur = function(){	
+			var len = document.getElementById('q').value;
+			if(len == ''){
+				document.getElementById('q_label').style.display = 'block';
+            	document.getElementById('q_i').style.display = 'block';	
+			}		
+		}
+	}
+</script>
+</body>
+</html>

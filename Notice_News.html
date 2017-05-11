@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>公告详情</title>
+	<link rel="stylesheet" href="css/framework7.ios.colors.min.css">
+	<link rel="stylesheet" href="css/framework7.ios.min.css">
+	<link rel="stylesheet" type="text/css" href="font/iconfont.css" />
+	<link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+<div class="panel-overlay"></div>
+<div class="statusbar-overlay"></div>
+<div class="views">
+	<div id="Notie_News" class="view">
+		<div class="pages">
+			<div data-page="Notie_News" class="page navbar-fixed">
+				<!--导航-->
+				<div class="navbar">
+					<div class="navbar-inner">
+				        <div class="left">
+				        	<a class="back">
+				        		<i class="iconfont icon-zuo"></i>
+				        	</a>
+				        </div>
+				        <div class="center">公告详情</div>   
+				        <div class="right">
+				        	<span>附件</span></div>
+				    </div>
+				</div>
+				<!--内容-->
+				<div class="page-content">
+	              	<div class="content-block">
+	              		<h1  class="">12月第一周广东省粮油产品零售价格平稳运行</h1>
+						<div class="titleDetail">
+							<span>发布人:杨镜基</span>
+							<samp>|</samp>
+							<span>时间:12-11</span>
+						</div>
+						<div class="Chart">
+							
+						</div>
+						<p>据广东省发改委价格监测中心监测，本周（2017年5月2日,下同）我省猪肉市场各环节价格总体呈窄幅盘整的运行走势。与上周（2017年4月25日，下同）相比，生猪出场价、总肉批发价和猪肉零售价分别微幅下降0.19%、0.94%和上升0.14%。猪粮比价为8.09:1，与上周变化不大，继续运行在绿色正常区域（6:1-8.5：1）。受“五一”小长假影响，本周我省猪肉零售环节价格略有回升，但随着节后市场需求再度回落，后期猪价仍可能回调下行。</p>
+	              		<p>一、生产环节</p>
+	              		<p>本周，我省生猪市场价格延续今年以来的回落走势。全省生猪平均出场价为每500克7.93元，比上周略降0.19%，比年初高点（1月10的9.0元）下降11.9%。</p>
+	              		<p>二、批发环节</p>
+	              		<p>本周，我省猪肉批发市场价格继续窄幅下跌。全省总肉平均批发价为每500克10.49元，比上周略降0.94%。</p>
+	              		<p>三、零售环节</p>
+	              		<p>本周，我省猪肉市场价格微幅盘整，略有回升，结束前期连续10周的下行走势。所监测的4种主要猪肉平均零售价为每500克18.16元，比上周微升0.14%。其中，排骨、精瘦肉、上肉和肋条肉零售价，与上周比分别微幅上升0.31%、0.16%、持平和下降0.07%。</p>
+	              		<p>四、饲料和仔猪</p>
+	              		<p>本周，我省饲料市场价格稳中略升。全省玉米和豆粕平均批发价分别为每500克0.98元和1.52元，与上周比分别持平和微微升0.66%。仔猪价格微升，本周均价为每500克21.67元，比上周略升0.58%。</p>
+	              		<p>五、猪粮比价</p>
+	              		<p>本周，我省猪粮比价变化不大，由上周的8.1:1略降至8.09:1，连续6周维持在绿色正常区域（6：1-8.5：1）运行。</p>
+	              	</div>
+				</div>
+				<!--结束-->
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="js/framework7.min.js"></script>
+<script type="text/javascript" src="js/my-app.js"></script>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script>
+	window.onload = function(){
+		var deviceWidth = document.documentElement.clientWidth;
+		if(deviceWidth > 750) deviceWidth = 750;
+		document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+		
+		document.getElementById('q').onfocus = function(){		
+			document.getElementById('q_label').style.display = 'none';
+            document.getElementById('q_i').style.display = 'none';		
+		}
+		document.getElementById('q').onblur = function(){	
+			var len = document.getElementById('q').value;
+			if(len == ''){
+				document.getElementById('q_label').style.display = 'block';
+            	document.getElementById('q_i').style.display = 'block';	
+			}
+				
+		}
+	}
+	
+</script>
+</body>
+</html>
