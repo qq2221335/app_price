@@ -1,10 +1,18 @@
 
 @font-face {font-family: "iconfont";
+<<<<<<< HEAD
   src: url('iconfont.eot?t=1494319538410'); /* IE9*/
   src: url('iconfont.eot?t=1494319538410#iefix') format('embedded-opentype'), /* IE6-IE8 */
   url('iconfont.woff?t=1494319538410') format('woff'), /* chrome, firefox */
   url('iconfont.ttf?t=1494319538410') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
   url('iconfont.svg?t=1494319538410#iconfont') format('svg'); /* iOS 4.1- */
+=======
+  src: url('iconfont.eot?t=1494317313420'); /* IE9*/
+  src: url('iconfont.eot?t=1494317313420#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1494317313420') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1494317313420') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1494317313420#iconfont') format('svg'); /* iOS 4.1- */
+>>>>>>> branch 'master' of https://github.com/qq2221335/app_price.git
 }
 
 .iconfont {
@@ -261,6 +269,7 @@
 
 .icon-duihua:before { content: "\e6c7"; }
 
+<<<<<<< HEAD
 .icon-chaxunmian1:before { content: "\e6c9"; }
 
 .icon-renwumian1:before { content: "\e6d2"; }
@@ -273,3 +282,5 @@
 
 .icon-shouye2:before { content: "\e6d6"; }
 
+=======
+>>>>>>> branch 'master' of https://github.com/qq2221335/app_price.git
