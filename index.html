@@ -7,30 +7,102 @@
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 	<title>首页</title>
-	<link rel="stylesheet" href="css/framework7.ios.colors.min.css">
-	<link rel="stylesheet" href="css/framework7.ios.min.css">
+	<link rel="stylesheet" href="css/framework7.ios.colors.min.css"/>
+	<link rel="stylesheet" href="css/framework7.ios.min.css"/>
+	<link rel="stylesheet" href="path/to/framework7.material.colors.min.css"/>
+	<link rel="stylesheet" href="path/to/framework7.material.min.css">
 	<link rel="stylesheet" type="text/css" href="font/iconfont.css" />
 	<link rel="stylesheet" href="css/index.css" />
+	<link rel="stylesheet" href="css/c_style.css" />
 </head>
 <body>
 <div class="panel-overlay"></div>
 <div class="statusbar-overlay"></div>
 <div class="views tabs toolbar-fixed">
-	<div id="index" class="view tab ">
+	<div id="index" class="view tab active">
 		<div class="pages">
 			<div data-page="index" class="page navbar-fixed">
 				<!--导航-->
 				<div class="navbar">
 					<div class="navbar-inner">
-						<div class="left"></div>
-						<div class="center">首页</div>
-						<div class="right"></div>
+						<div class="left">
+							
+						</div>
+						<div class="center">广东价格</div>
+						<div class="right">
+							<a href="#"><i class="iconfont icon-duihua"></i></a>
+						</div>
 					</div>
 				</div>
 				<!--内容-->
 				<div class="page-content">
-					<div class="content-block">
+					<!--8个按钮-->
+					<div class="row c_row">
+					    	<div class="col-25"><a href="#"><i class="iconfont icon-nongmaoshipin bule"></i><span>农贸食品</span></a></div>
+					    	<div class="col-25"><a href="#"><i class="iconfont icon-chaoshishipin red"></i><span>超市食品</span></a></div>
+					    	<div class="col-25"><a href="#"><i class="iconfont icon-dazongshangpin yellow"></i><span>大众商品</span></a></div>
+					    	<div class="col-25"><a href="#"><i class="iconfont icon-gongyechanpin green"></i><span>工业产品</span></a></div>
+					    	<div class="col-25"><a href="#"><i class="iconfont icon-jiagezixun yellow"></i><span>价格咨询</span></a></div>
+					    	<div class="col-25"><a href="#"><i class="iconfont icon-jiagezhishu green"></i><span>价格指数</span></a></div>
+					    	<div class="col-25"><a href="#"><i class="iconfont icon-jiageyujing bule"></i><span>价格预警</span></a></div>
+					    	<div class="col-25"><a href="#"><i class="iconfont icon-1 red"></i><span>全部</span></a></div>
 					</div>
+					
+					<!--最新价格-->
+					<div class="row c_row c_margin-top no-gutter c_padding-bottom">
+						<div class="col-100 c_margin-bottom"><b>最新价格</b> <a href="#">全部</a></div>
+					    	<div class="col-33">
+					    		<a href="#">
+					    		<p><i class="iconfont icon-liangshinew bule"></i><b>粮食</b></p>
+					    		<p><b class="red">20.00</b><samp class="red">元</samp></p>
+					    		<p><samp>环比：</samp><samp class="red">+0.15%</samp></p>
+					    		</a>
+					    	</div>
+					    	<div class="col-33">
+					    		<a href="#">
+					    		<p><i class="iconfont icon-liangshinew bule"></i><b>粮食</b></p>
+					    		<p><b class="red">20.00</b><samp class="red">元</samp></p>
+					    		<p><samp>环比：</samp><samp class="green">+0.15%</samp></p>
+					    		</a>
+					    	</div>
+					    	<div class="col-33">
+					    		<a href="#">
+					    		<p><i class="iconfont icon-liangshinew bule"></i><b>粮食</b></p>
+					    		<p><b class="red">20.00</b><samp class="red">元</samp></p>
+					    		<p><samp>环比：</samp><samp class="red">+0.15%</samp></p>
+					    		</a>
+					    	</div>
+					</div>
+					
+					<!--最新咨询-->
+					<div class="row c_row c_padding-bottom">
+						<div class="col-100 c_clo-100 c_margin-bottom"><b>最新咨询</b> <a href="#">全部</a></div>
+					    	<div class="col-100 c_margin-bottom">
+					    		<a href="#">
+					    		<div class="row">
+						    		<div class="col-40"><img src="images/11.png"/></div>
+	        						<div class="col-60">
+	        							<h1>本周广东省主要农产品零售价格平稳运行</h1>
+	        							<p>我省粮食市场零售价格保持稳定，晚籼米、丝苗...</p>
+	        							<dd>2016-12-11</dd>
+	        						</div>
+        						</div>
+        						</a>
+        						<a href="#">
+        						<div class="row">
+
+						    		<div class="col-40"><img src="images/11.png"/></div>
+	        						<div class="col-60">
+	        							<h1>本周广东省主要农产品零售价格平稳运行</h1>
+	        							<p>我省粮食市场零售价格保持稳定，晚籼米、丝苗...</p>
+	        							<dd>2016-12-11</dd>
+	        						</div>
+        						</div>
+        						</a>
+					    	</div>
+					    	
+					</div>
+					
 				</div>
 				<!--结束-->
 			</div>
@@ -76,7 +148,7 @@
 	<!--结束-->
 
 	<!--我的-->
-	<div id="index-Wo" class="view tab active">
+	<div id="index-Wo" class="view tab">
 		<div class="pages">
 			<div data-page="woIndex" class="page navbar-fixed">
 
@@ -97,7 +169,7 @@
 									<ul>
 										<li>
 											<a href="#" class="item-link item-content">
-												<div class="item-media"><div class="navbar-inner-img"><img src="images/我的_06.png" alt=""></div></div>
+												<div class="item-media"><div class="navbar-inner-img"><img src="images/images.png" alt=""></div></div>
 												<div class="item-inner">
 													
 													<p class="userName">陈志辉</p>
@@ -197,15 +269,15 @@
 	<div class="toolbar tabbar tabbar-labels">
 		<div class="toolbar-inner">
 			<a href="#index" class="tab-link active">
-				<i class="iconfont icon-shouye"></i>
+				<i class="iconfont icon-shouye1"></i>
 				<span class="tabbar-label">首页</span>
 			</a>
 			<a href="#index-Task" class="tab-link">
-				<i class="iconfont icon-renwumian"></i>
+				<i class="iconfont icon-renwu2"></i>
 				<span class="tabbar-label">新闻</span>
 			</a>
 			<a href="#index-Search" class="tab-link">
-				<i class="iconfont icon-llhomesearch" style="font-size: 22px;"></i>
+				<i class="iconfont icon-chaxun2"></i>
 				<span class="tabbar-label" >查询</span>
 			</a>
 			<a href="#index-Wo" class="tab-link">
@@ -217,6 +289,7 @@
 </div>
 <script type="text/javascript" src="js/framework7.min.js"></script>
 <script type="text/javascript" src="js/my-app.js"></script>
+<script type="text/javascript" src="js/c_style.js"></script>
 <script>
 	window.onload = function(){
 		document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px';

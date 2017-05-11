@@ -257,6 +257,7 @@ p{margin: 0;padding: 0;}
 #Judgment ul.Judgment_list .details p span:first-child{display: inline-block;width: 70%;}
 #Judgment ul.Judgment_list .details p span:last-child{margin-right: .3rem;}
 
+<<<<<<< HEAD
 /*Macro_data 宏观数据*/
 
 #Macro_data .navbar .btn{background-color: #fff;color: #333;font-weight: normal;height: 30px;line-height: 30px;padding: 0 10px;border-radius: 5px;}
@@ -282,7 +283,6 @@ p{margin: 0;padding: 0;}
 #Macro_data .page-content .data_list ul li .item_content .item_title p:last-child{font-size: .25rem;color:#999;margin-top: .1rem;}
 #Macro_data .page-content .data_list ul li .index{align-self: stretch;flex:0 0 auto;flex-wrap: nowrap;margin-right: 10px;font-size: .25rem;}
 #Macro_data .page-content .data_list ul li .index span:last-child{font-size: .4rem;color:#f29631;}
+
 /*小于375宽度*/
-@media screen and (max-width: 375px) {
-   
-}
+@media screen and (max-width: 375px) {}
