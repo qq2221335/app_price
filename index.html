@@ -19,7 +19,7 @@
 <div class="panel-overlay"></div>
 <div class="statusbar-overlay"></div>
 <div class="views tabs toolbar-fixed">
-	<div id="index" class="view tab active">
+	<div id="index" class="view tab ">
 		<div class="pages">
 			<div data-page="index" class="page navbar-fixed">
 				<!--导航-->
@@ -111,7 +111,7 @@
 
 
 	<!--任务-->
-	<div id="index-Task" class="view tab">
+	<div id="index-Task" class="view tab ">
 		<div class="pages">
 			<div data-page="TaskIndex" class="page navbar-fixed">
 				<!--导航-->
@@ -148,7 +148,7 @@
 	<!--结束-->
 
 	<!--我的-->
-	<div id="index-Wo" class="view tab">
+	<div id="index-Wo" class="view tab active">
 		<div class="pages">
 			<div data-page="woIndex" class="page navbar-fixed">
 
@@ -268,7 +268,7 @@
 	<!--尾部-->
 	<div class="toolbar tabbar tabbar-labels">
 		<div class="toolbar-inner">
-			<a href="#index" class="tab-link active">
+			<a href="#index" class="tab-link ">
 				<i class="iconfont icon-shouye1"></i>
 				<span class="tabbar-label">首页</span>
 			</a>
@@ -280,7 +280,7 @@
 				<i class="iconfont icon-chaxun2"></i>
 				<span class="tabbar-label" >查询</span>
 			</a>
-			<a href="#index-Wo" class="tab-link">
+			<a href="#index-Wo" class="tab-link active">
 				<i class="iconfont icon-wo1"></i>
 				<span class="tabbar-label">我的</span>
 			</a>
@@ -290,10 +290,5 @@
 <script type="text/javascript" src="js/framework7.min.js"></script>
 <script type="text/javascript" src="js/my-app.js"></script>
 <script type="text/javascript" src="js/c_style.js"></script>
-<script>
-	window.onload = function(){
-		document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px';
-	}
-</script>
 </body>
 </html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>价格预警</title>
+	<link rel="stylesheet" href="css/framework7.ios.colors.min.css">
+	<link rel="stylesheet" href="css/framework7.ios.min.css">
+	<link rel="stylesheet" type="text/css" href="font/iconfont.css" />
+	<link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+<div class="panel-overlay"></div>
+<div class="statusbar-overlay"></div>
+<div class="views">
+	<div id="PriceWarning" class="view">
+		<div class="pages">
+			<div data-page="PriceWarning" class="page navbar-fixed">
+				<!--导航-->
+				<div class="navbar">
+					<div class="navbar-inner">
+				        <div class="left">
+				        	<a class="back">
+				        		<i class="iconfont icon-zuo"></i>		        		
+				        	</a>
+				        </div>
+				        <div class="center">
+				        	价格预警
+				        </div>   
+				        <div class="right">
+				        	<span class="btnArea">广州<i class="iconfont icon-11"></i></span>
+				        </div>
+				    </div>
+				</div>
+				<!--内容-->
+				<div class="page-content">					
+					<div class="searchbar_form">
+					    <label for="q" id="q_label">搜索</label>
+					    <input id="q"  type="text">
+					    <i class="iconfont icon-llhomesearch" id="q_i"></i>
+					</div>
+					<div class="Warning_list">
+						<ul>
+							<li class="clearfloat">
+								<div class="item_content">
+									<i class="iconfont icon-jingbao fleft color-dorange"></i>
+									<span>中度上涨</span>
+									<p>
+										<span class="">粮食</span>
+										<span class="fright color-dgreen">-0.59%</span>
+									</p>
+									<p>
+										<span>环比:<em>+1.54%</em></span>
+										<span class="fright">涨跌幅</span>
+									</p>
+								</div>
+							</li>
+							<li class="clearfloat">
+								<div class="item_content">
+									<i class="iconfont icon-jingbao fleft color-dblue"></i>
+									<span>轻度下跌</span>
+									<p>
+										<span class="">粮食</span>
+										<span class="fright color-dgreen">-0.59%</span>
+									</p>
+									<p>
+										<span>环比:<em>+1.54%</em></span>
+										<span class="fright">涨跌幅</span>
+									</p>
+								</div>
+							</li>
+							<li class="clearfloat">
+								<div class="item_content">
+									<i class="iconfont icon-jingbao fleft color-dgreen"></i>
+									<span>正常</span>
+									<p>
+										<span class="">粮食</span>
+										<span class="fright color-dgreen">-0.59%</span>
+									</p>
+									<p>
+										<span>环比:<em>+1.54%</em></span>
+										<span class="fright">涨跌幅</span>
+									</p>
+								</div>
+							</li>
+							<li class="clearfloat">
+								<div class="item_content">
+									<i class="iconfont icon-jingbao fleft color-dorange"></i>
+									<span>中度上涨</span>
+									<p>
+										<span class="">粮食</span>
+										<span class="fright color-dgreen">-0.59%</span>
+									</p>
+									<p>
+										<span>环比:<em>+1.54%</em></span>
+										<span class="fright">涨跌幅</span>
+									</p>
+								</div>
+							</li>
+							<li class="clearfloat">
+								<div class="item_content">
+									<i class="iconfont icon-jingbao fleft color-dorange"></i>
+									<span>中度上涨</span>
+									<p>
+										<span class="">粮食</span>
+										<span class="fright color-dgreen">-0.59%</span>
+									</p>
+									<p>
+										<span>环比:<em>+1.54%</em></span>
+										<span class="fright">涨跌幅</span>
+									</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!--结束-->
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="js/framework7.min.js"></script>
+<script type="text/javascript" src="js/my-app.js"></script>
+<script>
+	window.onload = function(){	
+		document.getElementById('q').onfocus = function(){		
+			document.getElementById('q_label').style.display = 'none';
+            document.getElementById('q_i').style.display = 'none';		
+		}
+		document.getElementById('q').onblur = function(){	
+			var len = document.getElementById('q').value;
+			if(len == ''){
+				document.getElementById('q_label').style.display = 'block';
+            	document.getElementById('q_i').style.display = 'block';	
+			}		
+		}
+	}
+</script>
+</body>
+</html>

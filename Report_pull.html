@@ -16,9 +16,9 @@
 <div class="panel-overlay"></div>
 <div class="statusbar-overlay"></div>
 <div class="views">
-	<div id="Report_result" class="view">
+	<div id="Report_pull" class="view  report">
 		<div class="pages">
-			<div data-page="Report_result" class="page navbar-fixed">
+			<div data-page="Report_pull" class="page navbar-fixed">
 				<!--导航-->
 				<div class="navbar">
 					<div class="navbar-inner">
@@ -123,7 +123,7 @@
 						
 					</ul>
 					<!--下拉地区-->
-					<div class="row pull_area no-gutter" style="visibility: hidden;">
+					<div class="row pull_area no-gutter" style="visibility:hidden;">
 						<ul class="col-50 pull_left">
 							<li class="clearfloat select"><span class="fleft">广州</span><span class="fright">5</span></li>
 							<li class="clearfloat "><span class="fleft">广州</span><span class="fright">5</span></li>
@@ -157,11 +157,18 @@
 <script type="text/javascript" src="js/framework7.min.js"></script>
 <script type="text/javascript" src="js/my-app.js"></script>
 <script>
-	window.onload = function(){
-		var deviceWidth = document.documentElement.clientWidth;
-		if(deviceWidth > 750) deviceWidth = 750;
-		document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
-	}
+	$$(".btnArea").click(function(){
+		var ishidden = $$('.pull_area').css('visibility');
+		if(ishidden == 'visible'){
+			$$('.pull_area').css('visibility','hidden'); 
+		}else if(ishidden == 'hidden'){
+			$$('.pull_area').css('visibility','visible'); 
+		}
+	});
+	$$(".pull_left li").click(function(){
+		$$(".pull_left li").removeClass('select');
+		$$(this).addClass('select');
+	});
 </script>
 </body>
 </html>

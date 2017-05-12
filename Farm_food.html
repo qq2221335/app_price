@@ -125,11 +125,6 @@
 <script type="text/javascript" src="js/my-app.js"></script>
 <script>
 	window.onload = function(){
-		var deviceWidth = document.documentElement.clientWidth;
-		if(deviceWidth > 750) deviceWidth = 750;
-		document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
-		
-		
 		document.getElementById('q').onfocus = function(){		
 			document.getElementById('q_label').style.display = 'none';
             document.getElementById('q_i').style.display = 'none';		
@@ -139,8 +134,7 @@
 			if(len == ''){
 				document.getElementById('q_label').style.display = 'block';
             	document.getElementById('q_i').style.display = 'block';	
-			}
-				
+			}		
 		}
 	}
 </script>

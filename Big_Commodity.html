@@ -16,7 +16,7 @@
 <div class="panel-overlay"></div>
 <div class="statusbar-overlay"></div>
 <div class="views">
-	<div id="Big_Commodity" class="view">
+	<div id="Big_Commodity" class="view dftype">
 		<div class="pages">
 			<div data-page="Big_Commodity" class="page navbar-fixed">
 				<!--导航-->
@@ -49,7 +49,7 @@
 						<div class="Chart"></div>
 					</div> 
 					
-					<div class="Framfood_new">
+					<div class="type_new">
 						<h1>新闻</h1>
 						<ul class="newlist">
 							<li class="noturnline">
@@ -92,13 +92,5 @@
 </div>
 <script type="text/javascript" src="js/framework7.min.js"></script>
 <script type="text/javascript" src="js/my-app.js"></script>
-<script>
-	window.onload = function(){
-		var deviceWidth = document.documentElement.clientWidth;
-		if(deviceWidth > 750) deviceWidth = 750;
-		document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
-		
-	}
-</script>
 </body>
 </html>
