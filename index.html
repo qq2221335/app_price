@@ -19,7 +19,7 @@
 <div class="panel-overlay"></div>
 <div class="statusbar-overlay"></div>
 <div class="views tabs toolbar-fixed">
-	<div id="index" class="view tab ">
+	<div id="index" class="view tab active">
 		<div class="pages">
 			<div data-page="index" class="page navbar-fixed">
 				<!--导航-->
@@ -36,6 +36,11 @@
 				</div>
 				<!--内容-->
 				<div class="page-content">
+					<!--地区和搜索框-->
+					<div class="row c_con no-gutter">
+						<div class="col-20"><div class="c_region"><a href="#">广东<i class="iconfont icon-11"></i></a></div></div>
+						<div class="col-80"><a href="#"><div class="c_search"><i class="iconfont icon-llhomesearch"></i>搜索商品</div></a></div>
+					</div>
 					<!--8个按钮-->
 					<div class="row c_row">
 					    	<div class="col-25"><a href="#"><i class="iconfont icon-nongmaoshipin bule"></i><span>农贸食品</span></a></div>
@@ -111,7 +116,7 @@
 
 
 	<!--任务-->
-	<div id="index-Task" class="view tab ">
+	<div id="index-Task" class="view tab">
 		<div class="pages">
 			<div data-page="TaskIndex" class="page navbar-fixed">
 				<!--导航-->
@@ -148,7 +153,7 @@
 	<!--结束-->
 
 	<!--我的-->
-	<div id="index-Wo" class="view tab active">
+	<div id="index-Wo" class="view tab">
 		<div class="pages">
 			<div data-page="woIndex" class="page navbar-fixed">
 
@@ -268,7 +273,7 @@
 	<!--尾部-->
 	<div class="toolbar tabbar tabbar-labels">
 		<div class="toolbar-inner">
-			<a href="#index" class="tab-link ">
+			<a href="#index" class="tab-link active">
 				<i class="iconfont icon-shouye1"></i>
 				<span class="tabbar-label">首页</span>
 			</a>
@@ -280,7 +285,7 @@
 				<i class="iconfont icon-chaxun2"></i>
 				<span class="tabbar-label" >查询</span>
 			</a>
-			<a href="#index-Wo" class="tab-link active">
+			<a href="#index-Wo" class="tab-link">
 				<i class="iconfont icon-wo1"></i>
 				<span class="tabbar-label">我的</span>
 			</a>
@@ -290,5 +295,7 @@
 <script type="text/javascript" src="js/framework7.min.js"></script>
 <script type="text/javascript" src="js/my-app.js"></script>
 <script type="text/javascript" src="js/c_style.js"></script>
+
+
 </body>
 </html>
