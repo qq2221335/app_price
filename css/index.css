@@ -96,7 +96,7 @@ p{margin: 0;padding: 0;}
 #Farm_food .page-content{overflow: hidden;}
 #Farm_food .page-content>.row {margin-top: .5em;height: calc(100% - 3.6em);overflow: hidden;}
 #Farm_food .page-content .col-25{height: 100%;overflow: auto;}
-#Farm_food .page-content .col-75{height: 100%;overflow: auto;height:100%;}
+#Farm_food .page-content .col-75{height: 100%;overflow: auto;}
 #Farm_food .page-content .col-25 ul li{font-size: 1.1em; text-align: left;padding:0.5em;background-color: #FFFFFF;margin-bottom: 1px;}
 #Farm_food .page-content .col-25 ul li.select {color: #1682dd; padding:.5em .5em .5em .4em; border-left: .2em solid #1682dd;background-color: initial;border-bottom: none;}
 #Farm_food .page-content .col-25 ul li:last-child{border: none;}
@@ -271,9 +271,55 @@ p{margin: 0;padding: 0;}
 #PriceWarning .Warning_list .item_content  p:nth-child(4){font-size: 1.2em;margin-top: .2em;color: #999999;}
 #PriceWarning .Warning_list .item_content  p:nth-child(4) em{font-style: normal;color: red;}
 
-/*小于375宽度*/
+
+/*price_news 价格资讯*/
+#price_news .page-content{overflow: hidden;}
+#price_news .buttons-row{width: 80%;margin: 0 auto;padding: 10px;}
+#price_news .buttons-row .button{border: 1px solid #e9e9e9;margin-left: -1px;}
+#price_news .buttons-row a{color: #333;display: block;height: 38px;line-height: 38px;background-color: #fff;font-size: 1em;}
+#price_news .buttons-row a.select{background-color: #1682dd;color: #fff;}
+/*普通li*/
+#price_news ul.pricenews_list{height: calc( 100% - 58px );background-color: #fff;overflow: auto;}
+#price_news ul.pricenews_list li{padding: 15px 10px;border-bottom: 1px solid #f0eff5;}
+#price_news ul.pricenews_list li.nomoral a{width: 100%;display: block;}
+#price_news ul.pricenews_list li.nomoral a img{position: relative;top: 50%;transform: translateY(9%);display: inline-block;float: left;height: 7em;width: 45%;}
+#price_news ul.pricenews_list li.nomoral a>div.detail{padding-left:48%;}
+#price_news ul.pricenews_list li.nomoral a .detail div{font-size: 1.2em;margin: 5px 0;overflow: hidden;height: 4em;}
+#price_news ul.pricenews_list li.nomoral a .detail p{color: #999}
+/*专题li*/
+#price_news ul.pricenews_list li.special a img{width: 100%;height: 12em;display: block;}
+#price_news ul.pricenews_list li.special a  .detail h3{font-size: 1.2em;margin: 5px 0;font-weight: normal;padding: 0px 5px;height: 25px;}
+#price_news ul.pricenews_list li.special a  .detail h3 span{display: inline-block;height: 25px;line-height: 27px;}
+#price_news ul.pricenews_list li.special a  .detail h3 span:first-child{width: 83%;}
+#price_news ul.pricenews_list li.special a  .detail h3 span:last-child{font-size: .9em;background-color: red;color: #fff;letter-spacing: 3px;padding: 0px 5px;border-radius: 5px;}
+#price_news ul.pricenews_list li.special a  .detail p{color: #999;padding: 0px 5px;letter-spacing: 2px;font-size: 1em;line-height: 1.4;}
+
+/*task*/
+#Task .navbar{background-color: #f7f7f8;font-weight: normal;}
+#Task .navbar .buttons-row{font-size: .9em;}
+#Task .navbar .left  a {color: #333;}
+#Task .navbar .right span{background-color: initial;padding: 0;}
+#Task .navbar .center .buttons-row a{line-height: 30px; color: #333;text-overflow: initial;border: 1px solid #e9e9e9;font-size: 1em;}
+#Task .navbar .center .buttons-row a.active{color: #fff;border: 1px solid #007aff;}
+#Task .page-content .buttons-row{padding: 0 8px;background-color: #fff;}
+#Task .page-content .buttons-row .button{border: none;font-size: 1.2em;height: 36px;line-height: 37px;color: #333;}
+#Task .page-content .buttons-row .select{font-weight: bold;}
+#Task .page-content .buttons-row .select:after{content: '';position: absolute;margin-left:-7.5%;left: 45%;bottom: 0;height: 2px;width: 25%;background-color: #4198e5;display: block;z-index: 15;}
+#Task .page-content .chart{height: 8rem;margin-top: 1px;}
+#Task #tab1 .list-block li {padding: 0;background-color: #fff;}
+#Task #tab1 .list-block li a{padding: 0;}
+#Task #tab1 .list-block li .item-inner{padding-left: 15px;background-size: 16px 25px;}
+#Task #tab1 .list-block li .item-inner i{font-size: 1.3em;color: #ccc;}
+#Task #tab1 .list-block li .item-title {width: 90%;}
+#Task #tab1 .list-block li .item-title  h1{font-size: 1.1em;font-weight: normal;}
+#Task #tab1 .list-block li .item-title  p{color: #999;font-size: .9em;}
+#Task #tab1 .list-block li .item-title  p.progress {font-size: 1em;color: #333;}
+#Task #tab1 .list-block li .item-title  p.progress em {font-style: normal;font-size: 1.4em;color:#f29631;margin-right: 10px;}
+
+/*小于375宽度的设备*/
 @media screen and (max-width: 375px) {
 	body{font-size: 12px !important;}
 	.list-block{font-size:15px;}
 	#PriceWarning .Warning_list .item_content>span{top:50%;transform: translateY(-45%);}
+	#price_news .buttons-row a.button{padding: 0;}
 }

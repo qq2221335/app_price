@@ -5,7 +5,7 @@
 .c_margin-top{margin-top: 10px;}
 .c_margin-bottom{margin-bottom:0!important;}
 .c_padding-bottom{padding-bottom:0!important;}
-.navbar a i{font-size: 1.8em;}
+.navbar a i.icon-duihua{font-size: 1.8em;}
 .c_row{background: #fff;padding: 10px 0;}
 .c_row .col-25{margin-bottom: 8px;}
 .c_row .col-25 a i{font-size:3em;display: block;}
