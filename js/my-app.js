@@ -8,23 +8,19 @@ var myApp = new Framework7({
 
 var $$ = Dom7;
 
-
-var viewindex = myApp.addView('#Farm_food',{
+var viewindex = myApp.addView('#index',{
 	domCache: true,  //页面缓存
 
 });
+var viewnews = myApp.addView('#index-Task',{
+	domCache: true,
+});
+var viewnearby = myApp.addView('#index-Search',{
+	domCache: true,
 
-//var viewnews = myApp.addView('#index-news',{
-//	domCache: true,
-//});
-//
-//var viewnearby = myApp.addView('#index-nearby',{
-//	domCache: true,
-//
-//});
-//
-//var viewWo = myApp.addView('#index-wo',{
-//	domCache: true,
-//});
+});
 
+var viewWo = myApp.addView('#index-Wo',{
+	domCache: true,
+});
 
