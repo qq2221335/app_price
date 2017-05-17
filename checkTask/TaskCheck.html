@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>任务审核</title>
+    <link rel="stylesheet" href="../css/framework7.ios.colors.min.css">
+    <link rel="stylesheet" href="../css/framework7.ios.min.css">
+    <link rel="stylesheet" type="text/css" href="../font/iconfont.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/task.css" />
+</head>
+<body>
+<div class="panel-overlay"></div>
+<div class="statusbar-overlay"></div>
+<div class="views">
+    <div class="view">
+        <div class="pages">
+            <div data-page="TaskCheck" class="page navbar-fixed no-tabbar">
+                <!--导航-->
+                <div class="navbar">
+                    <div class="navbar-inner">
+                        <div class="left"><a href="#" class="back"><i class="iconfont icon-zuo"></i></a></div>
+                        <div class="center">广东省国际大宗商品价格监测日报</div>
+                        <div class="right"><i class="iconfont d-copy">&#xe608;</i></div>
+                    </div>
+                </div>
+                <!--内容-->
+                <div class="page-content swiperHidden">
+                    <div class="swiper-nav swiper-container swiper-free-mode taskSwiperNav">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide swiper-slide-visible swiper-slide-active active"><span>能源化工</span></div>
+                            <div class="swiper-slide swiper-slide-visible"><span>基本金属</span></div>
+                            <div class="swiper-slide swiper-slide-visible"><span>农产品</span></div>
+                            <div class="swiper-slide swiper-slide-visible"><span>黄金</span></div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-pages swiper-container taskSwiperPages">
+                        <div class="swiper-wrapper">
+
+                            <div id="Dtab0" class="active swiper-slide swiper-slide-visible swiper-slide-active infinite-scroll">
+                                <div class="content-block taskBox">
+                                    <div class="taskList taskLine-3">
+                                        <ul>
+                                            <li>
+                                                <a href="#" class="row">
+                                                    <div class="col-20"><img src="images/food.png" /></div>
+                                                    <div class="row col-80">
+                                                        <h3>天然气（纽约）</h3>
+                                                        <p class="col-50 a-pre">本期：<span>3.45</span></p>
+                                                        <p class="col-50">涨跌幅：<span  class="color-dgreen">-23%</span></p>
+                                                        <p class="col-50 a-current">终审：<input type="text"/></p>
+                                                        <p class="col-50 d-details">详情<i class="iconfont">&#xe64a;</i></p>
+                                                        <p class="col-50"><label><input type="radio" value="标记疑问"/>标记疑问</label></p>
+                                                        <p class="col-50"><label><input type="radio" value="标记错误"/>标记错误</label></p>
+                                                    </div>
+                                                </a>
+                                                <div class="row taskDetails">
+                                                    <p class="col-50">规格等级：新鲜一级</p>
+                                                    <p class="col-50">计价单位：美元/吨</p>
+                                                    <p class="col-50">全省均价：3.45元</p>
+                                                    <p class="col-50">上期：3.45</p>
+                                                    <p class="col-50">本期：3.45</p>
+                                                    <p class="col-50">初审：3.45</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="row">
+                                                    <div class="col-20"><img src="images/food.png" /></div>
+                                                    <div class="row col-80">
+                                                        <h3>天然气（纽约）</h3>
+                                                        <p class="col-50 a-pre">本期：<span>3.45</span></p>
+                                                        <p class="col-50">涨跌幅：<span  class="color-dgreen">-23%</span></p>
+                                                        <p class="col-50 a-current">终审：<input type="text"/></p>
+                                                        <p class="col-50 d-details">详情<i class="iconfont">&#xe64a;</i></p>
+                                                        <p class="col-50"><label><input type="radio" value="标记疑问"/>标记疑问</label></p>
+                                                        <p class="col-50"><label><input type="radio" value="标记错误"/>标记错误</label></p>
+                                                    </div>
+                                                </a>
+                                                <div class="row taskDetails">
+                                                    <p class="col-50">规格等级：新鲜一级</p>
+                                                    <p class="col-50">计价单位：美元/吨</p>
+                                                    <p class="col-50">全省均价：3.45元</p>
+                                                    <p class="col-50">上期：3.45</p>
+                                                    <p class="col-50">本期：3.45</p>
+                                                    <p class="col-50">初审：3.45</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="Dtab1" class="swiper-slide">
+                                <div class="content-block">
+                                    <div class="list-block h_news">
+                                        <ul>1</ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="Dtab2" class="swiper-slide">
+                                <div class="content-block">
+                                    <div class="list-block h_news">
+                                        <ul>2</ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="Dtab3" class="swiper-slide">
+                                <div class="content-block">
+                                    <div class="list-block h_news">
+                                        <ul>3</ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!--填写暂存-->
+                    <div class="taskToolbarBox">
+                        <div class="row no-gutter taskToolbar">
+                            <div class="col-50 btn">通过</div>
+                            <div class="col-50 btn">退回</div>
+                        </div>
+                    </div>
+                </div>
+                <!--结束-->
+                <!---->
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="../js/framework7.min.js"></script>
+<script type="text/javascript" src="../js/framework7.min.js"></script>
+<script type="text/javascript" src="../js/swiper.min.js"></script>
+<script type="text/javascript" src="../js/my-app.js"></script>
+<script type="text/javascript">
+    var nav = new Swiper('.taskSwiperNav', {
+        slidesPerView: 'auto',
+        freeMode: true,
+        noSwiping: true,
+        freeModeFluid: true,
+        calculateHeight: true,
+        visibilityFullFit: true,
+        onTap: function (nav) {
+            pages.slideTo(nav.clickedIndex, 300, false);
+            $$(".taskSwiperNav .active").removeClass('active');
+            $$(".taskSwiperNav .swiper-slide").eq(pages.activeIndex).addClass('active');
+        }
+    });
+
+    var pages = new Swiper('.taskSwiperPages', {
+        noSwiping: true,
+        onSlideChangeStart: function () {
+            $$(".taskSwiperNav .active").removeClass('active')
+            $$(".taskSwiperNav .swiper-slide").eq(pages.activeIndex).addClass('active');
+        }
+    });
+
+    pages.params.control = nav;
+</script>
+</body>
+</html>

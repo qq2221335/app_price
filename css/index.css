@@ -7,17 +7,17 @@ a {color: #000;}
 .navbar{background-color: #1682dd;color: #fff;}
 .navbar a{color: #fff;}
 .navbar  .left span{font-size: 1em;}
-.navbar .center{font-weight: bold;}
+/*.navbar .center{font-weight: bold;}*/
 .navbar .right .btnArea{line-height: 28px;height:28px;font-size: .9em;border-radius: 5px; display: inline-block;padding:0 .8em; background-color: #fff;color: #333;}
 .navbar .right i.icon-llhomesearch{margin-right: 10px;}
 .navbar .right i.icon-11{margin-left: .5em;font-size: .7em;position: relative;top: -2%;transform: translateY(-20%);}
 
 .views{overflow: hidden;}
 .toolbar .iconfont {font-size: 23px;}
-.color-dgreen{color: #0db78a;}
-.color-dorange{color: #f29715;}
-.color-dred{color: #e7172f;}
-.color-dblue{color: #1682dd;}
+.color-dgreen{color: #0db78a!important;}
+.color-dorange{color: #f29715!important;}
+.color-dred{color: #e7172f!important;}
+.color-dblue{color: #1682dd!important;}
 /*图标颜色*/
 .color-iblue{color: #3da7ff;}
 .color-igreen{color: #0db78a;}
