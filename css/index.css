@@ -2,6 +2,7 @@
 *{padding: 0;margin: 0;}
 a {color: #000;}
 /*公共样式*/
+
 .noturnline{white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
 .navbar{background-color: #1682dd;color: #fff;}
 .navbar a{color: #fff;}
@@ -11,7 +12,7 @@ a {color: #000;}
 .navbar .right i.icon-llhomesearch{margin-right: 10px;}
 .navbar .right i.icon-11{margin-left: .5em;font-size: .7em;position: relative;top: -2%;transform: translateY(-20%);}
 
-
+.views{overflow: hidden;}
 .toolbar .iconfont {font-size: 23px;}
 .color-dgreen{color: #0db78a;}
 .color-dorange{color: #f29715;}
@@ -86,10 +87,10 @@ p{margin: 0;padding: 0;}
 #my_application .navbar  input{background-color: #f1f1f1;}
 #my_application .navbar div.write{color: #128dea;font-size: .8em;margin-left: .5em;flex: 0 0 auto;}
 #my_application .page-content{background-color: #fff;}
-#my_application h4{margin: .7rem;font-size: 1rem;}
+#my_application h4{margin: .7em;margin-bottom: 0; font-size: 1.1em; font-weight: normal;}
 #my_application .row .col-25{text-align: center;padding: .5em 0;}
-#my_application .row .col-25 i{font-size: 4em;}
-#my_application .row .col-25 p{margin-top: -.5em;color: #999;font-size: 1em;}
+#my_application .row .col-25 i{font-size: 3em;}
+#my_application .row .col-25 p{margin-top: -5px;color: #999;font-size: 1em;}
 
 
 /*Farm_food 农副产品*/
@@ -124,8 +125,8 @@ p{margin: 0;padding: 0;}
 
 /*result——Report 报表搜索结果页面*/
 #Report_pull  .page-content{overflow: hidden;position: relative;}
-#Report_pull ul.Report_list {width: 100%;height: calc( 100% - 1.4em - 130px);overflow: auto;}
-#Report_pull .btn_box {position: relative; padding:.4em;font-size: 1rem; height: 28px;width: 100%;background-color: #fff;}
+#Report_pull ul.Report_list {width: 100%;height: calc( 100% - 140px);overflow: auto; margin-top: .3em;}
+#Report_pull .btn_box {position: relative; padding:.4em;font-size: 1em; height: 28px;width: 100%;background-color: #fff;}
 #Report_pull .btn_box .btn{line-height:28px;height:28px; border: 1px solid #F7F7F7;padding: 0 .8em;display: inline-block;border-radius: 5px;}
 #Report_pull .btn_box .btnSummary {position: relative;left: 30%;transform: translateX(-50%);}
 #Report_pull .btn_box .btnArea{margin-left: .8em;}
@@ -284,8 +285,8 @@ p{margin: 0;padding: 0;}
 #price_news ul.pricenews_list li.nomoral a{width: 100%;display: block;}
 #price_news ul.pricenews_list li.nomoral a img{position: relative;top: 50%;transform: translateY(9%);display: inline-block;float: left;height: 7em;width: 45%;}
 #price_news ul.pricenews_list li.nomoral a>div.detail{padding-left:48%;}
-#price_news ul.pricenews_list li.nomoral a .detail div{font-size: 1.2em;margin: 5px 0;overflow: hidden;height: 4em;}
-#price_news ul.pricenews_list li.nomoral a .detail p{color: #999}
+#price_news ul.pricenews_list li.nomoral a .detail div{font-size: 1.1em;margin: 5px 0;overflow: hidden;height: 4em;}
+#price_news ul.pricenews_list li.nomoral a .detail p{color: #999;font-size: 1em;}
 /*专题li*/
 #price_news ul.pricenews_list li.special a img{width: 100%;height: 12em;display: block;}
 #price_news ul.pricenews_list li.special a  .detail h3{font-size: 1.2em;margin: 5px 0;font-weight: normal;padding: 0px 5px;height: 25px;}
