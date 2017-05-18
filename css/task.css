@@ -20,10 +20,10 @@ body{font-family: "Microsoft YaHei" ! important;}
 .taskBox .taskList li a{padding: .7rem .5rem; }
 /*.taskBox .taskList li:nth-child(even){background: #e5f1fc;}*/
 .taskBox .taskList li .col-20{}
-.taskBox .taskList li .col-20 i{  font-size: 3.8em;line-height: normal;  }
+.taskBox .taskList li .col-20 i{  font-size: 4.8em;line-height: normal;  }
 .taskBox .taskList li .col-20 img{width: 100%;}
 .taskBox .taskList li .col-80{}
-.taskBox .taskList li .col-80 h3{  width:100%;font-size: 1em;  color: #333;  font-weight: normal;  }
+.taskBox .taskList li .col-80 h3{  width:100%;font-size: 1.2em;  color: #333;  font-weight: normal;  }
 .taskBox .taskList li .col-80 h3 label.right{    font-size: .8em;  font-weight: normal;  color: #666;  padding: .1rem .5rem;  border: 1px solid #eaeaea;  border-radius: 3px;}
 .taskBox .taskList li .col-80 h3 label.right i{ font-size: .8em;}
 .taskBox .taskList li p{ margin-top: .2rem;font-size: .8em;  color: #666;  }
@@ -33,7 +33,7 @@ body{font-family: "Microsoft YaHei" ! important;}
 .taskBox .taskList.taskLine-2 li .col-80 p{margin:.5rem 0;width:100%;}
 .taskBox .taskList.taskLine-3 li .col-80 p.col-50{width: 50%;  width: -webkit-calc((100% - 15px*1)/ 2);  width: calc((100% - 15px*1)/ 2);}
 .taskBox .taskList li .col-80 p:last-child{margin-bottom: 0;}
-.taskBox .taskList li .taskDetails{display:none;padding: .5rem; background: #f6f6f6;}
+.taskBox .taskList li .taskDetails{display:none;padding: .5rem; background: #f6f6f6;overflow: hidden; animation: Height100A .5s;}
 .taskBox .taskList li .taskDetails p{margin-bottom: .5rem;color: #333;}
 .taskBox .taskList li p.d-details{color: #1682dd;}
 .taskBox .taskList li p.d-details i{margin:0 .2rem;font-size: 1em;vertical-align: middle;}
@@ -46,8 +46,7 @@ body{font-family: "Microsoft YaHei" ! important;}
 .taskToolbarBox{position: fixed;bottom: 0;left: 0;right:0;height: 3rem;z-index: 3;}
 .taskToolbarBox .taskToolbar{position: absolute;bottom: 0;left: 0;width: 100%;line-height: 2rem;text-align: center;background: #5E5E5E;color: #fff;font-size: 1em;font-weight: normal;}
 .taskToolbarBox .taskList{position: absolute;bottom: 3rem;  left: 0;  top: -20rem;  width: 100%;  overflow: scroll;}
-.taskToolbarBox .taskList ul{    height: 20rem;  overflow: scroll;  background: #fff;  position: absolute;  left: 0;  bottom: 0;  right: 0;}
-
+.taskToolbarBox .taskList ul{    height: 20rem;  overflow: scroll;  background: #fff;  position: absolute;  left: 0;  bottom: 0;  right: 0;animation: taskHeightA .2s;}
 .taskToolbarBox .taskList li{ padding: .5rem; border-bottom: 1px solid #eaeaea;  font-size: 1em;text-align: center;}
 .taskToolbarBox .taskList li p.title{text-align: left;}
 .taskToolbarBox .taskToolbar .btn{position:relative;padding:.5rem 0;}
@@ -60,10 +59,10 @@ body{font-family: "Microsoft YaHei" ! important;}
 .taskToolbarBox .taskToolbar .btn:nth-child(3){background: #F29715;}
 .taskToolbarBox .taskToolbar .col-50.btn:nth-child(1){background: #1682dd;}
 .taskToolbarBox .taskToolbar .col-50.btn:nth-child(2){background: #F29715;}
-.d-fullscreen{position: fixed;top:0;bottom: 0;left: 0;right:0;z-index: 2;  background: rgba(0,0,0,.4);}
+.d-fullscreen{position: fixed;top:0;bottom: 0;left: 0;right:0;z-index: 2;  background: rgba(0,0,0,.4);animation: opacityA .2s;}
 .z-index10{z-index: 10;}
 /*上传图片*/
-.uploadBox, .remarksBox{position: absolute;  top: 20%;  left: 1rem;  right: 1rem;  z-index: 11;}
+.uploadBox, .remarksBox{position: absolute;  top: 20%;  left: 1rem;  right: 1rem;  z-index: 11;animation: opacityA .2s;}
 .uploadBox .uploadDiv{margin-bottom:2rem;height: 15rem;text-align: center;}
 .uploadBox .uploadDiv img{width: 100%;max-height: 100%;min-width: 60%;border: 2px solid #fff;box-sizing: border-box;}
 .uploadBox .uploadBtn{position: relative;text-align: center;}
@@ -110,8 +109,8 @@ body{font-family: "Microsoft YaHei" ! important;}
 .taskFileBox p{margin-bottom: .2rem;}
 .taskFileBox .msg{margin-top:.5rem;padding: .5rem;border: 1px solid #eaeaea;  font-size: .9em;  min-height: 20em;  border-radius: 5px;}
 /*地区选择*/
-.areaSelect{ display: none; position: absolute;  top: 44px;  left: 0;  right: 0;  bottom: 0;  z-index: 10;   font-size: 1em;  color: #333; background: #efeff4; }
-.areaSelect .box{padding-left:2rem;background: #fff;}
+.areaSelect{ display: none; position: absolute;  top: 44px;  left: 0;  right: 0;  bottom: 0;  z-index: 10;   font-size: 1em;  color: #333; background: rgba(0,0,0,0.4);overflow: hidden;animation: opacityA .3s; }
+.areaSelect .box{padding-left:2rem;background: #fff;height: 20rem;overflow: hidden;animation: taskHeightA .3s;}
 .areaSelect .line{  padding: 1rem 0;  border-bottom: 1px solid #eaeaea;  }
 .areaSelect .line:last-child{border-bottom: none;}
 .areaSelect .line h3{ position: relative; font-size: 1em;  font-weight: normal;  }
@@ -120,11 +119,15 @@ body{font-family: "Microsoft YaHei" ! important;}
 .areaSelect .line li{  margin: .5rem 2rem 0 0;  float: left;  color: #666; }
 /*超过隐藏长度*/
 .taskBox .taskList li .col-80 h3, .taskBox .taskList li .taskDetails p{text-overflow: ellipsis;  white-space: nowrap;  overflow: hidden;}
+/*任务填写动画*/
+@keyframes taskHeightA { from {height:0;} to {height:20rem;} }
+@keyframes opacityA { from {opacity:0;} to {opacity:1;} }
+@keyframes Height100A { from {height:0;} to {height:100%;} }
 
 @media screen and (max-width: 350px) {
     .taskTabs a i{font-size: 2.2em;}
     .taskBox .taskList li a{padding: .5rem;}
-    .taskBox .taskList li .col-20 i{font-size: 3em;}
+    .taskBox .taskList li .col-20 i{font-size: 4em;}
     .taskBox .taskList.taskLine-2 li .col-80 h3{margin: 0;}
     .taskBox .taskList.taskLine-3 li .col-80 p{margin-top: .2rem;}
 }

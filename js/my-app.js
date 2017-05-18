@@ -72,6 +72,9 @@ function areaToChange(){
 }
 
 function SelesctArea(){
+    $$(".areaSelect .box").on("click",function(e){
+        e.stopPropagation();
+    });
     $$(".areaSelect li").on("click",function(){
         var area = $$(this).html();
         $$(this).parents(".page-content").find(".a-tackArea").html(area);
@@ -81,7 +84,7 @@ function SelesctArea(){
 SelesctArea();
 //地区选择----结束
 
-$$(document).on('pageInit', function(e) {
+$$(document).on('pageBeforeAnimation', function(e) {
 
     SelesctArea();
 
@@ -106,11 +109,19 @@ $$(document).on('pageInit', function(e) {
     });
     //底部--编辑
     $$(".d-TaskList").on("click",function(){
-        $$(".d-fullscreen, .taskList").show();
+        if($$(".taskToolbarBox .taskList").css("display") == "none"){
+            $$(".d-fullscreen, .taskToolbarBox .taskList").show();
+        }else{
+            $$(".d-fullscreen, .taskToolbarBox .taskList").hide();
+        }
     });
     //遮罩--关闭所有
     $$(".d-fullscreen").on("click",function(){
         $$(".d-fullscreen, .remarksBox, .uploadBox, .taskToolbarBox .taskList").hide();
+    });
+    //地区选择，点击阴影关闭
+    $$(".areaSelect").on("click",function(){
+        $$(".areaSelect").css('display','none');
     });
 
     //全部复制上期
