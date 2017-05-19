@@ -26,6 +26,7 @@ var viewindex = myApp.addView('#index',{
  domCache: true,
  });
 
+
 $$(document).on('pageBeforeAnimation', function(e) {
     var page = e.detail.page;
 
@@ -45,7 +46,6 @@ $$(document).on('pageBeforeAnimation', function(e) {
                 $$(".taskSwiperNav .swiper-slide").eq(pages.activeIndex).addClass('active');
             }
         });
-
         var pages = new Swiper('.taskSwiperPages', {
             noSwiping: true,
             onSlideChangeStart: function () {
@@ -106,7 +106,11 @@ $$(document).on('pageInit', function(e) {
     });
     //底部--编辑
     $$(".d-TaskList").on("click",function(){
-        $$(".d-fullscreen, .taskList").show();
+        if($$(".taskToolbarBox .taskList").css("display") == "none"){
+            $$(".d-fullscreen, .taskToolbarBox .taskList").show();
+        }else{
+            $$(".d-fullscreen, .taskToolbarBox .taskList").hide();
+        }
     });
     //遮罩--关闭所有
     $$(".d-fullscreen").on("click",function(){

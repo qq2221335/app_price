@@ -33,84 +33,95 @@
 				</div>
 				<!--内容-->
 				<div class="page-content">					
-					<div class="buttons-row">
-						<a href="#" class="button select">
-							<span>未完成</span>
-							<p></p>
-						</a>
-						<a href="#" class="button">已完成</a>
-					</div>
-					<ul class="Notice_list">
-						<li>
-							<a href="#" class="clearfloat">
-								<div class="Ticon fleft">
-									<i class="iconfont icon-tongzhigonggao1"></i>
-									<span></span>
-								</div>
-								<div class="details">
-									<p>
-										<span class="PName">2017年3月17日短信</span>
-										<span class="fright">陈铁夫</span>
-									</p>
-									<p>
-										<span>2017-03-17 &nbsp;14:39:22</span>
-									</p>
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="#" class="clearfloat">
-								<div class="Ticon fleft">
-									<i class="iconfont icon-tongzhigonggao1"></i>
-									<span></span>
-								</div>
-								<div class="details">
-									<p>
-										<span class="PName">2017年3月17日短信</span>
-										<span class="fright">陈铁夫</span>
-									</p>
-									<p>
-										<span>2017-03-17 &nbsp;14:39:22</span>
-									</p>
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="#" class="clearfloat">
-								<div class="Ticon fleft">
-									<i class="iconfont icon-tongzhigonggao1"></i>
-									<span></span>
-								</div>
-								<div class="details">
-									<p>
-										<span class="PName">2017年3月17日短信</span>
-										<span class="fright">陈铁夫</span>
-									</p>
-									<p>
-										<span>2017-03-17 &nbsp;14:39:22</span>
-									</p>
-								</div>
-							</a>
-						</li>
-						
-						<li>
-							<a href="#" class="clearfloat">
-								<div class="Ticon fleft">
-									<i class="iconfont icon-tongzhigonggao1"></i>
-									<span></span>
-								</div>
-								<div class="details">
-									<p>
-										<span class="PName">2017年3月17日短信</span>
-										<span class="fright">陈铁夫</span>
-									</p>
-									<p>
-										<span>2017-03-17 &nbsp;14:39:22</span>
-									</p>
-								</div>
-							</a>
-						</li>
-					</ul>
+					<div class="swiper-nav swiper-container swiper-free-mode   TabSwiperNav">
+                        <div class="swiper-wrapper buttons-row">
+                            <div class="swiper-slide swiper-slide-visible swiper-slide-active active button">未完成</div>
+                            <div class="swiper-slide swiper-slide-visible button">已完成</div>
+                        </div>
+                    </div>
+                    <div class="swiper-pages swiper-container TabSwiperPages">
+                        <div class="swiper-wrapper">
+                            <div id="tab1" class="active swiper-slide swiper-slide-visible swiper-slide-active">
+                           		<ul class="Notice_list">
+									<li>
+										<a href="#" class="row no-gutter">
+											<div class="col-25">
+												<i class="iconfont icon-tongzhigonggao1"></i>
+												<span></span>
+											</div>
+											<div class="col-75">
+												<p>
+													<span class="PName">2017年3月17日短信</span>
+													<span class="fright">陈铁夫</span>
+												</p>
+												<p>
+													<span>2017-03-17 &nbsp;14:39:22</span>
+												</p>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#" class="row no-gutter">
+											<div class="col-25">
+												<i class="iconfont icon-tongzhigonggao1"></i>
+												<span></span>
+											</div>
+											<div class="col-75">
+												<p>
+													<span class="PName">2017年3月17日短信</span>
+													<span class="fright">陈铁夫</span>
+												</p>
+												<p>
+													<span>2017-03-17 &nbsp;14:39:22</span>
+												</p>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#" class="row no-gutter">
+											<div class="col-25">
+												<i class="iconfont icon-tongzhigonggao1"></i>
+												<span></span>
+											</div>
+											<div class="col-75">
+												<p>
+													<span class="PName">2017年3月17日短信</span>
+													<span class="fright">陈铁夫</span>
+												</p>
+												<p>
+													<span>2017-03-17 &nbsp;14:39:22</span>
+												</p>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#" class="row no-gutter">
+											<div class="col-25">
+												<i class="iconfont icon-tongzhigonggao1"></i>
+												<span></span>
+											</div>
+											<div class="col-75">
+												<p>
+													<span class="PName">2017年3月17日短信</span>
+													<span class="fright">陈铁夫</span>
+												</p>
+												<p>
+													<span>2017-03-17 &nbsp;14:39:22</span>
+												</p>
+											</div>
+										</a>
+									</li>
+								</ul>
+                            </div>
+                            <div id="tab2" class="swiper-slide">
+                                <div class="content-block">
+                                    <div class="list-block">
+                                        <ul>1</ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 					
 				</div>
 				<!--结束-->
@@ -120,5 +131,31 @@
 </div>
 <script type="text/javascript" src="js/framework7.min.js"></script>
 <script type="text/javascript" src="js/my-app.js"></script>
+<script>
+ 
+	var nav = new Swiper('.TabSwiperNav', {
+        slidesPerView: 'auto',
+        freeMode: true,
+        noSwiping: true,
+        freeModeFluid: true,
+        calculateHeight: true,
+        visibilityFullFit: true,
+        onTap: function (nav) {
+            pages.slideTo(nav.clickedIndex, 300, false);
+            $$(".TabSwiperNav .active").removeClass('active');
+            $$(".TabSwiperNav .swiper-slide").eq(pages.activeIndex).addClass('active');
+        }
+    });
+
+    var pages = new Swiper('.TabSwiperPages', {
+        noSwiping: true,
+        onSlideChangeStart: function () {
+            $$(".TabSwiperNav .active").removeClass('active')
+            $$(".TabSwiperNav .swiper-slide").eq(pages.activeIndex).addClass('active');
+        }
+    });
+
+    pages.params.control = nav;
+</script>
 </body>
 </html>
