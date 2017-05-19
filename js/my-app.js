@@ -26,7 +26,6 @@ var viewindex = myApp.addView('#index',{
  domCache: true,
  });
 
-
 $$(document).on('pageBeforeAnimation', function(e) {
     var page = e.detail.page;
 
