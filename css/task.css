@@ -135,7 +135,10 @@ body{font-family: "Microsoft YaHei" ! important;}
     .uploadBox, .remarksBox{ left: 2rem;  right: 2rem;}
     .taskToolbarBox .taskToolbar .btn.col-40{padding-left: 4rem;}
 }
-
+@media screen and (min-width: 414px) {
+    .areaSelect .box{height: 22rem;}
+    @keyframes taskHeightA { from {height:0;} to {height:22rem;} }
+}
 
 
 
