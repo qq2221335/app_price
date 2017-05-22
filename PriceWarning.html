@@ -35,17 +35,25 @@
 				        </div>
 				    </div>
 				</div>
+				
+				<!--搜索框-->
+				<form data-search-list=".list-block-search" data-search-in=".item-title" class="searchbar searchbar-init">
+					<div class="searchbar_form searchbar-input">
+					    <label for="q" id="q_label" >搜索</label>
+					    <input id="q" type="search">
+					    <i class="iconfont icon-llhomesearch" id="q_i"></i>
+					    <a href="#" class="searchbar-clear"></a>
+					</div>
+				</form>
+				<!--搜索结束-->
+				
 				<!--内容-->
 				<div class="page-content">					
-					<div class="searchbar_form">
-					    <label for="q" id="q_label">搜索</label>
-					    <input id="q"  type="text">
-					    <i class="iconfont icon-llhomesearch" id="q_i"></i>
-					</div>
-					<div class="Warning_list">
-						<ul>
+					
+					<div class="Warning_list list-block-search">
+						<ul class="searchbar-found">
 							<li class="clearfloat">
-								<div class="item_content">
+								<div class="item_content item-title">
 									<i class="iconfont icon-jingbao fleft color-dorange"></i>
 									<span>中度上涨</span>
 									<p>
@@ -59,7 +67,7 @@
 								</div>
 							</li>
 							<li class="clearfloat">
-								<div class="item_content">
+								<div class="item_content  item-title">
 									<i class="iconfont icon-jingbao fleft color-dblue"></i>
 									<span>轻度下跌</span>
 									<p>
@@ -73,7 +81,7 @@
 								</div>
 							</li>
 							<li class="clearfloat">
-								<div class="item_content">
+								<div class="item_content item-title">
 									<i class="iconfont icon-jingbao fleft color-dgreen"></i>
 									<span>正常</span>
 									<p>
@@ -87,11 +95,11 @@
 								</div>
 							</li>
 							<li class="clearfloat">
-								<div class="item_content">
+								<div class="item_content item-title">
 									<i class="iconfont icon-jingbao fleft color-dorange"></i>
 									<span>中度上涨</span>
 									<p>
-										<span class="">粮食</span>
+										<span class="">商品</span>
 										<span class="fright color-dgreen">-0.59%</span>
 									</p>
 									<p>
@@ -101,7 +109,7 @@
 								</div>
 							</li>
 							<li class="clearfloat">
-								<div class="item_content">
+								<div class="item_content item-title">
 									<i class="iconfont icon-jingbao fleft color-dorange"></i>
 									<span>中度上涨</span>
 									<p>
@@ -116,7 +124,7 @@
 							</li>
 						</ul>
 						<div class="btnShow">查看预警规则</div>
-						<div class="rule_table">
+						<div class="rule_table" style="display: none;">
 							<table border="0">
 								<tr>
 									<th>商品</th>
@@ -226,7 +234,15 @@
             	document.getElementById('q_i').style.display = 'block';	
 			}		
 		}
-	}
+	};
+	$$(".btnShow").click(function(){
+		var ishidden = $$('.rule_table').css('display');
+		if(ishidden == 'block'){
+			$$('.rule_table').css('display','none'); 
+		}else if(ishidden == 'none'){
+			$$('.rule_table').css('display','block'); 
+		}
+	});
 </script>
 </body>
 </html>

@@ -35,16 +35,23 @@
 				        </div>
 				    </div>
 				</div>
-				<!--内容-->
-				<div class="page-content">
-	              	<div class="searchbar_form">
-					    <label for="q" id="q_label">搜索</label>
-					    <input id="q"  type="text">
+				
+				<!--搜索框-->
+				<form data-search-list=".list-block-search" data-search-in=".item-title" class="searchbar searchbar-init">
+					<div class="searchbar_form searchbar-input">
+					    <label for="q" id="q_label" >搜索</label>
+					    <input id="q" type="search">
 					    <i class="iconfont icon-llhomesearch" id="q_i"></i>
+					    <a href="#" class="searchbar-clear"></a>
 					</div>
-					<ul class="message_list">
+				</form>
+				<!--搜索结束-->
+				
+				<!--内容-->
+				<div class="page-content list-block-search">
+					<ul class="message_list searchbar-found">
 						<li>
-							<a href="#" class="clearfloat">
+							<a href="#" class="clearfloat item-title">
 								<div class="Ticon fleft">
 									<i class="iconfont icon-wo2"></i>
 								</div>
@@ -60,7 +67,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="#" class="clearfloat">
+							<a href="#" class="clearfloat item-title">
 								<div class="Ticon fleft">
 									<i class="iconfont icon-wo2"></i>
 								</div>
@@ -76,7 +83,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="#" class="clearfloat">
+							<a href="#" class="clearfloat item-title">
 								<div class="Ticon fleft">
 									<i class="iconfont icon-wo2"></i>
 								</div>
@@ -86,19 +93,19 @@
 										<span class="fright">17:56</span>
 									</p>
 									<p class="noturnline">
-										广东省国际大宗商品价格监测广东省国际大宗商品价格监测
+										广xi省国际大宗商品价格监测广东省国际大宗商品价格监测
 									</p>
 								</div>
 							</a>
 						</li>
 						<li>
-							<a href="#" class="clearfloat">
+							<a href="#" class="clearfloat item-title">
 								<div class="Ticon fleft">
 									<i class="iconfont icon-wo2"></i>
 								</div>
 								<div class="details">
 									<p>
-										<span class="PName">陈春丽</span>
+										<span class="PName">陈春</span>
 										<span class="fright">17:56</span>
 									</p>
 									<p class="noturnline">
@@ -107,6 +114,7 @@
 								</div>
 							</a>
 						</li>
+						
 					</ul>
             	</div>
 				<!--结束-->

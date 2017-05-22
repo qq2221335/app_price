@@ -20,95 +20,102 @@
 		<div class="pages">
 			<div data-page="my_application"  id="my_application" class="page no-tabbar navbar-fixed">
 				<!--导航-->
-				<div class="navbar">
-					<form class="searchbar searchbar-init">
-                        <a href="" class="backico back Search-back"><i class="iconfont icon-u-arrow3-left"></i></a>
-                        <div class="searchbar-input">
-                            <input id="more_application" type="search" placeholder="全部应用">
-                            <a href="#" class="searchbar-clear"></a>
-                        </div>
-                        <div class="write">编辑</div>
-                	</form>	
-				</div>
-				<!--内容-->
-				<div class="page-content">
-						<h4>我的应用</h4>
-						<div class="row">
-						    <!-- Each "cell" has col-[widht in percents] class -->
-						    <div class="col-25">
-						    	<a href="#">
-							    	<i class="iconfont icon-nongmaoshipin color-dblue"></i>
-							    	<p>农贸食品</p>
-						    	</a>
-						    </div>
-						    <div class="col-25">
-						    	<a href="#">
-							    	<i class="iconfont icon-chaoshishipin color-dred"></i>
-							    	<p>超市食品</p>
-						    	</a>
-						    </div>
-						   	<div class="col-25">
-						    	<a href="#">
-							    	<i class="iconfont icon-dazongshangpin color-dorange"></i>
-							    	<p>大宗食品</p>
-						    	</a>
-						    </div>
-						    <div class="col-25">
-						    	<a href="#">
-							    	<i class="iconfont icon-gongyechanpin color-dgreen"></i>
-							    	<p>工业产品</p>
-						    	</a>
-						    </div>
-						    <div class="col-25">
-						    	<a href="#">
-							    	<i class="iconfont icon-jiagezixun color-dorange"></i>
-							    	<p>价格咨询</p>
-						    	</a>
-						    </div>
-						    <div class="col-25">
-						    	<a href="#">
-							    	<i class="iconfont icon-jiagezhishu color-dgreen"></i>
-							    	<p>价格指数</p>
-						    	</a>
-						    </div>
-						   	<div class="col-25">
-						    	<a href="#">
-							    	<i class="iconfont icon-jiageyujing color-dblue"></i>
-							    	<p>价格预警</p>
-						    	</a>
-						    </div>
-					    	<div class="col-25">
-						    	<a href="Macro_Judgment.html">
-							    	<i class="iconfont icon-hongguanyanpan color-dred"></i>
-							    	<p>宏观研判</p>
-						    	</a>
-						    </div>
-						    <div class="col-25">
-						    	<a href="Macro_data.html">
-							    	<i class="iconfont icon-hongguanshuju color-dred"></i>
-							    	<p>宏观数据</p>
-						    	</a>
-						    </div>
-						    <div class="col-25">
-						    	<a href="task.html">
-							    	<i class="iconfont icon-renwujiankong color-dblue"></i>
-							    	<p>任务监控</p>
-						    	</a>
-						    </div>
-						   	<div class="col-25">
-						    	<a href="my_ToWork.html">
-							    	<i class="iconfont icon-wodedaiban color-dorange"></i>
-							    	<p>我的待办</p>
-						    	</a>
-						    </div>
-						    <div class="col-25">
-						    	<a href="Notice.html">
-							    	<i class="iconfont icon-jiageyujing color-dgreen"></i>
-							    	<p>通知公告</p>
-						    	</a>
-						    </div>  
+				<div class="navbar">	
+					<!--搜索框-->
+					<form data-search-list=".list-block-search" data-search-in=".item-title" class="searchbar searchbar-init">
+						<a href="" class="backico back Search-back"><i class="iconfont icon-u-arrow3-left"></i></a>
+						<div class="searchbar_form searchbar-input">
+						    <input id="q" type="search" placeholder="全部应用">
+						    <a href="#" class="searchbar-clear"></a>
 						</div>
+						<div class="write">编辑</div>
+					</form>
+					<!--搜索结束-->
 				</div>
+				
+				
+				
+				<!--内容-->
+				<div class="page-content" >
+						<h4>我的应用</h4>
+						<div class="searchbar-found  list-block-search">
+							<ul class="row">
+							    <!-- Each "cell" has col-[widht in percents] class -->
+							    <li class="col-25">
+							    	<a href="#" class="item-title">
+								    	<i class="iconfont icon-nongmaoshipin color-dblue"></i>
+								    	<p >农贸食品</p>
+							    	</a>
+							    </li>
+							    <li class="col-25">
+							    	<a href="#" class="item-title"> 
+								    	<i class="iconfont icon-chaoshishipin color-dred"></i>
+								    	<p>超市食品</p>
+							    	</a>
+							    </li>
+							   	<li class="col-25">
+							    	<a href="#" class="item-title">
+								    	<i class="iconfont icon-dazongshangpin color-dorange"></i>
+								    	<p>大宗食品</p>
+							    	</a>
+							    </li>
+							    <li class="col-25">
+							    	<a href="#" class="item-title">
+								    	<i class="iconfont icon-gongyechanpin color-dgreen"></i>
+								    	<p>工业产品</p>
+							    	</a>
+							    </li>
+							    <li class="col-25">
+							    	<a href="#" class="item-title">
+								    	<i class="iconfont icon-jiagezixun color-dorange"></i>
+								    	<p>价格咨询</p>
+							    	</a>
+							    </li>
+							    <li class="col-25">
+							    	<a href="#" class="item-title">
+								    	<i class="iconfont icon-jiagezhishu color-dgreen"></i>
+								    	<p>价格指数</p>
+							    	</a>
+							    </li>
+							   	<li class="col-25">
+							    	<a href="#" class="item-title">
+								    	<i class="iconfont icon-jiageyujing color-dblue"></i>
+								    	<p>价格预警</p>
+							    	</a>
+							    </li>
+						    	<li class="col-25">
+							    	<a href="Macro_Judgment.html" class="item-title">
+								    	<i class="iconfont icon-hongguanyanpan color-dred"></i>
+								    	<p>宏观研判</p>
+							    	</a>
+							    </li>
+							    <li class="col-25">
+							    	<a href="Macro_data.html" class="item-title">
+								    	<i class="iconfont icon-hongguanshuju color-dred"></i>
+								    	<p>宏观数据</p>
+							    	</a>
+							    </li>
+							    <li class="col-25">
+							    	<a href="task.html" class="item-title">
+								    	<i class="iconfont icon-renwujiankong color-dblue"></i>
+								    	<p>任务监控</p>
+							    	</a>
+							    </li>
+							   	<li class="col-25">
+							    	<a href="my_ToWork.html" class="item-title">
+								    	<i class="iconfont icon-wodedaiban color-dorange"></i>
+								    	<p>我的待办</p>
+							    	</a>
+							    </li>
+							    <li class="col-25">
+							    	<a href="Notice.html" class="item-title">
+								    	<i class="iconfont icon-jiageyujing color-dgreen"></i>
+								    	<p>通知公告</p>
+							    	</a>
+							    </li>  
+							</ul>
+						</div>
+					</div>
 				<!--结束-->
 			</div>
 		</div>
