@@ -59,10 +59,13 @@ $$(document).on('pageBeforeAnimation', function(e) {
 
     }
     //填报----结束
+
 });
 
 //地区选择
-function areaToChange(){
+var _thisArea ;//地区选择当前点击对象
+function areaToChange(_this){
+    _thisArea = $$(_this);
     var val = $$(".areaSelect").css('display');
     if(val == 'none'){
         $$(".areaSelect").css('display','flex');
@@ -77,7 +80,7 @@ function SelesctArea(){
     });
     $$(".areaSelect li").on("click",function(){
         var area = $$(this).html();
-        $$(this).parents(".page-content").find(".a-tackArea").html(area);
+        $$(_thisArea).find(".a-tackArea").html(area);
         areaToChange();
     });
 }
@@ -86,7 +89,16 @@ SelesctArea();
 
 $$(document).on('pageBeforeAnimation', function(e) {
 
-    SelesctArea();
+    //SelesctArea();
+    $$(".areaSelect .box").on("click",function(e){
+        e.stopPropagation();
+    });
+    $$(".areaSelect li").on("click",function(){
+        var area = $$(this).html();
+        //$$(this).parents(".page-content").find(".a-tackArea").html(area);
+        $$(_thisArea).find(".a-tackArea").html(area);
+        areaToChange();
+    });
 
     //点击详情
     $$(".d-details").on("click",function(){
@@ -134,5 +146,33 @@ $$(document).on('pageBeforeAnimation', function(e) {
         }
     });
 
+
 });
 
+$$(document).on('pageInit', function(e) {
+    var page = e.detail.page;
+
+    //数据查询-筛选
+    if (page.name === 'DataQuery') {
+        $$(".a-filtrate").on("click", function () {
+            toggleSH()
+        });
+        $$(".filtrateBox .box").on("click", function (e) {
+            e.stopPropagation();
+        });
+        //点击阴影隐藏
+        $$(".filtrateBox").on("click", function () {
+            $$(".filtrateBox").css('display', 'none');
+        });
+
+        function toggleSH() {
+            var val = $$(".filtrateBox").css('display');
+            if (val == 'none') {
+                $$(".filtrateBox").css('display', 'block');
+            } else {
+                $$(".filtrateBox").css('display', 'none');
+            }
+        }
+    }
+//数据查询-筛选------结束
+});
