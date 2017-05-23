@@ -5,7 +5,7 @@
 .c_margin-top{margin-top: 10px;}
 .c_margin-bottom{margin-bottom:0!important;}
 .c_padding-bottom{padding-bottom:0!important;}
-.navbar a i.icon-duihua{font-size: 1.8em;}
+.navbar a i.icon-duihua{font-size: 1.6em;}
 .c_row{background: #fff;padding: 10px 0;}
 .c_margin-tops{margin-top: 2rem;}
 .c_row .col-25{margin-bottom: 8px;}
@@ -17,14 +17,14 @@
 .c_row .col-100{border-bottom: solid 1px #efeff4;margin-bottom: 10px; padding:0 14px 8px;}
 .c_row .col-100 b{font-size: 1.2em;color: #666;float: left;font-weight: normal;}
 .c_row .col-100 a{font-size: 1em;color: #999;float: right;padding-top: 5px;}
-.c_row .col-33 p b{font-size: 1.5em;padding: 0 5px;color: #333;}
+.c_row .col-33 p b{font-size: 1.2em;padding: 0 5px;color: #333;font-weight: normal;}
 .c_row .col-33 p samp{font-size:1em; color: #666;}
 .c_row .col-33 p{font-size:1.1em;}
-.c_row .col-33 p i{font-size:1.6em;}
-.c_row .col-33{padding:3%;border: solid 1px #efeff4; border-top:none; border-left:none;}
+.c_row .col-33 p i{font-size:1.4em;}
+.c_row .col-33{padding:.5rem;border: solid 1px #efeff4; border-top:none; border-left:none;}
 .c_row .col-33 a{display: block;}
 .c_row .col-100 .row .col-40 img{ width: 100%;height: 106px;}
-.c_row .col-100 a .row .col-60 h1{font-size: 1.1em; color: #333;}
+.c_row .col-100 a .row .col-60 h1{font-size: 1.2em; color: #333;font-weight: normal;}
 .c_row .col-100 a .row .col-60 p{font-size: 1em; color: #666;}
 .c_row .col-100 a .row .col-60 dd{font-size: 1em; text-align: right;color: #999;padding:0 10px 0 0;}
 .c_row .col-100 a{display: block;}
@@ -38,4 +38,4 @@
 .c_body .c_seeks{text-align: center; padding: 1rem 0;}
 .c_body .c_seeks a{display: block;}
 .c_body .c_seeks a i{font-size: 8em;}
-.c_body .c_seeks a p{font-size: 1.6em; margin-top: -1rem;}
+.c_body .c_seeks a p{font-size: 1.4em; margin-top: -1rem;}

@@ -3,7 +3,7 @@
 .left{float: left;}
 .right{float: right;}
 .taskTabs{margin: .5rem 0;background: #fff;overflow: auto;zoom:1;}
-.taskTabs a{display:block;float:left;padding: .5rem 0;width: 20%;font-size: .9em;color: #666;text-align: center;}
+.taskTabs a{display:block;float:left;padding: .5rem 0;width: 20%;font-size: 1em;color: #666;text-align: center;}
 .taskTabs.d-tab4 a{width:25%;}
 .taskTabs a i{display: block;font-size: 3em;line-height: normal;}
 .taskTabs a.active{  background: #eaeaea;  }
@@ -50,7 +50,7 @@
 .taskToolbarBox{position: fixed;bottom: 0;left: 0;right:0;height: 3rem;z-index: 3;}
 .taskToolbarBox .taskToolbar{position: absolute;bottom: 0;left: 0;width: 100%;line-height: 2rem;text-align: center;background: #5E5E5E;color: #fff;font-size: 1em;font-weight: normal;}
 .taskToolbarBox .taskList{position: absolute;bottom: 3rem;  left: 0;  top: -20rem;  width: 100%;  overflow: scroll;}
-.taskToolbarBox .taskList ul{    height: 20rem;  overflow: scroll;  background: #fff;  position: absolute;  left: 0;  bottom: 0;  right: 0;animation: taskHeightA .2s;}
+.taskToolbarBox .taskList ul{    height: 20rem;  overflow: scroll;  background: #fff;  position: absolute;  left: 0;  bottom: 0;  right: 0;animation: taskHeight20A .2s;}
 .taskToolbarBox .taskList li{ padding: .5rem; border-bottom: 1px solid #eaeaea;  font-size: 1em;text-align: center;}
 .taskToolbarBox .taskList li p.title{text-align: left;}
 .taskToolbarBox .taskToolbar .btn{position:relative;padding:.5rem 0;}
@@ -95,12 +95,12 @@
 .submitBtn{position: absolute;bottom: 0;  left: 0;  right: 0;padding: 1rem 0;z-index: 2;background: #fff;}
 .submitBtn input[type="submit"], .submitBtn input[type="button"], .submitBtn button{display: block;margin: 0 auto;  width: 80%;  height: 2.5rem;  border: none;  background: #1682dd;  color: #fff;  font-size: 1em;  border-radius: .5rem;}
 /*进度条*/
-.progress { display: inline-block;margin:0 .5rem;width: 60%; height: .8rem;  background: #eaeaea; border-radius: 10px; overflow: hidden }
-.progress > span {position: relative;  float: left;  margin: 0 -1px;  min-width: 30px;  height: .8rem;  line-height: .8rem;  text-align: right;  background: #cccccc;  border-radius: 10px;  }
-.progress .green {  background: #85c440;  }
-.progress .red {  background: #db3a27;  }
-.progress .orange {  background: #f2b63c;  }
-.progress .blue {  background: #5aaadb;  }
+.d-progress { display: inline-block;margin:0 .5rem;width: 60%; height: .8rem;  background: #eaeaea; border-radius: 10px; overflow: hidden }
+.d-progress > span {position: relative;  float: left;  margin: 0 -1px;  min-width: 30px;  height: .8rem;  line-height: .8rem;  text-align: right;  background: #cccccc;  border-radius: 10px;  }
+.d-progress .green {  background: #85c440;  }
+.d-progress .red {  background: #db3a27;  }
+.d-progress .orange {  background: #f2b63c;  }
+.d-progress .blue {  background: #5aaadb;  }
 .tackArea, .taskProgress{margin-bottom: .5rem;padding:.5rem;background: #fff;font-size: 1em;color: #333;}
 .tackArea .col-40 label, .tackArea .col-60 a{  border: 1px solid #eaeaea;  padding: .2rem .8rem;  border-radius: 5px;  color: #333;  }
 .tackArea .col-40 label i{ margin-left: .3rem; font-size: .8em; }
@@ -114,7 +114,7 @@
 .taskFileBox .msg{margin-top:.5rem;padding: .5rem;border: 1px solid #eaeaea;  font-size: .9em;  min-height: 20em;  border-radius: 5px;}
 /*地区选择*/
 .areaSelect, .filtrateBox{ display: none; position: absolute;  top: 44px;  left: 0;  right: 0;  bottom: 0;  z-index: 10;   font-size: 1em;  color: #333; background: rgba(0,0,0,0.4);overflow: hidden;animation: opacityA .3s; }
-.areaSelect .box, .filtrateBox .box{padding-left:2rem;background: #fff;height: 20rem;overflow: hidden;animation: taskHeightA .3s;}
+.areaSelect .box, .filtrateBox .box{padding-left:2rem;background: #fff;height: 22rem;overflow: hidden;animation: taskHeightA .3s;}
 .areaSelect .line{  padding: 1rem 0;  border-bottom: 1px solid #eaeaea;  }
 .areaSelect .line:last-child{border-bottom: none;}
 .areaSelect .line h3{ position: relative; font-size: 1em;  font-weight: normal;  }
@@ -142,7 +142,8 @@
 /*超过隐藏长度*/
 .taskBox .taskList li .col-80 h3, .taskBox .taskList li .taskDetails p{text-overflow: ellipsis;  white-space: nowrap;  overflow: hidden;}
 /*任务填写动画*/
-@keyframes taskHeightA { from {height:0;} to {height:20rem;} }
+@keyframes taskHeightA { from {height:0;} to {height:22rem;} }
+@keyframes taskHeight20A { from {height:0;} to {height:20rem;} }
 @keyframes opacityA { from {opacity:0;} to {opacity:1;} }
 @keyframes Height100A { from {height:0;} to {height:100%;} }
 
@@ -152,6 +153,8 @@
     .taskBox .taskList li .col-20 i{font-size: 4em;}
     .taskBox .taskList.taskLine-2 li .col-80 h3{margin: 0;}
     .taskBox .taskList.taskLine-3 li .col-80 p{margin-top: .2rem;}
+    .areaSelect .box, .filtrateBox .box{height: 20rem;}
+    @keyframes taskHeightA { from {height:0;} to {height:20rem;} }
 }
 @media screen and (min-width: 375px) {
     .uploadBox, .remarksBox{ left: 2rem;  right: 2rem;}
