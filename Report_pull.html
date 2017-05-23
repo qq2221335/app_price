@@ -42,13 +42,13 @@
 						<span>天河区</span>
 						<span>定点单位:4</span>
 					</div>
-					<div class="swiper-nav swiper-container swiper-free-mode   TabSwiperNav">
+					<div class="swiper-nav swiper-container swiper-free-mode   Report-SwiperNav">
                         <div class="swiper-wrapper buttons-row">
                             <div class="swiper-slide swiper-slide-visible swiper-slide-active active button">未完成</div>
                             <div class="swiper-slide swiper-slide-visible button">已完成</div>
                         </div>
                     </div>
-                    <div class="swiper-pages swiper-container TabSwiperPages">
+                    <div class="swiper-pages swiper-container Report-SwiperPages">
                         <div class="swiper-wrapper">
                             <div id="tab1" class="active swiper-slide swiper-slide-visible swiper-slide-active">
                            		<ul class="Report_list">
@@ -193,43 +193,5 @@
 </div>
 <script type="text/javascript" src="js/framework7.min.js"></script>
 <script type="text/javascript" src="js/my-app.js"></script>
-<script>
-	$$(".btnArea").click(function(){
-		var ishidden = $$('.pull_area').css('display');
-		if(ishidden == 'flex'){
-			$$('.pull_area').css('display','none'); 
-		}else if(ishidden == 'none'){
-			$$('.pull_area').css('display','flex'); 
-		}
-	});
-	$$(".pull_left li").click(function(){
-		$$(".pull_left li").removeClass('select');
-		$$(this).addClass('select');
-	});
-	var nav = new Swiper('.TabSwiperNav', {
-        slidesPerView: 'auto',
-        freeMode: true,
-        noSwiping: true,
-        freeModeFluid: true,
-        calculateHeight: true,
-        visibilityFullFit: true,
-        onTap: function (nav) {
-            pages.slideTo(nav.clickedIndex, 300, false);
-            $$(".TabSwiperNav .active").removeClass('active');
-            $$(".TabSwiperNav .swiper-slide").eq(pages.activeIndex).addClass('active');
-        }
-    });
-
-    var pages = new Swiper('.TabSwiperPages', {
-        noSwiping: true,
-        onSlideChangeStart: function () {
-            $$(".TabSwiperNav .active").removeClass('active')
-            $$(".TabSwiperNav .swiper-slide").eq(pages.activeIndex).addClass('active');
-        }
-    });
-
-    pages.params.control = nav;
-
-</script>
 </body>
 </html>

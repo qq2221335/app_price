@@ -80,7 +80,7 @@
 						                      <div class="item-inner">
 						                        <div class="item-title label">价格指标*</div>
 						                        <div class="item-input">
-						                        	<input name="commodityName" placeholder="" type="text" readonly="readonly" class="onlyred">
+						                        	<input name="PriceIndex" placeholder="" type="text" readonly="readonly" class="onlyred">
 						                        	<i class="iconfont icon-11"></i>
 						                        	<ul class="pull_list" style="display: none;">
 							                        	<li>所有</li>
@@ -220,19 +220,19 @@
 </div>
 <script type="text/javascript" src="js/framework7.min.js"></script>
 <script type="text/javascript" src="js/my-app.js"></script>
-<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
+<script type="text/javascript" src="js/jquery.js" ></script>
 <script>
-	window.onload = function(){
-		
-	};
-	$$('input.onlyred').click(function(){
-		var index = $(".onlyred").index($(this));
-		if($$(".pull_list").eq(index).css('display') == 'block'){
-			$$(".pull_list").eq(index).css('display','none');
+ 	$$(document).click(function(){
+ 		$$(".pull_list").hide();
+ 	});
+	$$('input.onlyred').click(function(e){
+		if($$(this).nextAll('.pull_list').css('display') == 'block'){
+			$$(this).nextAll('.pull_list').hide();
 		} else{
-			$$(".pull_list").css('display','none');
-			$$(".pull_list").eq(index).css('display','block');
+			$$(".pull_list").hide();
+			$$(this).nextAll('.pull_list').show();
 		}
+		e.stopPropagation();
 	});
 	var myCalendar = myApp.calendar({
    	 	input: '#calendar',

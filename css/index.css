@@ -75,7 +75,6 @@ p{margin: 0;padding: 0;}
 #index-Wo .user_box .login-after  p{position: absolute;max-width: 100%;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
 #index-Wo .user_box .login-after  p.userName{top: .8em;left: 0;font-weight: bold;}
 #index-Wo .user_box .login-after  p.userCompany{bottom: .8em;left: 0;}
-#index-Wo .user_box .list-block{margin: 0;}
 #index-Wo .list-block{margin: 10px 0;}
 #index-Wo .wo_box1 ul li:nth-child(1)::after{content: '';position: absolute;left: 0;bottom: 0;right: auto;top: auto;height: 1px;width: 100%;background-color: #EEEEEE;display: block;z-index: 15;-webkit-transform-origin: 50% 100%;transform-origin: 50% 100%;}
 #index-Wo ul li i{font-size: 1.5em;}
@@ -336,18 +335,21 @@ p{margin: 0;padding: 0;}
 #Task  .list-block li .item-title {width: 90%;}
 #Task  .list-block li .item-title  h1{font-size: 1.3em;font-weight: normal;}
 #Task  .list-block li .item-title  p{color: #999;font-size: .9em;}
-#Task  .list-block li .item-title  p.progress {font-size: 1.1em;color: #333;}
-#Task  .list-block li .item-title  p.progress em {font-style: normal;font-size: 1.4em;color:#f29631;margin-right: 10px;}
+#Task  .list-block li .item-title  p.task_progress {font-size: 1.1em;color: #333;}
+#Task  .list-block li .item-title  p.task_progress em {font-style: normal;font-size: 1.4em;color:#f29631;margin-right: 10px;}
 
 
 
 /*Company 定点单位*/
+#Company .list-block{margin: 0;font-size: 1em;}
 #Company .searchbar_form{background-color: #F0EFF5;}
 #Company .searchbar_form input{background-color: #fff;}
+#Company .searchbar_form label{left: 51%;margin-left: -3%;}
+#Company .searchbar_form i{left: 51%;margin-left: -8%;}
 #Company .page-content{background-color: #fff;overflow: hidden;}
-#Company .page-content h1{font-size: 1.2em;padding: 5px 15px;border-bottom: 1px solid #f0eff5;}
-#Company .page-content ul{height: calc(100% - 5em - 10px);overflow: auto;}
-#Company .page-content ul li{display: flex;justify-content: flex-start;align-items: center;padding: 10px;border-bottom: 1px solid #f0eff5;}
+#Company .page-content h1{font-size: 1.2em;height:2.5em;line-height:2.5em;padding-left:10px;border-bottom: 1px solid #f0eff5;}
+#Company .page-content ul{height: calc(100% - 3em);overflow: auto;}
+#Company .page-content ul li{padding: 10px;border-bottom: 1px solid #f0eff5;}
 #Company .page-content ul li:last-child{border: none;}
 #Company .page-content ul li i{font-size: 1.5em;margin-right: 5px;}
 #Company .page-content ul li span{font-size: 1.2em;}
@@ -356,7 +358,7 @@ p{margin: 0;padding: 0;}
 /*Investigate 明察暗访*/
 #Investigate .page-content{background: url(../images/bg.png) 100% 100%;display: flex;flex-direction: column;align-items: center;}
 #Investigate .page-content a{flex: 1;}
-#Investigate .page-content a:first-child{flex-direction: column;display: flex;align-items: center;flex-direction: column;justify-content: center;}
+#Investigate .page-content a:first-child{flex-direction: column;display: 	flex;align-items: center;flex-direction: column;justify-content: center;}
 #Investigate .page-content a i{font-size: 8em;}
 #Investigate .page-content a p{text-align: center;margin-top: -10px;font-size: 1.2em;}
 

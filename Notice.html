@@ -131,31 +131,5 @@
 </div>
 <script type="text/javascript" src="js/framework7.min.js"></script>
 <script type="text/javascript" src="js/my-app.js"></script>
-<script>
- 
-	var nav = new Swiper('.TabSwiperNav', {
-        slidesPerView: 'auto',
-        freeMode: true,
-        noSwiping: true,
-        freeModeFluid: true,
-        calculateHeight: true,
-        visibilityFullFit: true,
-        onTap: function (nav) {
-            pages.slideTo(nav.clickedIndex, 300, false);
-            $$(".TabSwiperNav .active").removeClass('active');
-            $$(".TabSwiperNav .swiper-slide").eq(pages.activeIndex).addClass('active');
-        }
-    });
-
-    var pages = new Swiper('.TabSwiperPages', {
-        noSwiping: true,
-        onSlideChangeStart: function () {
-            $$(".TabSwiperNav .active").removeClass('active')
-            $$(".TabSwiperNav .swiper-slide").eq(pages.activeIndex).addClass('active');
-        }
-    });
-
-    pages.params.control = nav;
-</script>
 </body>
 </html>

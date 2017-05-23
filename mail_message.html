@@ -125,22 +125,5 @@
 <script type="text/javascript" src="js/framework7.min.js"></script>
 <script type="text/javascript" src="js/my-app.js"></script>
 <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-<script>
-	window.onload = function(){
-		document.getElementById('q').onfocus = function(){		
-			document.getElementById('q_label').style.display = 'none';
-            document.getElementById('q_i').style.display = 'none';		
-		}
-		document.getElementById('q').onblur = function(){	
-			var len = document.getElementById('q').value;
-			if(len == ''){
-				document.getElementById('q_label').style.display = 'block';
-            	document.getElementById('q_i').style.display = 'block';	
-			}
-				
-		}
-	}
-	
-</script>
 </body>
 </html>

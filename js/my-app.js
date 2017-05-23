@@ -174,5 +174,129 @@ $$(document).on('pageInit', function(e) {
             }
         }
     }
-//数据查询-筛选------结束
+    //数据查询-筛选------结束
+    
+    //swiper初始化方法
+   	function SwiperInit(){
+   		var nav = new Swiper('.TabSwiperNav', {
+	        slidesPerView: 'auto',
+	        freeMode: true,
+	        noSwiping: true,
+	        freeModeFluid: true,
+	        calculateHeight: true,
+	        visibilityFullFit: true,
+	        onTap: function (nav) {
+	            pages.slideTo(nav.clickedIndex, 300, false);
+	            $$(".TabSwiperNav .active").removeClass('active');
+	            $$(".TabSwiperNav .swiper-slide").eq(pages.activeIndex).addClass('active');
+	        }
+   		});
+
+	    var pages = new Swiper('.TabSwiperPages', {
+	        noSwiping: true,
+	        onSlideChangeStart: function () {
+	            $$(".TabSwiperNav .active").removeClass('active')
+	            $$(".TabSwiperNav .swiper-slide").eq(pages.activeIndex).addClass('active');
+	        }
+	    });
+	
+	    pages.params.control = nav;
+   	}
+   		
+    
+    
+	//包含搜索框页面 编辑隐藏label文字
+	if(page.name === 'Farm_food' || page.name === 'Macro_data' || page.name === 'PriceWarning'
+		|| page.name === 'Mail_message'){
+			
+		document.getElementById('q').onfocus = function(){		
+			document.getElementById('q_label').style.display = 'none';
+            document.getElementById('q_i').style.display = 'none';		
+		}
+		document.getElementById('q').onblur = function(){	
+			var len = document.getElementById('q').value;
+			if(len == ''){
+				document.getElementById('q_label').style.display = 'block';
+            	document.getElementById('q_i').style.display = 'block';	
+			}		
+		}
+	}
+	//价格预警页面JS
+	if( page.name === 'PriceWarning'){
+		$$(".btnShow").click(function(){
+			var ishidden = $$('.rule_table').css('display');
+			if(ishidden == 'block'){
+				$$('.rule_table').css('display','none'); 
+			}else if(ishidden == 'none'){
+				$$('.rule_table').css('display','block'); 
+			}
+		});
+	};
+	//明察暗访页面JS
+	if(page.name === 'InvestigateFill'){
+		SwiperInit();
+		$$(document).click(function(){
+ 			$$(".pull_list").hide();
+		});
+		$$('input.onlyred').click(function(e){
+			if($$(this).nextAll('.pull_list').css('display') == 'block'){
+				$$(this).nextAll('.pull_list').hide();
+			} else{
+				$$(".pull_list").hide();
+				$$(this).nextAll('.pull_list').show();
+			}
+			e.stopPropagation();
+		});
+		var myCalendar = myApp.calendar({
+	   	 	input: '#calendar',
+	   	 	monthNames: ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月' , '九月' , '十月', '十一月', '十二月'],
+	   	 	dayNamesShort:['周日', '周一', '周二', '周三', '周四', '周五', '周六'],
+	   	 	onDayClick:function (p, dayContainer, year, month, day){
+	   	 		myCalendar.close();
+	   	 	}
+		});  
+	}
+	//swiper 初始化
+	if( page.name === 'price_news' || page.name === 'Task' || page.name === 'Notice'){
+		  SwiperInit();
+	}
+	if(page.name === 'All_Report' || page.name === 'Report_pull'){
+		var nav = new Swiper('.Report-SwiperNav', {
+	        slidesPerView: 'auto',
+	        freeMode: true,
+	        noSwiping: true,
+	        freeModeFluid: true,
+	        calculateHeight: true,
+	        visibilityFullFit: true,
+	        onTap: function (nav) {
+	            pages.slideTo(nav.clickedIndex, 300, false);
+	            $$(".Report-SwiperNav .active").removeClass('active');
+	            $$(".Report-SwiperNav .swiper-slide").eq(pages.activeIndex).addClass('active');
+	        }
+   		});
+
+	    var pages = new Swiper('.Report-SwiperPages', {
+	        noSwiping: true,
+	        onSlideChangeStart: function () {
+	            $$(".Report-SwiperNav .active").removeClass('active')
+	            $$(".Report-SwiperNav .swiper-slide").eq(pages.activeIndex).addClass('active');
+	        }
+	    });
+	
+	    pages.params.control = nav;
+	    
+	    $$(".btnArea").click(function(){
+			var ishidden = $$('.pull_area').css('display');
+			if(ishidden == 'flex'){
+				$$('.pull_area').css('display','none'); 
+			}else if(ishidden == 'none'){
+				$$('.pull_area').css('display','flex'); 
+			}
+		});
+		$$(".pull_left li").click(function(){
+			$$(".pull_left li").removeClass('select');
+			$$(this).addClass('select');
+		});
+	};
+	
 });

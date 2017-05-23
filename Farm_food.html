@@ -60,7 +60,7 @@
 								<li>加工食品</li>
 							</ul>
 						</div>
-						<div class="col-75  list-block-search  searchbar-found" >
+						<div class="col-75 list-block-search  searchbar-found" >
 							<ul class="row no-gutter">
 								<li class="col-33">
 									<a href="Farm_foodDetail.html" class="item-title">
@@ -199,20 +199,5 @@
 </div>
 <script type="text/javascript" src="js/framework7.min.js"></script>
 <script type="text/javascript" src="js/my-app.js"></script>
-<script>
-	window.onload = function(){
-		document.getElementById('q').onfocus = function(){		
-			document.getElementById('q_label').style.display = 'none';
-            document.getElementById('q_i').style.display = 'none';		
-		}
-		document.getElementById('q').onblur = function(){	
-			var len = document.getElementById('q').value;
-			if(len == ''){
-				document.getElementById('q_label').style.display = 'block';
-            	document.getElementById('q_i').style.display = 'block';	
-			}		
-		}
-	}
-</script>
 </body>
 </html>
