@@ -26,7 +26,7 @@ a {color: #000;}
 .searchbar_form label{font-size: 1em; z-index: 2;position: absolute;left: 51%;margin-left: -13%;color: #B2B2B2;top:.35rem;font-weight: normal;color: #999;}
 .searchbar_form i{font-size:1em;position: absolute;top:.35rem;left: 51%;margin-left: -18%;color: #999;}
 .searchbar{background-color: #fff;}
-.page>.searchbar input[type=search]{background-color: #E5E5E5 !important;background-image: none;padding: 0 28px 0 10px;}
+.page>.searchbar input[type=search]{background-color: #E5E5E5;background-image: none;padding: 0 28px 0 10px;}
 .searchbar:after{height: 0;}
 /*选项组*/
 .swiper-wrapper.buttons-row .button{line-height:40px;height:40px;border-radius: initial;border: none;color: #808082;background-color: #f9f9fb;flex: 1;}
@@ -272,10 +272,12 @@ p{margin: 0;padding: 0;}
 
 /*#PriceWarning 价格预警*/ 
 #PriceWarning  .navbar .center{left: 18px !important;}
-#PriceWarning  .searchbar_form label{left: 51%;margin-left: -3%;}
-#PriceWarning  .searchbar_form i{left: 51%;margin-left: -8%;}
-#PriceWarning .Warning_list ul{padding-left: 10px;}
-#PriceWarning .Warning_list ul li{position: relative;background-color: #fff;height: 4.6em;margin-top: 10px;border-radius: 2.5em 0 0 2.5em;padding:.8em .4em .2em 6.2em;}
+#PriceWarning  .searchbar{background-color: initial;padding: 0;}
+#PriceWarning  .searchbar input{background-color: #fff;width: 95%;margin: 0 auto;}
+#PriceWarning  .searchbar_form label{left: 50%;margin-left: -3%;}
+#PriceWarning  .searchbar_form i{left: 50%;margin-left: -8%;}
+#PriceWarning .Warning_list ul{width: 95%;margin: 0 auto;}
+#PriceWarning .Warning_list ul li{position: relative;background-color: #fff;height: 4.6em;margin-top: 10px;border-radius: 2.5em 5px 5px 2.5em;padding:.8em .4em .2em 6.2em;}
 #PriceWarning .Warning_list .item_content  i{position: absolute;top: -.38em;left: -.18em;font-size:9em;display: inline-block;width: 1.5rem;height: 1.5rem;}
 #PriceWarning .Warning_list .item_content>span{position: absolute;font-size: 1.2em;width: 2.5em;top:50%;transform: translateY(-50%);left: 1.4em;color: #fff;font-weight: bold;}
 #PriceWarning .Warning_list .item_content  p:nth-child(3){font-size: 1.4em}
@@ -337,7 +339,6 @@ p{margin: 0;padding: 0;}
 #Task  .list-block li .item-title  p{color: #999;font-size: .9em;}
 #Task  .list-block li .item-title  p.task_progress {font-size: 1.1em;color: #333;}
 #Task  .list-block li .item-title  p.task_progress em {font-style: normal;font-size: 1.4em;color:#f29631;margin-right: 10px;}
-
 
 
 /*Company 定点单位*/
