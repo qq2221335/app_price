@@ -33,7 +33,7 @@ a {color: #000;}
 .swiper-wrapper.buttons-row .button.active:after{content: '';position: absolute;margin-left:-7.5%;left: 50%;bottom: 0;right: auto;top: auto;height: 2px;width: 15%;background-color: #4198e5;display: block;z-index: 15;}
 .swiper-wrapper.buttons-row .button.active{color: #4198e5;}
 /*大宗商品和大宗商品通用样式*/
-.dftype .detail_box{padding: .9rem .8rem;background-color: #fff;}
+.dftype .detail_box{padding: 10px 15px;background-color: #fff;}
 .dftype .detail_box .row{border: 1px solid #E9E9E9;}
 .dftype .detail_box h1{margin-bottom: .3rem;font-size: 1.8em;font-weight: normal;}
 .dftype .detail_box h1:first-child{letter-spacing: 3px;}
@@ -43,7 +43,7 @@ a {color: #000;}
 .dftype .detail_box .col-60{padding: .6rem 0 .6rem .9rem;}
 .dftype .detail_box .col-40 img{display: block;width:8.5em;height: 6.7em;padding: .6rem .9rem .6rem 0;}
 .dftype .detail_box .Chart{border: 1px solid #E9E9E9;height: 12em;margin-top: 10px;}
-.dftype .type_new{background-color: #fff;margin-top: .9rem;padding: .9rem .8rem;}
+.dftype .type_new{background-color: #fff;margin-top: .9rem;padding:10px 15px;}
 .dftype .type_new h1{margin-bottom:.9rem; text-align:center;font-size: 1.2em;color: #1682dd;}
 .dftype .type_new ul li{padding-left: .6rem; margin-bottom:.4rem;margin-left: .2rem; color:#999; font-size: 1.1em;position: relative;}
 .dftype .type_new ul li a{color: #999;}
@@ -73,8 +73,8 @@ p{margin: 0;padding: 0;}
 #index-Wo .user_box img{width: 100%;height: 100%;border-radius: 5px;}
 #index-Wo .user_box .navbar-inner-img{width: 4.5em;height: 4.5em}
 #index-Wo .user_box .login-after  p{position: absolute;max-width: 100%;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
-#index-Wo .user_box .login-after  p.userName{top: .8em;left: 0;font-weight: bold;}
-#index-Wo .user_box .login-after  p.userCompany{bottom: .8em;left: 0;}
+#index-Wo .user_box .login-after  p.userName{top: 1em;left: 0;font-weight: bold;}
+#index-Wo .user_box .login-after  p.userCompany{top: 3em;left: 0;}
 #index-Wo .list-block{margin: 10px 0;}
 #index-Wo .wo_box1 ul li:nth-child(1)::after{content: '';position: absolute;left: 0;bottom: 0;right: auto;top: auto;height: 1px;width: 100%;background-color: #EEEEEE;display: block;z-index: 15;-webkit-transform-origin: 50% 100%;transform-origin: 50% 100%;}
 #index-Wo ul li i{font-size: 1.5em;}
@@ -110,13 +110,13 @@ p{margin: 0;padding: 0;}
 #Farm_food .page-content>.row {margin-top: .5em;height: 100%;overflow: hidden;}
 #Farm_food .page-content .col-25{height: 100%;overflow: auto;}
 #Farm_food .page-content .col-75{height: calc(100% - .5em);}
-#Farm_food .page-content .col-25 ul li{font-size: 1.1em; text-align: left;padding:0 0.6em;height: 2.5em;line-height: 2.5em; background-color: #FFFFFF;margin-bottom: 1px;}
+#Farm_food .page-content .col-25 ul li{font-size: 1em; text-align: left;padding:0 0.6em;height: 2.5em;line-height: 2.5em; background-color: #FFFFFF;margin-bottom: 1px;}
 #Farm_food .page-content .col-25 ul li.select {color: #1682dd;border-left: .2em solid #1682dd;background-color: initial;border-bottom: none;}
 #Farm_food .page-content .col-25 ul li:last-child{border: none;}
 #Farm_food .page-content .col-75 .row{background-color: #fff;justify-content: inherit;height: 100%;align-content: flex-start;overflow: auto;}
 #Farm_food .page-content .col-75 .row li{text-align: center;}
 #Farm_food .page-content .col-75 .row li img{display: block;height: 4.5em;width: 4.5em;margin:0 auto;padding-top: 1em;}
-#Farm_food .page-content .col-75 .row li  p{font-size: 1.1em;margin: .3em 0;}
+#Farm_food .page-content .col-75 .row li  p{font-size: 1em;margin: .3em 0;}
 
 /*Farm_foodDetail 农贸产品详细*/
 #Farm_foodDetail .detail_box .col-50{padding:5px 10px 4px;font-size: 1.1em;text-align: left;letter-spacing: 2px;}
@@ -172,7 +172,7 @@ p{margin: 0;padding: 0;}
 #Notice_Search .navbar  .back{margin-top: 2px;}
 #Notice_Search .navbar  .back i{font-size: 18px;color: #999;}
 #Notice_Search .navbar .searchbar-input{margin-left: .3em;}
-#Notice_Search .navbar  input{background-color: #fff;background-image: initial;padding: 0px 5px;border-radius:20px;}
+#Notice_Search .navbar  input{background-color: #fff;background-image: initial;padding: 0px 5px;}
 #Notice_Search .navbar span{color: #128dea;font-size: .8em;width: 15%;margin-left: .8em;background-color: #1682dd;text-align: center;padding: 5px;border-radius: 20px;color: #fff;}
 #Notice_Search .page-content{background-color: #fff;padding:44px 10px 0;}
 #Notice_Search .page-content .head_title{font-size: 1.3em;padding: 15px 0;}
@@ -187,7 +187,7 @@ p{margin: 0;padding: 0;}
 #Notie_News p{font: 1.3em / 1.8em 微软雅黑;text-indent: 2em;}
 
 /*我的待办*/
-#ToWork li{background-color: #fff;padding: .7em .55em;margin-bottom: 1px;}
+#ToWork li{background-color: #fff;padding: .7rem 15px;margin-bottom: 1px;}
 #ToWork li i{font-size: 5.5em;margin-top: -.05em;}
 #ToWork li .details{font-size: 1em;margin-left: 6.5em;}
 #ToWork li .details p{font-size: 1.1em; margin-bottom: 2px; white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
@@ -226,14 +226,14 @@ p{margin: 0;padding: 0;}
 #Mail_message  .message_list li .Ticon{border-radius: 50%;background-color: #e5f3fe; position: relative;width: 4.5em;height: 4.5em;}
 #Mail_message  .message_list li .Ticon i{font-size: 3em; color: #3da7ff;position: absolute;top: .18em;left: .26em;}
 #Mail_message  .message_list li .details{height: 4.6em;margin-left: 1em;padding-left: 4.5em;}
-#Mail_message  .message_list li .details p{font-size: 1.2em;margin-top:.32em;}
+#Mail_message  .message_list li .details p{font-size: 1.2em;margin-top:.5em;}
 #Mail_message  .message_list li .details p:nth-child(1) .PName{font-size: 1em;}
 #Mail_message  .message_list li .details p:nth-child(1) .fright{font-size :.8em;color: #999;}
 #Mail_message  .message_list li .details p:last-child{font-size:1em;color: #999;width: 70%;}
 
 /*Judgment 宏观研判*/
 #Judgment ul.Judgment_list li{background-color: #fff;display: block;margin-bottom: 1px;}
-#Judgment ul.Judgment_list li a{padding: .8em;padding-left: 0;}
+#Judgment ul.Judgment_list li a{padding: .8em 15px;padding-left: 0;}
 #Judgment ul.Judgment_list li .col-25{height: 5em;position: relative;}
 #Judgment ul.Judgment_list li .col-25 i{font-size: 5em;color: #3da7ff;position: absolute;top: -.16em;left: 50%;transform: translateX(-50%);}
 #Judgment ul.Judgment_list li .col-75 {height: 5em;position: relative;}
@@ -241,13 +241,14 @@ p{margin: 0;padding: 0;}
 #Judgment ul.Judgment_list li .col-75 p:first-child{color: #333;height: 2.8em;overflow: hidden;}
 #Judgment ul.Judgment_list li .col-75 p:last-child{font-size: 1em; margin: 0;position: absolute;left: .1rem;bottom: 0;width: 100%;color: #999;}
 #Judgment ul.Judgment_list li .col-75 p span:first-child{display: inline-block;width: 70%;}
-#Judgment ul.Judgment_list li .col-75 p span:last-child{margin-right: 1em;}
+/*#Judgment ul.Judgment_list li .col-75 p span:last-child{margin-right: 1em;}*/
 
 /*Macro_data 宏观数据*/
 
 #Macro_data .navbar .btn{background-color: #fff;color: #333;font-weight: normal;height: 30px;line-height: 30px;padding: 0 10px;border-radius: 5px;}
 #Macro_data .navbar .center span i{font-size: 12px;margin-left: 4px;}
 #Macro_data .navbar .center span{font-weight: normal;}
+#Macro_data .searchbar_form{background-color: initial;}
 #Macro_data .searchbar_form input{background-color: #fff;}
 #Macro_data .searchbar_form label{left: 51%;margin-left: -3%;}
 #Macro_data .searchbar_form i{left: 51%;margin-left: -8%;}
@@ -287,7 +288,7 @@ p{margin: 0;padding: 0;}
 #PriceWarning .Warning_list .btnShow{width: 30%;margin: 20px auto;text-align: center;background-color: #fff;padding: 10px;border-radius: 30px;color: #999;}
 #PriceWarning .Warning_list .rule_table table{font-size: 1.1em; width: 100%;text-align: center;border-collapse: collapse;margin: 10px 0;}
 #PriceWarning .Warning_list .rule_table table th{background-color: red;color: #fff;}
-#PriceWarning .Warning_list .rule_table table th,td{border: 1px solid #CFD5DA;padding: 5px;}
+#PriceWarning .Warning_list .rule_table table th, #PriceWarning .Warning_list .rule_table table td{border: 1px solid #CFD5DA;padding: 5px;}
 #PriceWarning .Warning_list .rule_table table tr:first-child,tr td:first-child{white-space: nowrap;}
 
 
@@ -302,11 +303,11 @@ p{margin: 0;padding: 0;}
 #price_news .swiper-pages{height: calc( 100% - 60px);}
 /*普通li*/
 #price_news ul.pricenews_list{background-color: #fff;overflow: auto;height: 100%;}
-#price_news ul.pricenews_list li{padding: 15px 10px;border-bottom: 1px solid #f0eff5;}
+#price_news ul.pricenews_list li{padding: .5rem 15px;border-bottom: 1px solid #f0eff5;}
 #price_news ul.pricenews_list li.nomoral a{width: 100%;display: block;}
-#price_news ul.pricenews_list li.nomoral a img{position: relative;top: 50%;transform: translateY(9%);display: inline-block;float: left;height: 7em;width: 45%;}
-#price_news ul.pricenews_list li.nomoral a>div.detail{padding-left:48%;}
-#price_news ul.pricenews_list li.nomoral a .detail div{font-size: 1.2em;margin: 5px 0;overflow: hidden;height: 4em;}
+#price_news ul.pricenews_list li.nomoral a img{position: relative;top: 50%;display: inline-block;float: left;height: 7em;width: 35%;}
+#price_news ul.pricenews_list li.nomoral a>div.detail{padding-left:38%;}
+#price_news ul.pricenews_list li.nomoral a .detail div{font-size: 1.1em;margin: 5px 0;overflow: hidden;height: 4em;}
 #price_news ul.pricenews_list li.nomoral a .detail p{color: #999;font-size: 1em;}
 /*专题li*/
 #price_news ul.pricenews_list li.special a img{width: 100%;height: 12em;display: block;}
@@ -342,15 +343,16 @@ p{margin: 0;padding: 0;}
 #Task  .list-block li .item-title  p.task_progress em {font-style: normal;font-size: 1.4em;color:#f29631;margin-right: 10px;}
 
 
+
 /*Company 定点单位*/
 #Company .list-block{margin: 0;font-size: 1em;}
 #Company .searchbar_form{background-color: #F0EFF5;}
 #Company .searchbar_form input{background-color: #fff;}
 #Company .searchbar_form label{left: 51%;margin-left: -3%;}
 #Company .searchbar_form i{left: 51%;margin-left: -8%;}
-#Company .page-content{overflow: hidden;}
-#Company .page-content h1{background-color: #fff;font-size: 1.2em;height:2.5em;line-height:2.5em;padding-left:10px;border-bottom: 1px solid #f0eff5;}
-#Company .page-content ul{background-color: #fff;height: calc(100% - 3em);overflow: auto;}
+#Company .page-content{background-color: #fff;overflow: hidden;}
+#Company .page-content h1{font-size: 1.2em;height:2.5em;line-height:2.5em;padding-left:10px;border-bottom: 1px solid #f0eff5;}
+#Company .page-content ul{height: calc(100% - 3em);overflow: auto;}
 #Company .page-content ul li{padding: 10px;border-bottom: 1px solid #f0eff5;}
 #Company .page-content ul li:last-child{border: none;}
 #Company .page-content ul li i{font-size: 1.5em;margin-right: 5px;}
@@ -368,15 +370,15 @@ p{margin: 0;padding: 0;}
 #aboutOur .page-content .detail{padding: 30px 0;text-align: center;font-size: 1.1em;}
 #aboutOur .page-content .detail img{margin: 0 auto;display: block;width: 6.5em;height: 6.5em;}
 #aboutOur .page-content .detail div{margin-top: 5px;}
-#aboutOur .page-content .detail p{display: block;position: relative; width: auto;border: 1px solid #ccc;width: 5em;margin: 0 auto;font-size: 1.3em;padding: 5px;margin-top: 10px;border-radius: 10px;}
+#aboutOur .page-content .detail p{display: block;position: relative; width: auto;border: 1px solid #ccc;width: 5em;margin: 0 auto;font-size: 1.3em;padding: 5px;margin-top: 10px;border-radius: 5px;}
 #aboutOur .page-content .detail p span:last-child{position: absolute; display: block; width: 10px;height: 10px;border-radius: 50%;background-color:red;top: -3px;right: -3px;}
-#aboutOur .page-content .text{padding: 20px;padding-top: 0;}
+#aboutOur .page-content .text{padding: 0 15px 20px;}
 #aboutOur .page-content .text p{font-size: 1.2em;letter-spacing: 1px;text-indent: 2em;}
 #aboutOur .page-content .text h3{font-size: 1.2em;padding: 10px 0;}
 
 /*InvestigateFill 明察暗访填报页面*/
 #InvestigateFill  .page-content{overflow: hidden;}
-#InvestigateFill form{margin: 0;padding: 20px 10px;background-color:#fff ;}
+#InvestigateFill form{margin: 0;padding: 20px 15px;background-color:#fff ;}
 #InvestigateFill .list-block ul:before{height: 0;}
 #InvestigateFill .list-block ul:after{height: 0;}
 #InvestigateFill .list-block .item-inner{padding-right: 0px;}
@@ -404,11 +406,12 @@ p{margin: 0;padding: 0;}
 
 
 /*小于375宽度的设备*/
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 320px) {
 	body{font-size: 12px !important;}
 	.list-block{font-size:14px;}
 	#PriceWarning .Warning_list .item_content>span{top:50%;transform: translateY(-45%);}
-	#price_news .buttons-row .button{font-size: .8em;}
+	#price_news .buttons-row a.button{padding: 0;}
 	#InvestigateFill .list-block .item-input input{font-size: 12px;}
 	#InvestigateFill .list-block>ul>li.noMust textarea{font-size: 12px;}
+	#price_news .buttons-row .button{font-size: .7rem}
 }
