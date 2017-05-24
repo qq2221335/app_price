@@ -23,11 +23,11 @@ a {color: #000;}
 .color-igreen{color: #0db78a;}
 /*搜索框*/
 .searchbar_form input {display: block;height: 2.5em;padding:0 2%;font-size: 1em;width: 90%;margin: 0 auto;background-color: #e5e5e5;border-radius: 5px;border: none;outline: none;}
-.searchbar_form label{font-size: 1em; z-index: 2;position: absolute;left: 51%;margin-left: -13%;color: #B2B2B2;top:.35rem;font-weight: normal;color: #999;}
-.searchbar_form i{font-size:1em;position: absolute;top:.35rem;left: 51%;margin-left: -18%;color: #999;}
-.searchbar{background-color: #fff;}
+.searchbar_form label{font-size: 1em; z-index: 2;position: absolute;left: 51%;margin-left: -13%;top: 50%;transform: translateY(-50%);font-weight: normal;color: #999;}
+.searchbar_form i{font-size:1em;position: absolute;left: 51%;margin-left: -18%;color: #999;top: 50%;transform: translateY(-50%);}
 .page>.searchbar input[type=search]{background-color: #E5E5E5;background-image: none;padding: 0 28px 0 10px;}
 .searchbar:after{height: 0;}
+.searchbar{background-color: #f0eff5;}
 /*选项组*/
 .swiper-wrapper.buttons-row .button{line-height:40px;height:40px;border-radius: initial;border: none;color: #808082;background-color: #f9f9fb;flex: 1;}
 .swiper-wrapper.buttons-row .button.active:after{content: '';position: absolute;margin-left:-7.5%;left: 50%;bottom: 0;right: auto;top: auto;height: 2px;width: 15%;background-color: #4198e5;display: block;z-index: 15;}
@@ -104,12 +104,14 @@ p{margin: 0;padding: 0;}
 
 
 /*Farm_food 农副产品*/
+
 #Farm_food .page-content{overflow: hidden;}
+#Farm_food .searchbar{background-color: #fff;}
 #Farm_food .page-content>.row {margin-top: .5em;height: 100%;overflow: hidden;}
 #Farm_food .page-content .col-25{height: 100%;overflow: auto;}
 #Farm_food .page-content .col-75{height: calc(100% - .5em);}
-#Farm_food .page-content .col-25 ul li{font-size: 1.1em; text-align: left;padding:0.5em;background-color: #FFFFFF;margin-bottom: 1px;}
-#Farm_food .page-content .col-25 ul li.select {color: #1682dd; padding:.5em .5em .5em .4em; border-left: .2em solid #1682dd;background-color: initial;border-bottom: none;}
+#Farm_food .page-content .col-25 ul li{font-size: 1.1em; text-align: left;padding:0 0.6em;height: 2.5em;line-height: 2.5em; background-color: #FFFFFF;margin-bottom: 1px;}
+#Farm_food .page-content .col-25 ul li.select {color: #1682dd;border-left: .2em solid #1682dd;background-color: initial;border-bottom: none;}
 #Farm_food .page-content .col-25 ul li:last-child{border: none;}
 #Farm_food .page-content .col-75 .row{background-color: #fff;justify-content: inherit;height: 100%;align-content: flex-start;overflow: auto;}
 #Farm_food .page-content .col-75 .row li{text-align: center;}
@@ -170,7 +172,7 @@ p{margin: 0;padding: 0;}
 #Notice_Search .navbar  .back{margin-top: 2px;}
 #Notice_Search .navbar  .back i{font-size: 18px;color: #999;}
 #Notice_Search .navbar .searchbar-input{margin-left: .3em;}
-#Notice_Search .navbar  input{background-color: #fff;background-image: initial;padding: 0px 5px;}
+#Notice_Search .navbar  input{background-color: #fff;background-image: initial;padding: 0px 5px;border-radius:20px;}
 #Notice_Search .navbar span{color: #128dea;font-size: .8em;width: 15%;margin-left: .8em;background-color: #1682dd;text-align: center;padding: 5px;border-radius: 20px;color: #fff;}
 #Notice_Search .page-content{background-color: #fff;padding:44px 10px 0;}
 #Notice_Search .page-content .head_title{font-size: 1.3em;padding: 15px 0;}
@@ -246,7 +248,6 @@ p{margin: 0;padding: 0;}
 #Macro_data .navbar .btn{background-color: #fff;color: #333;font-weight: normal;height: 30px;line-height: 30px;padding: 0 10px;border-radius: 5px;}
 #Macro_data .navbar .center span i{font-size: 12px;margin-left: 4px;}
 #Macro_data .navbar .center span{font-weight: normal;}
-#Macro_data .searchbar_form{background-color: initial;}
 #Macro_data .searchbar_form input{background-color: #fff;}
 #Macro_data .searchbar_form label{left: 51%;margin-left: -3%;}
 #Macro_data .searchbar_form i{left: 51%;margin-left: -8%;}
@@ -272,18 +273,18 @@ p{margin: 0;padding: 0;}
 
 /*#PriceWarning 价格预警*/ 
 #PriceWarning  .navbar .center{left: 18px !important;}
-#PriceWarning  .searchbar{background-color: initial;padding: 0;}
+#PriceWarning  .searchbar{padding: 0;}
 #PriceWarning  .searchbar input{background-color: #fff;width: 95%;margin: 0 auto;}
 #PriceWarning  .searchbar_form label{left: 50%;margin-left: -3%;}
 #PriceWarning  .searchbar_form i{left: 50%;margin-left: -8%;}
 #PriceWarning .Warning_list ul{width: 95%;margin: 0 auto;}
-#PriceWarning .Warning_list ul li{position: relative;background-color: #fff;height: 4.6em;margin-top: 10px;border-radius: 2.5em 5px 5px 2.5em;padding:.8em .4em .2em 6.2em;}
+#PriceWarning .Warning_list ul li{position: relative;background-color: #fff;height: 4.6em;margin-top: 10px;border-radius: 2.5em 5px 5px 2.5em;padding:.8em .8em .2em 6.2em;}
 #PriceWarning .Warning_list .item_content  i{position: absolute;top: -.38em;left: -.18em;font-size:9em;display: inline-block;width: 1.5rem;height: 1.5rem;}
 #PriceWarning .Warning_list .item_content>span{position: absolute;font-size: 1.2em;width: 2.5em;top:50%;transform: translateY(-50%);left: 1.4em;color: #fff;font-weight: bold;}
 #PriceWarning .Warning_list .item_content  p:nth-child(3){font-size: 1.4em}
 #PriceWarning .Warning_list .item_content  p:nth-child(4){font-size: 1.2em;margin-top: .2em;color: #999999;}
 #PriceWarning .Warning_list .item_content  p:nth-child(4) em{font-style: normal;color: red;}
-#PriceWarning .Warning_list .btnShow{width: 30%;margin: 20px auto 0;text-align: center;background-color: #fff;padding: 10px;border-radius: 30px;color: #999;}
+#PriceWarning .Warning_list .btnShow{width: 30%;margin: 20px auto;text-align: center;background-color: #fff;padding: 10px;border-radius: 30px;color: #999;}
 #PriceWarning .Warning_list .rule_table table{font-size: 1.1em; width: 100%;text-align: center;border-collapse: collapse;margin: 10px 0;}
 #PriceWarning .Warning_list .rule_table table th{background-color: red;color: #fff;}
 #PriceWarning .Warning_list .rule_table table th,td{border: 1px solid #CFD5DA;padding: 5px;}
@@ -305,7 +306,7 @@ p{margin: 0;padding: 0;}
 #price_news ul.pricenews_list li.nomoral a{width: 100%;display: block;}
 #price_news ul.pricenews_list li.nomoral a img{position: relative;top: 50%;transform: translateY(9%);display: inline-block;float: left;height: 7em;width: 45%;}
 #price_news ul.pricenews_list li.nomoral a>div.detail{padding-left:48%;}
-#price_news ul.pricenews_list li.nomoral a .detail div{font-size: 1.1em;margin: 5px 0;overflow: hidden;height: 4em;}
+#price_news ul.pricenews_list li.nomoral a .detail div{font-size: 1.2em;margin: 5px 0;overflow: hidden;height: 4em;}
 #price_news ul.pricenews_list li.nomoral a .detail p{color: #999;font-size: 1em;}
 /*专题li*/
 #price_news ul.pricenews_list li.special a img{width: 100%;height: 12em;display: block;}
@@ -347,9 +348,9 @@ p{margin: 0;padding: 0;}
 #Company .searchbar_form input{background-color: #fff;}
 #Company .searchbar_form label{left: 51%;margin-left: -3%;}
 #Company .searchbar_form i{left: 51%;margin-left: -8%;}
-#Company .page-content{background-color: #fff;overflow: hidden;}
-#Company .page-content h1{font-size: 1.2em;height:2.5em;line-height:2.5em;padding-left:10px;border-bottom: 1px solid #f0eff5;}
-#Company .page-content ul{height: calc(100% - 3em);overflow: auto;}
+#Company .page-content{overflow: hidden;}
+#Company .page-content h1{background-color: #fff;font-size: 1.2em;height:2.5em;line-height:2.5em;padding-left:10px;border-bottom: 1px solid #f0eff5;}
+#Company .page-content ul{background-color: #fff;height: calc(100% - 3em);overflow: auto;}
 #Company .page-content ul li{padding: 10px;border-bottom: 1px solid #f0eff5;}
 #Company .page-content ul li:last-child{border: none;}
 #Company .page-content ul li i{font-size: 1.5em;margin-right: 5px;}
@@ -403,11 +404,11 @@ p{margin: 0;padding: 0;}
 
 
 /*小于375宽度的设备*/
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 375px) {
 	body{font-size: 12px !important;}
 	.list-block{font-size:14px;}
 	#PriceWarning .Warning_list .item_content>span{top:50%;transform: translateY(-45%);}
-	#price_news .buttons-row a.button{padding: 0;}
+	#price_news .buttons-row .button{font-size: .8em;}
 	#InvestigateFill .list-block .item-input input{font-size: 12px;}
 	#InvestigateFill .list-block>ul>li.noMust textarea{font-size: 12px;}
 }
