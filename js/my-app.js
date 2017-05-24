@@ -60,6 +60,76 @@ $$(document).on('pageBeforeAnimation', function(e) {
     }
     //填报----结束
 
+    //任务监控
+    if (page.name === 'Task') {
+        var nav = new Swiper('.TabSwiperNav', {
+            slidesPerView: 'auto',
+            freeMode: true,
+            noSwiping: true,
+            freeModeFluid: true,
+            calculateHeight: true,
+            visibilityFullFit: true,
+            onTap: function (nav) {
+                pages.slideTo(nav.clickedIndex, 300, false);
+                $$(".TabSwiperNav .active").removeClass('active');
+                $$(".TabSwiperNav .swiper-slide").eq(pages.activeIndex).addClass('active');
+            }
+        });
+
+        var pages = new Swiper('.TabSwiperPages', {
+            noSwiping: true,
+            onSlideChangeStart: function () {
+                $$(".TabSwiperNav .active").removeClass('active')
+                $$(".TabSwiperNav .swiper-slide").eq(pages.activeIndex).addClass('active');
+            }
+        });
+
+        pages.params.control = nav;
+
+    }
+    //任务监控----结束
+
+    //任务监控-任务详情
+    if (page.name === 'Report_pull') {
+        $$(".btnArea").click(function(){
+            var ishidden = $$('.pull_area').css('display');
+            if(ishidden == 'flex'){
+                $$('.pull_area').css('display','none');
+            }else if(ishidden == 'none'){
+                $$('.pull_area').css('display','flex');
+            }
+        });
+        $$(".pull_left li").click(function(){
+            $$(".pull_left li").removeClass('select');
+            $$(this).addClass('select');
+        });
+        var nav = new Swiper('.TabSwiperNav', {
+            slidesPerView: 'auto',
+            freeMode: true,
+            noSwiping: true,
+            freeModeFluid: true,
+            calculateHeight: true,
+            visibilityFullFit: true,
+            onTap: function (nav) {
+                pages.slideTo(nav.clickedIndex, 300, false);
+                $$(".TabSwiperNav .active").removeClass('active');
+                $$(".TabSwiperNav .swiper-slide").eq(pages.activeIndex).addClass('active');
+            }
+        });
+
+        var pages = new Swiper('.TabSwiperPages', {
+            noSwiping: true,
+            onSlideChangeStart: function () {
+                $$(".TabSwiperNav .active").removeClass('active')
+                $$(".TabSwiperNav .swiper-slide").eq(pages.activeIndex).addClass('active');
+            }
+        });
+
+        pages.params.control = nav;
+
+    }
+    //任务监控-任务详情----结束
+
 });
 
 //地区选择
