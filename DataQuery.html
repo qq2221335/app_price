@@ -30,9 +30,20 @@
                 <!--内容-->
                 <div class="page-content taskTab2">
                     <!--地区和搜索框-->
-                    <div class="row c_con d-searchBox no-gutter">
+                    <!--<div class="row c_con d-searchBox no-gutter">
                         <div class="col-100"><div class="d_search"><i class="iconfont">&#xe600;</i><input type="text" placeholder="输入关键字"/></div></div>
-                    </div>
+                    </div>-->
+
+                    <!--搜索框-->
+                    <form data-search-list=".taskList" data-search-in=".taskBox .taskList li a" class="searchbar searchbar-init d-FormFix">
+                        <div class="searchbar_form searchbar-input">
+                            <label for="q" id="q_label" >搜索</label>
+                            <input id="q" type="search">
+                            <i class="iconfont icon-llhomesearch" id="q_i"></i>
+                            <a href="#" class="searchbar-clear"></a>
+                        </div>
+                    </form>
+                    <!--搜索结束-->
 
                     <div class="content-block taskBox">
                         <div class="tabs">

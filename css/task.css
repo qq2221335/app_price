@@ -12,15 +12,16 @@
 .taskTab2 .taskTabs a{position: relative;padding:.7rem 0;width: 50%;font-size: 1em;}
 .taskTab2 .taskTabs a.active{color: #1682dd;background: none;}
 .taskTab2 .taskTabs a.active::after{content: "";position: absolute;bottom: 0;  left: 40%;width: 20%;height: .2rem;background: #1682dd;}
-.taskTab2 .taskTabs a::before{content: "";position: absolute;top:0;left:0;bottom:0;width: 1px;height: 100%;background: #eaeaea;}
+.taskTab2 .taskTabs a:nth-child(2)::before{content: "";position: absolute;top:0;left:0;bottom:0;width: 1px;height: 100%;background: #eaeaea;}
 .content-block.taskBox{  margin: .5rem 0;  background: #fff;  padding: 0;  }
 .taskBox .taskList{}
 .taskBox .taskList li{border-bottom: 1px solid #eaeaea;}
 .taskBox .taskList li a{padding: 10px 15px; }
 /*.taskBox .taskList li:nth-child(even){background: #e5f1fc;}*/
-.taskBox .taskList li .col-20{text-align: center;}
-.taskBox .taskList li .col-20 i{  font-size: 4.2em;line-height: normal;  }
+.taskBox .taskList li .col-20{position:relative;text-align: center;}
+.taskBox .taskList li .col-20 i{  font-size: 4em;line-height: normal;  }
 .taskBox .taskList li .col-20 img{width: 100%;}
+.taskBox .taskList li .col-20.new::before{content: "";position: absolute;top: 0;right: -.25rem;width: .5rem;height: .5rem;border-radius: 50%;background: #FF0000;}
 .taskBox .taskList li .col-80{}
 .taskBox .taskList li .col-80 h3{  width:100%;font-size: 1.2em;  color: #333;  font-weight: normal;  }
 .taskBox .taskList li .col-80 h3 label.right{    font-size: .8em;  font-weight: normal;  color: #666;  padding: .1rem .5rem;  border: 1px solid #eaeaea;  border-radius: 3px;}
@@ -37,7 +38,7 @@
 .taskBox .taskList.taskLine-2 li .col-80 p{margin:.5rem 0;}
 .taskBox .taskList li .col-80 p:last-child{margin-bottom: 0;}
 .taskBox .taskList li .taskDetails{display:none;padding: .5rem; background: #f6f6f6;overflow: hidden; animation: Height100A .5s;}
-.taskBox .taskList li .taskDetails p{margin-bottom: .5rem;color: #333;}
+.taskBox .taskList li .taskDetails p{margin:.2rem 0;color: #333;}
 .taskBox .taskList li p.d-details{color: #1682dd;}
 .taskBox .taskList li p.d-details i{margin:0 .2rem;font-size: 1em;vertical-align: middle;}
 .taskBox .taskList.taskLine-3 li .col-80 p{margin-top: .5rem;width: 100%;}
@@ -80,7 +81,7 @@
 .remarksBox .line input[type="submit"]{display: block;margin: 0 auto;width: 80%;height: 2.5rem;border: none;background: #1682dd;color: #fff;font-size: 1em;border-radius: 5px;}
 .remarksBox .line textarea{  margin-left: .5rem;  width: 70%;  border: 1px solid #eaeaea;  resize: none;  vertical-align: text-top;  border-radius: 3px;  }
 .swiperHidden{padding-bottom:4rem;overflow: hidden;}
-.swiperHidden .swiper-pages{height: 100%;overflow-y: scroll;height: 90%;}
+.swiperHidden .swiper-pages{overflow-y: scroll;height: calc( 100% - 3rem - 40px);}
 .swiperHidden .content-block.taskBox{margin: 0;}
 /*审核表格*/
 .taskTable{padding-bottom:4.5rem;background: #fff;}
@@ -105,9 +106,9 @@
 .tackArea .col-40 label, .tackArea .col-60 a{  border: 1px solid #eaeaea;  padding: .2rem .8rem;  border-radius: 5px;  color: #333;  }
 .tackArea .col-40 label i{ margin-left: .3rem; font-size: .8em; }
 .tackArea .col-60 a i{margin-left: .3rem;font-size: 1.1em;line-height: normal;}
-.taskProgress h3{  margin-bottom: .5rem;  font-size: 1em;  font-weight: normal;  }
+.taskProgress h3{ font-size: 1em;  font-weight: normal;  }
 .taskProgress h3 span{margin-left: 1rem}
-.taskProgress .line{margin-bottom: .5rem; color: #666;}
+.taskProgress .line{margin-top: .5rem; color: #666;}
 /*附件*/
 .taskFileBox{padding:1rem .5rem;height: -webkit-calc(100% - 3rem);height: calc(100% - 3rem);background: #fff;box-sizing: border-box;font-size: 1em;color: #333;}
 .taskFileBox p{margin-bottom: .2rem;}
@@ -141,6 +142,10 @@
 
 /*超过隐藏长度*/
 .taskBox .taskList li .col-80 h3, .taskBox .taskList li .taskDetails p{text-overflow: ellipsis;  white-space: nowrap;  overflow: hidden;}
+.searchbar.d-FormFix{background: #fff; height:52px;border-bottom: .5rem solid #efeff4;}
+.d-FormFix .searchbar_form label{left: 51%;  margin-left: -3%;}
+.d-FormFix.searchbar input[type=search]{background-color: #eaeaea;  background-image: none;  padding: 0 28px 0 10px;}
+.d-FormFix .searchbar_form i{ left: 51%;  margin-left: -8%;}
 /*任务填写动画*/
 @keyframes taskHeightA { from {height:0;} to {height:22rem;} }
 @keyframes taskHeight20A { from {height:0;} to {height:20rem;} }

@@ -29,9 +29,10 @@ a {color: #000;}
 .searchbar:after{height: 0;}
 .searchbar{background-color: #f0eff5;}
 /*选项组*/
-.swiper-wrapper.buttons-row .button{line-height:40px;height:40px;border-radius: initial;border: none;color: #808082;background-color: #f9f9fb;flex: 1;}
-.swiper-wrapper.buttons-row .button.active:after{content: '';position: absolute;margin-left:-7.5%;left: 50%;bottom: 0;right: auto;top: auto;height: 2px;width: 15%;background-color: #4198e5;display: block;z-index: 15;}
-.swiper-wrapper.buttons-row .button.active{color: #4198e5;}
+.swiper-wrapper.buttons-row .button{line-height:40px;height:40px;border-radius: initial;border: none;color: #808082;background-color: #fff;flex: 1;}
+/*.swiper-wrapper.buttons-row .button.active:after{content: '';position: absolute;margin-left:-7.5%;left: 50%;bottom: 0;right: auto;top: auto;height: 2px;width: 15%;background-color: #4198e5;display: block;z-index: 15;}*/
+.swiper-wrapper.buttons-row .button.active:after{content: "";  position: absolute;  bottom: 0;  left: 40%;  width: 20%;  height: .2rem;  background: #1682dd;}
+#Company .searchbar_form input{color: #1682dd;}
 /*大宗商品和大宗商品通用样式*/
 .dftype .detail_box{padding: 10px 15px;background-color: #fff;}
 .dftype .detail_box .row{border: 1px solid #E9E9E9;}
@@ -75,13 +76,13 @@ p{margin: 0;padding: 0;}
 #index-Wo .user_box .login-after  p{position: absolute;max-width: 100%;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
 #index-Wo .user_box .login-after  p.userName{top: 1em;left: 0;font-weight: bold;}
 #index-Wo .user_box .login-after  p.userCompany{top: 3em;left: 0;}
-#index-Wo .list-block{margin: 10px 0;}
+#index-Wo .list-block{margin: .5rem 0;}
 #index-Wo .wo_box1 ul li:nth-child(1)::after{content: '';position: absolute;left: 0;bottom: 0;right: auto;top: auto;height: 1px;width: 100%;background-color: #EEEEEE;display: block;z-index: 15;-webkit-transform-origin: 50% 100%;transform-origin: 50% 100%;}
 #index-Wo ul li i{font-size: 1.5em;}
 
 /*index-woDetail 我的详细页面*/
 #Wo_Detail .navbar:after{height: 0;}
-#Wo_Detail .list-block{margin: 10px 0;}
+#Wo_Detail .list-block{margin: .5rem 0;}
 #Wo_Detail .page-content .detail_bg{background: url(../images/woDetail.jpg) 100% 100%;text-align: center;color: #fff;padding:1em 0 2.5em;}
 #Wo_Detail .page-content .detail_bg p{font-size: 1.2em;}
 #Wo_Detail .page-content .detail_bg p>span:last-child{margin-left: .8em;}
@@ -129,7 +130,8 @@ p{margin: 0;padding: 0;}
 
 
 /*Report 报表页面*/
-.report  .buttons-row .button:first-child{border-right:1px solid #f0eff5;}
+.report  .buttons-row .button.active{color: #1682dd;}
+.report  .buttons-row .button:first-child{border-right:1px solid #eaeaea;}
 #All_Report .swiper-pages{height: calc( 100% - 40px);}
 
 /*result——Report 报表搜索结果页面*/
@@ -140,7 +142,7 @@ p{margin: 0;padding: 0;}
 #Report_pull .btn_box .btnSummary {position: relative;left: 30%;transform: translateX(-50%);}
 #Report_pull .btn_box .btnArea{margin-left: .8em;}
 #Report_pull .btn_box .btn i{margin-left: .2em;font-size: 1em;position: relative;transform: translateY(-50%);}
-#Report_pull .area_num{font-size: 1.2em;background-color: #fff;padding: .8em 1em;margin: .3em 0;}
+#Report_pull .area_num{font-size: 1.2em;background-color: #fff;padding: .8em 1em;margin: .5em 0;}
 #Report_pull .area_num span{margin-right: .3em;}
 #Report_pull .pull_area{z-index: 999;; width:100%;height: calc(100% - 36px - 3.6em); background: rgba(0,0,0,0.3);position: absolute;top:6.8em;left: 0;}
 #Report_pull .pull_area .col-50{height: 80%;background-color: #fff;font-size: 1.2em;overflow: auto;}
@@ -274,12 +276,12 @@ p{margin: 0;padding: 0;}
 
 /*#PriceWarning 价格预警*/ 
 #PriceWarning  .navbar .center{left: 18px !important;}
-#PriceWarning  .searchbar{padding: 0;}
-#PriceWarning  .searchbar input{background-color: #fff;width: 95%;margin: 0 auto;}
+/*#PriceWarning  .searchbar{padding: 0;}*/
+/*#PriceWarning  .searchbar input{width: 95%;margin: 0 auto;}*/
 #PriceWarning  .searchbar_form label{left: 50%;margin-left: -3%;}
 #PriceWarning  .searchbar_form i{left: 50%;margin-left: -8%;}
 #PriceWarning .Warning_list ul{width: 95%;margin: 0 auto;}
-#PriceWarning .Warning_list ul li{position: relative;background-color: #fff;height: 4.6em;margin-top: 10px;border-radius: 2.5em 5px 5px 2.5em;padding:.8em .8em .2em 6.2em;}
+#PriceWarning .Warning_list ul li{position: relative;background-color: #fff;height: 4.6em;margin-top: 10px;border-radius: 2.5em 5px 5px 2.5em;padding:.8em .8em .2em 6.2em;box-shadow: 2px 2px 3px rgba(0,0,0,0.1);}
 #PriceWarning .Warning_list .item_content  i{position: absolute;top: -.38em;left: -.18em;font-size:9em;display: inline-block;width: 1.5rem;height: 1.5rem;}
 #PriceWarning .Warning_list .item_content>span{position: absolute;font-size: 1.2em;width: 2.5em;top:50%;transform: translateY(-50%);left: 1.4em;color: #fff;font-weight: bold;}
 #PriceWarning .Warning_list .item_content  p:nth-child(3){font-size: 1.4em}
@@ -347,7 +349,7 @@ p{margin: 0;padding: 0;}
 /*Company 定点单位*/
 #Company .list-block{margin: 0;font-size: 1em;}
 #Company .searchbar_form{background-color: #F0EFF5;}
-#Company .searchbar_form input{background-color: #fff;}
+/*#Company .searchbar_form input{background-color: #fff;}*/
 #Company .searchbar_form label{left: 51%;margin-left: -3%;}
 #Company .searchbar_form i{left: 51%;margin-left: -8%;}
 #Company .page-content{background-color: #fff;overflow: hidden;}
