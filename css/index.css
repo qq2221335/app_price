@@ -8,9 +8,9 @@ a {color: #000;}
 .navbar a{color: #fff;}
 .navbar  .left span{font-size: 1em;}
 /*.navbar .center{font-weight: bold;}*/
-.navbar .right .btnArea{line-height: 23px;height:23px;font-size: .8em;border-radius: 5px; display: inline-block;padding:0 .8em; background-color: #fff;color: #333;}
+.navbar .right .btnArea{line-height: 28px;height:28px;border-radius: 5px; display: inline-block;padding:0 .5rem; background-color: #fff;color: #333;}
 .navbar .right i.icon-llhomesearch{margin-right: 10px;}
-.navbar .right i.icon-11{margin-left: .5em;font-size: .7em;position: relative;top: -2%;transform: translateY(-20%);}
+.navbar .right i.icon-11{margin-left: .5em;font-size: .8em;position: relative;top: -2%;transform: translateY(-20%);}
 
 .views{overflow: hidden;}
 .toolbar .iconfont {font-size: 23px;}
@@ -44,7 +44,7 @@ a {color: #000;}
 .dftype .detail_box .col-60{padding: .6rem 0 .6rem .9rem;}
 .dftype .detail_box .col-40 img{display: block;width:8.5em;height: 6.7em;padding: .6rem .9rem .6rem 0;}
 .dftype .detail_box .Chart{border: 1px solid #E9E9E9;height: 12em;margin-top: 10px;}
-.dftype .type_new{background-color: #fff;margin-top: .9rem;padding:10px 15px;}
+.dftype .type_new{background-color: #fff;margin-top: .5rem;padding:10px 15px;}
 .dftype .type_new h1{margin-bottom:.9rem; text-align:center;font-size: 1.2em;color: #1682dd;}
 .dftype .type_new ul li{padding-left: .6rem; margin-bottom:.4rem;margin-left: .2rem; color:#999; font-size: 1.1em;position: relative;}
 .dftype .type_new ul li a{color: #999;}
@@ -175,10 +175,10 @@ p{margin: 0;padding: 0;}
 #Notice_Search .navbar  .back i{font-size: 18px;color: #999;}
 #Notice_Search .navbar .searchbar-input{margin-left: .3em;}
 #Notice_Search .navbar  input{background-color: #fff;background-image: initial;padding: 0px 5px;}
-#Notice_Search .navbar span{color: #128dea;font-size: .8em;width: 15%;margin-left: .8em;background-color: #1682dd;text-align: center;padding: 5px;border-radius: 20px;color: #fff;}
+#Notice_Search .navbar span{font-size: .8em;width: 15%;margin-left: .8em;background-color: #1682dd;text-align: center;height:28px;line-height:28px;border-radius: 5px;color: #fff;}
 #Notice_Search .page-content{background-color: #fff;padding:44px 10px 0;}
-#Notice_Search .page-content .head_title{font-size: 1.3em;padding: 15px 0;}
-#Notice_Search .page-content  ul li{margin-bottom:.8em;margin-right:.8em;font-size: 1em;padding: .8em;float: left;background-color: #f5f5f5;border-radius: 15px;}
+#Notice_Search .page-content .head_title{font-size: 1.2em;padding: 15px 0;}
+#Notice_Search .page-content  ul li{margin-bottom:.8em;margin-right:.8em;font-size: 1em;padding: .5rem;float: left;background-color: #f5f5f5;border-radius: 5px;line-height: normal;}
 
 /*Notie_News 公告详情*/
 #Notie_News .page-content{background-color: #fff;}
@@ -247,11 +247,11 @@ p{margin: 0;padding: 0;}
 
 /*Macro_data 宏观数据*/
 
-#Macro_data .navbar .btn{background-color: #fff;color: #333;font-weight: normal;height: 30px;line-height: 30px;padding: 0 10px;border-radius: 5px;}
+#Macro_data .navbar .btn{background-color: #fff;color: #333;font-weight: normal;height: 28px;line-height: 28px;padding: 0 .5rem;border-radius: 5px;}
 #Macro_data .navbar .center span i{font-size: 12px;margin-left: 4px;}
 #Macro_data .navbar .center span{font-weight: normal;}
 #Macro_data .searchbar_form{background-color: initial;}
-#Macro_data .searchbar_form input{background-color: #fff;}
+/*#Macro_data .searchbar_form input{background-color: #fff;}*/
 #Macro_data .searchbar_form label{left: 51%;margin-left: -3%;}
 #Macro_data .searchbar_form i{left: 51%;margin-left: -8%;}
 #Macro_data .page-content .part1{background-color: #fff;}
@@ -380,19 +380,19 @@ p{margin: 0;padding: 0;}
 
 /*InvestigateFill 明察暗访填报页面*/
 #InvestigateFill  .page-content{overflow: hidden;}
-#InvestigateFill form{margin: 0;padding: 20px 15px;background-color:#fff ;}
+#InvestigateFill form{margin: 0;padding: 0;background-color:#fff ;}
 #InvestigateFill .list-block ul:before{height: 0;}
 #InvestigateFill .list-block ul:after{height: 0;}
-#InvestigateFill .list-block .item-inner{padding-right: 0px;}
+/*#InvestigateFill .list-block .item-inner{padding-right: 0px;}*/
 #InvestigateFill .list-block .item-inner:after{height: 0;}
 #InvestigateFill .list-block .item-title.label{width: 25%;}
 #InvestigateFill .list-block .item-input {position: relative;}
-#InvestigateFill .list-block .item-input input{padding-right: 30px;}
-#InvestigateFill .list-block>ul>li{border: 1px solid #f0eff5;margin-bottom: 10px;}
-#InvestigateFill .list-block>ul>li i{position: absolute;right: 5px;top: 50%; transform: translateY(-45%); font-size: 1.2em;}
+/*#InvestigateFill .list-block .item-input input{padding-right: 30px;}*/
+#InvestigateFill .list-block>ul>li{border-bottom: 1px solid #eaeaea;}
+#InvestigateFill .list-block>ul>li i{position: absolute;right: 0;top: 50%; transform: translateY(-45%); font-size: 1.2em;}
 #InvestigateFill .list-block>ul>li.noMust{border: none;} 
 #InvestigateFill .list-block>ul>li.noMust .label{width: 10%;}
-#InvestigateFill .list-block>ul>li.noMust textarea{border: 1px solid #f0eff5;border-radius: 5px;}
+#InvestigateFill .list-block>ul>li.noMust textarea{margin: .8rem 0;  padding: .2rem;border: 1px solid #f0eff5;border-radius: 5px;}
 #InvestigateFill .list-block>ul>li.noMust .voice  span{display: inline-block;padding: 5px 0px;color: #fff;width: 6em;text-align: center;border-radius: 5px;margin-right: 10px;}
 #InvestigateFill .list-block>ul>li.noMust .photo div{position: relative;border: 1px dashed #f0eff5;width: 3em;height: 3em;display: inline-block;margin-right: 10px;}
 #InvestigateFill .list-block>ul>li.noMust .photo div span{position: absolute;left: 50%;top: 50%;}
