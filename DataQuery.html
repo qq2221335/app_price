@@ -30,15 +30,26 @@
                 <!--内容-->
                 <div class="page-content taskTab2">
                     <!--地区和搜索框-->
-                    <div class="row c_con d-searchBox no-gutter">
+                    <!--<div class="row c_con d-searchBox no-gutter">
                         <div class="col-100"><div class="d_search"><i class="iconfont">&#xe600;</i><input type="text" placeholder="输入关键字"/></div></div>
-                    </div>
+                    </div>-->
+
+                    <!--搜索框-->
+                    <form data-search-list=".taskList" data-search-in=".taskBox .taskList li a" class="searchbar searchbar-init d-FormFix">
+                        <div class="searchbar_form searchbar-input">
+                            <label for="q" id="q_label" >搜索</label>
+                            <input id="q" type="search">
+                            <i class="iconfont icon-llhomesearch" id="q_i"></i>
+                            <a href="#" class="searchbar-clear"></a>
+                        </div>
+                    </form>
+                    <!--搜索结束-->
 
                     <div class="content-block taskBox">
                         <div class="tabs">
                             <div class="taskList">
                                 <ul>
-                                    <li><a href="checkTask/TaskCheck.html" class="row">
+                                    <li><a href="Search_Commodity.html" class="row">
                                         <div class="col-20"><img src="images/food.png"></div>
                                         <div class="row col-80">
                                             <h3>油粘米 <samp>（新鲜一级优质）</samp></h3>
@@ -48,7 +59,7 @@
                                             <p class="col-50">环比：<span>0.33%</span></p>
                                         </div>
                                     </a></li>
-                                    <li><a href="#"  class="row">
+                                    <li><a href="Search_Commodity.html"  class="row">
                                         <div class="col-20"><img src="images/food.png"></div>
                                         <div class="row col-80">
                                             <h3>油粘米 <samp>（新鲜一级优质）</samp></h3>
