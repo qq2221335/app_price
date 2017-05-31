@@ -327,7 +327,7 @@ $$(document).on('pageInit', function(e) {
 		});
 	};
 	//明察暗访页面JS
-	if(page.name === 'InvestigateFill'){
+	if(page.name === 'InvestigateFill' || page.name === 'Search_Commodity'){
 		SwiperInit();
 		$$(document).click(function(){
  			$$(".pull_list").hide();
@@ -348,7 +348,15 @@ $$(document).on('pageInit', function(e) {
 	   	 	onDayClick:function (p, dayContainer, year, month, day){
 	   	 		myCalendar.close();
 	   	 	}
-		});  
+		});
+        var myCalendarEnd = myApp.calendar({
+            input: '#calendarEnd',
+            monthNames: ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月' , '九月' , '十月', '十一月', '十二月'],
+            dayNamesShort:['周日', '周一', '周二', '周三', '周四', '周五', '周六'],
+            onDayClick:function (p, dayContainer, year, month, day){
+                myCalendarEnd.close();
+            }
+        });
 	}
 	//swiper 初始化
 	if( page.name === 'price_news' || page.name === 'Task' || page.name === 'Notice'){
