@@ -1,6 +1,9 @@
 .navbar .right{font-size: .8em;}
+.navbar-fixed>.searchbar~.page-content{padding-top: 96px;}
 .row .col-30{    width: 30%;}
 .row .col-70{    width: 70%;}
+.margin0{margin: 0!important;}
+.margin-tb0{margin-top: 0!important;margin-bottom: 0!important;}
 .left{float: left;}
 .right{float: right;}
 .taskTabs{margin: .5rem 0;background: #fff;overflow: auto;zoom:1;}
@@ -19,10 +22,10 @@
 .taskBox .taskList li{border-bottom: 1px solid #eaeaea;}
 .taskBox .taskList li a{padding: 10px 15px; }
 /*.taskBox .taskList li:nth-child(even){background: #e5f1fc;}*/
-.taskBox .taskList li .col-20{position:relative;text-align: center;}
+.taskBox .taskList li .col-20{position:relative;}
 .taskBox .taskList li .col-20 i{  font-size: 4em;line-height: normal;  }
 .taskBox .taskList li .col-20 img{width: 100%;}
-.taskBox .taskList li .col-20.new::before{content: "";position: absolute;top: 0;right: -.25rem;width: .5rem;height: .5rem;border-radius: 50%;background: #FF0000;}
+.taskBox .taskList li .col-20.new::before{content: "";position: absolute;top: 0;left: 3.5em;width: .5rem;height: .5rem;border-radius: 50%;background: #FF0000;}
 .taskBox .taskList li .col-80{}
 .taskBox .taskList li .col-80 h3{  width:100%;font-size: 1.2em;  color: #333;  font-weight: normal;  }
 .taskBox .taskList li .col-80 h3 label.right{    font-size: .8em;  font-weight: normal;  color: #666;  padding: .1rem .5rem;  border: 1px solid #eaeaea;  border-radius: 3px;}
@@ -35,14 +38,14 @@
 .taskBox .taskList li .col-80 p span.right, .taskBox .taskList li .col-80 h3 samp{color:#999;}
 .taskBox .taskList li .col-80 p input[type="text"]{margin:0;padding:0 .5rem;width: 50%;border: none;border-bottom: 1px solid #ccc;color: #333;background: inherit;}
 .taskBox .taskList li .col-80 h3, .taskBox .taskList li .col-80 p{width:100%;}
-.taskBox .taskList.taskLine-2 li .col-80 h3{margin:.5rem 0;}
+.taskBox .taskList.taskLine-2 li .col-80 h3{margin:.2rem 0;}
 .taskBox .taskList.taskLine-2 li .col-80 p{margin:.5rem 0;}
 .taskBox .taskList li .col-80 p:last-child{margin-bottom: 0;}
 .taskBox .taskList li .taskDetails{display:none;padding: .5rem; background: #f6f6f6;overflow: hidden; animation: Height100A .5s;}
 .taskBox .taskList li .taskDetails p{margin:.2rem 0;color: #333;}
 .taskBox .taskList li p.d-details{color: #1682dd;}
 .taskBox .taskList li p.d-details i{margin:0 .2rem;font-size: 1em;vertical-align: middle;}
-.taskBox .taskList.taskLine-3 li .col-80 p{margin-top: .5rem;width: 100%;}
+.taskBox .taskList.taskLine-3 li .col-80 p{margin-top: .3rem;width: 100%;}
 .taskBox .taskList li .col-80 p.col-50{width: 50%;  width: -webkit-calc((100% - 15px*1)/ 2);  width: calc((100% - 15px*1)/ 2);}
 /*»ŒŒÒÃÓ–¥*/
 .taskSwiperNav{margin-bottom:.5rem;padding: .5rem 0;background: #fff;color: #666;overflow: hidden;}
