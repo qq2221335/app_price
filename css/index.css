@@ -196,8 +196,8 @@ p{margin: 0;padding: 0;}
 #ToWork li .details p{font-size: 1.1rem; margin-bottom: 2px; white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
 #ToWork li .details p.task_num span{margin-right: .1rem;}
 #ToWork li .details p:last-child{color: #999;}
-#ToWork li .details p:last-child rem{margin-left: .1rem;}
-#ToWork li .details p rem{font-style: initial;color: #999;}
+#ToWork li .details p:last-child em{margin-left: .1rem;}
+#ToWork li .details p em{font-style: initial;color: #999;}
 
 /*Mail_list 通讯录*/
 #Mail_list .bgcolor-1{background-color: #82d0ff;}
@@ -215,10 +215,8 @@ p{margin: 0;padding: 0;}
 #Mail_list .nomoral  .item-title p{width: 90%;font-size: 1rem;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
 #Mail_list .nomoral  .item-title p:last-child{color:#999;font-size: .6em;margin-top: .1rem;}
 
-
 /*Mail_list_chat 个人聊天页面*/
 #Mail_list_chat .toolbar-inner .button{align-self: initial; margin-right:8px;height: 28px;background-color: #1682dd;color: #fff;}
-
 
 /*#Mail_message  消息页面*/
 #Mail_message .page-content{overflow: hidden;}
@@ -247,7 +245,6 @@ p{margin: 0;padding: 0;}
 /*#Judgment ul.Judgment_list li .col-75 p span:last-child{margin-right: 1rem;}*/
 
 /*Macro_data 宏观数据*/
-
 #Macro_data .navbar .btn{background-color: #fff;color: #333;font-weight: normal;height: 28px;line-height: 28px;padding: 0 .5rem;border-radius: 5px;}
 #Macro_data .navbar .center span i{font-size: 12px;margin-left: 4px;}
 #Macro_data .navbar .center span{font-weight: normal;}
@@ -274,8 +271,6 @@ p{margin: 0;padding: 0;}
 #Macro_data .page-content .data_list ul li .index{align-self: stretch;flex:0 0 auto;flex-wrap: nowrap;margin-right: 10px;font-size: 1rem;}
 #Macro_data .page-content .data_list ul li .index span:last-child{font-size: 1.2rem;color:#f29631;}
 
-
-
 /*#PriceWarning 价格预警*/
 #PriceWarning  .navbar .center{left: 18px !important;}
 /*#PriceWarning  .searchbar{padding: 0;}*/
@@ -294,9 +289,6 @@ p{margin: 0;padding: 0;}
 #PriceWarning .Warning_list .rule_table table th{background-color: red;color: #fff;}
 #PriceWarning .Warning_list .rule_table table th, #PriceWarning .Warning_list .rule_table table td{border: 1px solid #CFD5DA;padding: 5px;}
 #PriceWarning .Warning_list .rule_table table tr:first-child,tr td:first-child{white-space: nowrap;}
-
-
-
 
 /*price_news 价格资讯*/
 #price_news .buttons-row{padding: 10px;box-sizing: border-box;}
@@ -413,9 +405,9 @@ p{margin: 0;padding: 0;}
 @media screen and (max-width: 320px) {
 	body{font-size: 12px !important;}
 	.list-block{font-size:14px;}
-	#PriceWarning .Warning_list .itrem_content>span{top:50%;transform: translateY(-45%);}
+	#PriceWarning .Warning_list .item_content>span{top:50%;transform: translateY(-45%);}
 	#price_news .buttons-row a.button{padding: 0;}
-	#InvestigateFill .list-block .itrem-input input{font-size: 12px;}
+	#InvestigateFill .list-block .item-input input{font-size: 12px;}
 	#InvestigateFill .list-block>ul>li.noMust textarea{font-size: 12px;}
 	#price_news .buttons-row .button{font-size: .7rem}
 }
