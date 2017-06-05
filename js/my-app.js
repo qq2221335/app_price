@@ -10,7 +10,6 @@ var $$ = Dom7;
 
 var viewindex = myApp.addView('#index',{
  domCache: true,  //页面缓存
-
  });
 
  var viewTask = myApp.addView('#index-Task',{
@@ -19,18 +18,19 @@ var viewindex = myApp.addView('#index',{
 
  var viewSearch = myApp.addView('#index-Search',{
  domCache: true,
-
  });
 
  var viewWo = myApp.addView('#index-Wo',{
  domCache: true,
  });
 
+var _thisArea ;//地区选择当前点击对象
+
 $$(document).on('pageBeforeAnimation', function(e) {
     var page = e.detail.page;
 
     //填报
-    if (page.name === 'TaskWrite' || page.name === 'TaskCheck') {
+    /*if (page.name === 'TaskWrite' || page.name === 'TaskCheck') {
         //滑动切换
         var nav = new Swiper('.taskSwiperNav', {
             slidesPerView: 'auto',
@@ -57,11 +57,11 @@ $$(document).on('pageBeforeAnimation', function(e) {
         pages.params.control = nav;
         //滑动切换----结束
 
-    }
+    }*/
     //填报----结束
 
     //任务监控
-    if (page.name === 'Task') {
+   /* if (page.name === 'Task') {
         var nav = new Swiper('.TabSwiperNav', {
             slidesPerView: 'auto',
             freeMode: true,
@@ -86,7 +86,7 @@ $$(document).on('pageBeforeAnimation', function(e) {
 
         pages.params.control = nav;
 
-    }
+    }*/
     //任务监控----结束
 
 //  //任务监控-任务详情
@@ -133,7 +133,6 @@ $$(document).on('pageBeforeAnimation', function(e) {
 });
 
 //地区选择
-var _thisArea ;//地区选择当前点击对象
 function areaToChange(_this){
     _thisArea = $$(_this);
     var val = $$(".areaSelect").css('display');
@@ -359,7 +358,7 @@ $$(document).on('pageInit', function(e) {
         });
 	}
 	//swiper 初始化
-	if( page.name === 'price_news' || page.name === 'Task' || page.name === 'Notice'){
+	if( page.name === 'price_news' || page.name === 'Task' || page.name === 'Notice' || page.name === 'TaskWrite' || page.name === 'TaskCheck'){
 		  SwiperInit();
 	}
 	//	Report_pull 月报
