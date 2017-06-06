@@ -29,7 +29,7 @@ a {color: #000;}
 .searchbar:after{height: 0;}
 .searchbar{background-color: #f0eff5;}
 /*选项组*/
-.swiper-wrapper.buttons-row .button{line-height:normal;padding:.7rem 0;border-radius: initial;border: none;color: #666;background-color: #fff;flex: 1;}
+.swiper-wrapper.buttons-row .button{line-height:normal;padding:.7rem 0;border-radius: initial;border: none;color: #666;background-color: #fff;flex: 1;font-size:.8rem;}
 .swiper-wrapper.buttons-row .button.active{color: #1682dd;}
 /*.swiper-wrapper.buttons-row .button.active:after{content: '';position: absolute;margin-left:-7.5%;left: 50%;bottom: 0;right: auto;top: auto;height: 2px;width: 15%;background-color: #4198e5;display: block;z-index: 15;}*/
 .swiper-wrapper.buttons-row .button.active:after{content: "";  position: absolute;  bottom: 0;  left: 40%;  width: 20%;  height: .2rem;  background: #1682dd;}
@@ -43,7 +43,8 @@ a {color: #000;}
 .dftype .detail_box h1 span:last-child {font-size: .6rem;}
 .dftype .detail_box h4{margin-bottom: .2rem;font-size: .8rem;font-weight: normal;}
 .dftype .detail_box .col-60{padding: .6rem 0 .6rem .9rem;}
-.dftype .detail_box .col-40 img{display: block;width:7.5rem;height: 5.7rem;padding: .6rem .9rem .6rem 0;}
+.dftype .detail_box .col-40{text-align: right;}
+.dftype .detail_box .col-40 img{width:7.5rem;height: 5.7rem;padding: .6rem .9rem .6rem 0;}
 .dftype .detail_box .Chart{border: 1px solid #E9E9E9;height: 12rem;margin-top: 10px;}
 .dftype .type_new{background-color: #fff;margin-top: .5rem;padding:10px 15px;}
 .dftype .type_new h1{margin-bottom:.9rem; text-align:center;font-size: 1rem;color: #1682dd;}
@@ -84,7 +85,7 @@ p{margin: 0;padding: 0;}
 /*index-woDetail 我的详细页面*/
 #Wo_Detail .navbar:after{height: 0;}
 #Wo_Detail .list-block{margin: .5rem 0;}
-#Wo_Detail .page-content .detail_bg{background: url(../images/woDetail.jpg) 100% 100%;text-align: center;color: #fff;padding:1rem 0 2.5rem;}
+#Wo_Detail .page-content .detail_bg{background: url(../images/woDetail.jpg) center center no-repeat;background-size: 100% 100%;text-align: center;color: #fff;padding:1rem 0 2.5rem;}
 #Wo_Detail .page-content .detail_bg p{font-size: 1rem;}
 #Wo_Detail .page-content .detail_bg p>span:last-child{margin-left: .8rem;}
 #Wo_Detail .page-content .detail_bg i{font-size: 6rem;color: #C8C7CC;}
@@ -308,8 +309,8 @@ p{margin: 0;padding: 0;}
 #price_news ul.pricenews_list li.nomoral a .detail p{color: #999;font-size: .8rem;}
 /*专题li*/
 #price_news ul.pricenews_list li.special a img{width: 100%;height: 10rem;display: block;}
-#price_news ul.pricenews_list li.special a  .detail h3{font-size: 1.2rem;margin: 5px 0;font-weight: normal;padding: 0px 5px;height: 25px;}
-#price_news ul.pricenews_list li.special a  .detail h3 span{display: inline-block;height: 25px;line-height: 27px;}
+#price_news ul.pricenews_list li.special a  .detail h3{font-size: 1rem;margin: 5px 0;font-weight: normal;padding: 0px 5px;}
+#price_news ul.pricenews_list li.special a  .detail h3 span{display: inline-block;}
 #price_news ul.pricenews_list li.special a  .detail h3 span:first-child{width: 83%;}
 #price_news ul.pricenews_list li.special a  .detail h3 span:last-child{font-size: .9rem;background-color: red;color: #fff;letter-spacing: 3px;padding: 0px 5px;border-radius: 5px;}
 #price_news ul.pricenews_list li.special a  .detail p{color: #999;padding: 0px 5px;letter-spacing: 2px;font-size: .8rem;line-height: 1.4;}
@@ -321,7 +322,7 @@ p{margin: 0;padding: 0;}
 #Task .navbar .buttons-row{font-size: .9rem;}
 #Task .navbar .left  a {color: #333;}
 #Task .navbar .right span{background-color: initial;padding: 0;}
-#Task .navbar .center .buttons-row a{line-height: 30px; color: #333;text-overflow: initial;border: 1px solid #e9e9e9;font-size: 1rem;}
+#Task .navbar .center .buttons-row a{line-height: 30px; color: #333;text-overflow: initial;border: 1px solid #e9e9e9;font-size: .8rem;}
 #Task .navbar .center .buttons-row a.active{color: #fff;border: 1px solid #007aff;}
 #Task .page-content .buttons-row{background-color: #fff;}
 #Task .page-content .buttons-row .active{font-weight: bold;color: #333;}

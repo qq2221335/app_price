@@ -37,7 +37,7 @@ html{font-size: 17px;}
 .taskBox .taskList li .col-80 p span.sub samp{font-size: .6rem;}
 .taskBox .taskList li .col-80 h3 samp{font-size: .8rem;}
 .taskBox .taskList li .col-80 p span.right, .taskBox .taskList li .col-80 h3 samp{color:#999;}
-.taskBox .taskList li .col-80 p input[type="text"]{margin:0;padding:0 .5rem;width: 50%;border: none;border-bottom: 1px solid #ccc;color: #333;background: inherit;}
+.taskBox .taskList li .col-80 p input[type="text"]{margin:0;padding:0 .5rem;width: 50%;border: none;border-bottom: 1px solid #ccc;color: #333;background: inherit;font-size: .8rem;}
 .taskBox .taskList li .col-80 h3, .taskBox .taskList li .col-80 p{width:100%;}
 .taskBox .taskList.taskLine-2 li .col-80 h3{margin:.2rem 0;}
 .taskBox .taskList.taskLine-2 li .col-80 p{margin:.5rem 0;}
@@ -50,7 +50,7 @@ html{font-size: 17px;}
 .taskBox .taskList li .col-80 p.col-50{width: 50%;  width: -webkit-calc((100% - 15px*1)/ 2);  width: calc((100% - 15px*1)/ 2);}
 /*任务填写*/
 .taskSwiperNav{margin-bottom:.5rem;padding: .5rem 0;background: #fff;color: #666;overflow: hidden;}
-.taskSwiperNav .swiper-slide{width: 25%;text-align: center;}
+.taskSwiperNav .swiper-slide{width: 25%;text-align: center;font-size: .8rem;}
 .taskSwiperNav .swiper-slide.active{color: #333;}
 .taskSwiperNav .swiper-slide.active:after{content: "";position: absolute;  bottom: -.5rem;  left: 30%;display: block;background: #1682dd;  height: .2rem;  width: 40%;}
 .taskToolbarBox{position: fixed;bottom: 0;left: 0;right:0;height: 3rem;z-index: 3;}
@@ -82,7 +82,7 @@ html{font-size: 17px;}
 .remarksBox h3{    padding-bottom: 1rem;  text-align: center;  font-size: 1rem;  font-weight: normal;}
 .remarksBox .line{padding: 1rem .5rem;border-top: 1px solid #eaeaea;}
 .remarksBox .line input[type="text"]{}
-.remarksBox .line select{margin-left: .5rem;  padding: .2rem .5rem;  border: 1px solid #eaeaea;  border-radius: 3px;}
+.remarksBox .line select{margin-left: .5rem;  padding: .2rem .5rem;  border: 1px solid #eaeaea;  border-radius: 3px;font-size: .8rem;}
 .remarksBox .line input[type="submit"]{display: block;margin: 0 auto;width: 80%;height: 2.5rem;border: none;background: #1682dd;color: #fff;font-size: 1rem;border-radius: 5px;}
 .remarksBox .line textarea{  margin-left: .5rem;padding: .2rem;  width: 70%;  border: 1px solid #eaeaea;  resize: none;  vertical-align: text-top;  border-radius: 3px; font-size: .8rem; }
 .swiperHidden{padding-bottom:4rem;overflow: hidden;}
@@ -144,10 +144,10 @@ html{font-size: 17px;}
 .filtrateBox .box .condition p label::after{content: ":";position: absolute;  right: .2rem;  top: 0;}
 .filtrateBox .box form input[type="submit"]{    display: block;  margin: 2rem auto 0;  width: 80%;  height: 2.5rem;  border: none;  background: #1682dd;  color: #fff;  font-size: 1rem;  border-radius: 5px;}
 /*日历*/
-.StimeBox{margin-bottom:.5rem;padding:.5rem 15px;background: #fff; color: #666;}
+.StimeBox{margin-bottom:.5rem;padding:.5rem 15px;background: #fff; color: #666;font-size: .8rem;}
 .StimeBox span{ position: relative; display: inline-block; margin: 0 .3rem; padding: .2rem .5rem;max-width: 6rem;  overflow: hidden;  border: 1px solid #eaeaea;border-radius: 5px;box-sizing:border-box; vertical-align: middle;}
-.StimeBox span input{position:relative;width: 100%;border: none;color: #333;background:none;z-index: 2;}
-.StimeBox span i{  position: absolute;top: 25%;right: .3rem;line-height: normal;z-index: 1;font-size: .8rem;}
+.StimeBox span input{position:relative;width: 100%;border: none;color: #333;background:none;z-index: 2;font-size: .8rem;}
+.StimeBox span i{  position: absolute;top: 20%;right: .3rem;line-height: normal;z-index: 1;font-size: .8rem;}
 
 /*超过隐藏长度*/
 .taskBox .taskList li .col-80 h3, .taskBox .taskList li .taskDetails p{text-overflow: ellipsis;  white-space: nowrap;  overflow: hidden;}
