@@ -27,23 +27,24 @@
                         <div class="right dr-css"><a class="a-filtrate" href="#">更多 <i class="iconfont">&#xe64a;</i></a></div>
                     </div>
                 </div>
+
+                <!--搜索框-->
+                <form data-search-list=".taskList" data-search-in=".taskBox .taskList li a" class="searchbar searchbar-init d-FormFix">
+                    <div class="searchbar_form searchbar-input">
+                        <label for="q" id="q_label" >搜索</label>
+                        <input id="q" type="search">
+                        <i class="iconfont icon-llhomesearch" id="q_i"></i>
+                        <a href="#" class="searchbar-clear"></a>
+                    </div>
+                </form>
+                <!--搜索结束-->
+
                 <!--内容-->
                 <div class="page-content taskTab2">
                     <!--地区和搜索框-->
                     <!--<div class="row c_con d-searchBox no-gutter">
                         <div class="col-100"><div class="d_search"><i class="iconfont">&#xe600;</i><input type="text" placeholder="输入关键字"/></div></div>
                     </div>-->
-
-                    <!--搜索框-->
-                    <form data-search-list=".taskList" data-search-in=".taskBox .taskList li a" class="searchbar searchbar-init d-FormFix">
-                        <div class="searchbar_form searchbar-input">
-                            <label for="q" id="q_label" >搜索</label>
-                            <input id="q" type="search">
-                            <i class="iconfont icon-llhomesearch" id="q_i"></i>
-                            <a href="#" class="searchbar-clear"></a>
-                        </div>
-                    </form>
-                    <!--搜索结束-->
 
                     <div class="content-block taskBox">
                         <div class="tabs">
@@ -74,25 +75,26 @@
                         </div>
                     </div>
 
-                    <!--数据查询筛选-->
-                    <div class="filtrateBox">
-                        <div class="box">
-                            <div class="link">
-                                <a href="#" onclick="areaToChange(this)"><i class="iconfont color-dblue">&#xe6a3;</i>地区</a>
-                                <a href="#"><i class="iconfont color-dorange">&#xe6a6;</i>任务名称</a>
-                                <a href="#"><i class="iconfont color-dgreen">&#xe6a4;</i>定点单位</a>
-                                <a href="#"><i class="iconfont color-dred">&#xe6a5;</i>价格指标</a>
-                            </div>
-                            <form>
-                                <div class="condition">
-                                    <p><label>地区</label>广州</p>
-                                    <p><label>任务名称</label>广州市红华好滋润食品有限公司</p>
-                                    <p><label>定点单位</label>广州市国际大宗商品价格监测日报</p>
-                                    <p><label>价格指标</label>XXX</p>
-                                </div>
-                                <input type="submit" value="确定"/>
-                            </form>
+                </div>
+
+                <!--数据查询筛选-->
+                <div class="filtrateBox">
+                    <div class="box">
+                        <div class="link">
+                            <a href="#" onclick="areaToChange(this)"><i class="iconfont color-dblue">&#xe6a3;</i>地区</a>
+                            <a href="#"><i class="iconfont color-dorange">&#xe6a6;</i>任务名称</a>
+                            <a href="#"><i class="iconfont color-dgreen">&#xe6a4;</i>定点单位</a>
+                            <a href="#"><i class="iconfont color-dred">&#xe6a5;</i>价格指标</a>
                         </div>
+                        <form>
+                            <div class="condition">
+                                <p><label>地区</label>广州</p>
+                                <p><label>任务名称</label>广州市红华好滋润食品有限公司</p>
+                                <p><label>定点单位</label>广州市国际大宗商品价格监测日报</p>
+                                <p><label>价格指标</label>XXX</p>
+                            </div>
+                            <input type="submit" value="确定"/>
+                        </form>
                     </div>
                 </div>
                 <!--结束-->

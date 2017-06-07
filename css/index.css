@@ -10,7 +10,7 @@ a {color: #000;}
 /*.navbar .center{font-weight: bold;}*/
 .navbar .right .btnArea{line-height: 28px;height:28px;border-radius: 5px; display: inline-block;padding:0 .5rem; background-color: #fff;color: #333;}
 .navbar .right i.icon-llhomesearch{margin-right: 10px;}
-.navbar .right i.icon-11{margin-left: .5rem;font-size: .8rem;position: relative;top: -2%;transform: translateY(-20%);}
+.navbar .right i.icon-11{margin-left: .3rem;font-size: .7rem;position: relative;top:0;transform: translateY(-20%);}
 
 .views{overflow: hidden;}
 .toolbar .iconfont {font-size: 23px;}
@@ -35,7 +35,7 @@ a {color: #000;}
 .swiper-wrapper.buttons-row .button.active:after{content: "";  position: absolute;  bottom: 0;  left: 40%;  width: 20%;  height: .2rem;  background: #1682dd;}
 #Company .searchbar_form input{color: #1682dd;}
 /*大宗商品和大宗商品通用样式*/
-.dftype .detail_box{padding: 10px 15px;background-color: #fff;}
+.dftype .detail_box{padding: .5rem 15px;background-color: #fff;}
 .dftype .detail_box .row{border: 1px solid #E9E9E9;}
 .dftype .detail_box h1{margin-bottom: .3rem;font-size: 1.4rem;font-weight: normal;}
 .dftype .detail_box h1:first-child{letter-spacing: 3px;}
@@ -55,9 +55,9 @@ a {color: #000;}
 /*月报和定点单位月报通用页面*/
 ul.Report_list {width: 100%;height:100%;overflow: auto;}
 ul.Report_list li{background-color: #fff;display: block;margin-bottom: 1px;}
-ul.Report_list li a{padding: 10px 15px;}
+ul.Report_list li a{padding: .5rem 15px;}
 ul.Report_list li .col-20{height: 5rem;position: relative;}
-ul.Report_list li .col-20 i{font-size: 4rem;line-height: normal;}
+ul.Report_list li .col-20 i{font-size: 3.5rem;line-height: normal;}
 ul.Report_list .col-80 {height: 5rem;display: flex;flex-direction: column; align-content: center;justify-content: space-between;}
 ul.Report_list .col-80 p{font-size: 1rem;}
 ul.Report_list .col-80 p.Cname{font-size: 1.2rem;color: #333;}
@@ -137,17 +137,18 @@ p{margin: 0;padding: 0;}
 #All_Report .swiper-pages{height: calc( 100% - 40px);}
 
 /*result——Report 报表搜索结果页面*/
-#Report_pull .swiper-pages{height: calc( 100% - 140px);}
-#Report_pull  .page-content{overflow: hidden;position: relative;}
-#Report_pull .btn_box {position: relative; padding:.4rem;font-size: 1rem; height: 28px;width: 100%;background-color: #fff;}
-#Report_pull .btn_box .btn{line-height:28px;height:28px; border: 1px solid #F7F7F7;padding: 0 .8rem;display: inline-block;border-radius: 5px;}
+#Report_pull .swiper-pages{height: calc( 100% - 8rem);}
+#Report_pull  .page-content{position: relative;}
+#Report_pull .btn_box {position: relative; padding:.4rem;font-size: .8rem; height: 28px;width: 100%;background-color: #fff;}
+#Report_pull .btn_box .btn{ border: 1px solid #eaeaea;padding: .2rem .8rem;display: inline-block;border-radius: 5px;}
 #Report_pull .btn_box .btnSummary {position: relative;left: 30%;transform: translateX(-50%);}
 #Report_pull .btn_box .btnArea{margin-left: .8rem;}
-#Report_pull .btn_box .btn i{margin-left: .2rem;font-size: 1rem;position: relative;transform: translateY(-50%);}
-#Report_pull .area_num{font-size: 1.2rem;background-color: #fff;padding: .8rem 1rem;margin: .5rem 0;}
+#Report_pull .btn_box .btn i{margin-left: .3rem;font-size: .7rem;position: relative;transform: translateY(-50%);}
+#Report_pull .btn_box .btnSummary i{font-size: .8rem;}
+#Report_pull .area_num{font-size: 1rem;background-color: #fff;padding: .5rem 1rem;margin: .5rem 0;}
 #Report_pull .area_num span{margin-right: .3rem;}
-#Report_pull .pull_area{z-index: 999;; width:100%;height: calc(100% - 36px - 3.6rem); background: rgba(0,0,0,0.3);position: absolute;top:6.8rem;left: 0;}
-#Report_pull .pull_area .col-50{height: 80%;background-color: #fff;font-size: 1.2rem;overflow: auto;}
+#Report_pull .pull_area{z-index: 999;; width:100%;height: calc(100% - 30px - 3.6rem); background: rgba(0,0,0,0.3);position: absolute;top:5.5rem;left: 0;}
+#Report_pull .pull_area .col-50{height: 80%;background-color: #fff;font-size: 1rem;overflow: auto;}
 #Report_pull .pull_area .col-50 li{padding:.4rem .6rem ;margin-left: .6rem;border-right:1px solid #EEEEEE;}
 #Report_pull .pull_area .pull_left{color: #ccc;}
 #Report_pull .pull_area .pull_right{ border-top: 1px solid #EEEEEE;}
@@ -160,7 +161,7 @@ p{margin: 0;padding: 0;}
 #Notice  .buttons-row .button:first-child{border-right:1px solid #eaeaea;}
 #Notice  ul.Notice_list {width: 100%;height:100%; overflow: auto;}
 #Notice  .Notice_list li{background-color: #fff;margin-bottom: 1px;}
-#Notice  .Notice_list li a{padding: 10px 15px;}
+#Notice  .Notice_list li a{padding: .5rem 15px;}
 #Notice  .Notice_list li .col-20{position: relative;height: 4rem;}
 #Notice  .Notice_list li .col-20 i{font-size: 3.5rem; color: #3da7ff;;line-height: normal;}
 #Notice  .Notice_list li .col-20::after{content:"";position: absolute;top:0;left: 3rem; display: block;width: .5rem;height: .5rem;border-radius: 50%;background-color: #FF0000;}
@@ -172,11 +173,11 @@ p{margin: 0;padding: 0;}
 
 
 /*notice_Search 通知公告搜索结果*/
-#Notice_Search .navbar form{background-color: #f5f5f5;}
+#Notice_Search .navbar form{background-color: #fff;}
 #Notice_Search .navbar  .back{margin-top: 2px;}
-#Notice_Search .navbar  .back i{font-size: 18px;color: #999;}
+#Notice_Search .navbar  .back i{font-size: 18px;color: #666;}
 #Notice_Search .navbar .searchbar-input{margin-left: .3rem;}
-#Notice_Search .navbar  input{background-color: #fff;background-image: initial;padding: 0px 5px;}
+#Notice_Search .navbar  input{background-color: #eaeaea;background-image: initial;padding: 0px 5px;}
 #Notice_Search .navbar span{font-size: .8rem;width: 15%;margin-left: .8rem;background-color: #1682dd;text-align: center;height:28px;line-height:28px;border-radius: 5px;color: #fff;}
 #Notice_Search .page-content{background-color: #fff;padding:44px 10px 0;}
 #Notice_Search .page-content .head_title{font-size: 1rem;padding: 15px 0;}
@@ -235,7 +236,7 @@ p{margin: 0;padding: 0;}
 
 /*Judgment 宏观研判*/
 #Judgment ul.Judgment_list li{background-color: #fff;display: block;margin-bottom: 1px;}
-#Judgment ul.Judgment_list li a{padding: 10px 15px;}
+#Judgment ul.Judgment_list li a{padding: .5rem 15px;}
 #Judgment ul.Judgment_list li .col-20{height: 4rem;position: relative;}
 #Judgment ul.Judgment_list li .col-20 i{font-size: 3.5rem;color: #3da7ff;line-height: normal;}
 #Judgment ul.Judgment_list li .col-80 {height: 4rem;position: relative;}
@@ -260,7 +261,7 @@ p{margin: 0;padding: 0;}
 #Macro_data .page-content .buttons-row .button:first-child{text-align: left;}
 #Macro_data .page-content .buttons-row .button:last-child{text-align: right;}
 #Macro_data .page-content .buttons-row .button i{font-size: .8rem;}
-#Macro_data .page-content .data_list ul{margin-top: 10px;}
+#Macro_data .page-content .data_list ul{margin-top: .5rem;}
 #Macro_data .page-content .data_list ul li a{background-color: #fff;display: flex;justify-content: space-between;align-items: center;padding: .5rem .5rem 0 15px;margin-bottom: 1px;}
 #Macro_data .page-content .data_list ul li a>div{font-size: 1rem;display: flex;align-items: center;}
 #Macro_data .page-content .data_list ul li .iconf{flex-shrink: 0;}
@@ -303,10 +304,11 @@ p{margin: 0;padding: 0;}
 #price_news ul.pricenews_list{background-color: #fff;overflow: auto;height: 100%;}
 #price_news ul.pricenews_list li{padding: .5rem 15px;border-bottom: 1px solid #f0eff5;}
 #price_news ul.pricenews_list li.nomoral a{width: 100%;display: block;}
-#price_news ul.pricenews_list li.nomoral a img{position: relative;top: 50%;display: inline-block;float: left;height: 6rem;width: 35%;}
-#price_news ul.pricenews_list li.nomoral a>div.detail{padding-left:38%;}
+#price_news ul.pricenews_list li.nomoral a img{position: relative;top: 50%;display: inline-block;float: left;height: 5rem;width: 25%;}
+#price_news ul.pricenews_list li.nomoral a>div.detail{padding-left:27%;}
 #price_news ul.pricenews_list li.nomoral a .detail div{font-size: 1rem;margin: 5px 0;overflow: hidden;height: 4rem;}
-#price_news ul.pricenews_list li.nomoral a .detail p{color: #999;font-size: .8rem;}
+#price_news ul.pricenews_list li.nomoral a .detail p{display:inline-block;color: #999;font-size: .8rem;}
+#price_news ul.pricenews_list li.nomoral a .detail p.area{width: 60%;}
 /*专题li*/
 #price_news ul.pricenews_list li.special a img{width: 100%;height: 10rem;display: block;}
 #price_news ul.pricenews_list li.special a  .detail h3{font-size: 1rem;margin: 5px 0;font-weight: normal;padding: 0px 5px;}
@@ -318,7 +320,7 @@ p{margin: 0;padding: 0;}
 /*task*/
 #Task .swiper-pages{height: calc( 100% - 40px);}
 #Task .tab{height: 100%;}
-#Task .navbar{background-color: #f7f7f8;font-weight: normal;}
+#Task .navbar{background-color: #fff;font-weight: normal;}
 #Task .navbar .buttons-row{font-size: .9rem;}
 #Task .navbar .left  a {color: #333;}
 #Task .navbar .right span{background-color: initial;padding: 0;}
