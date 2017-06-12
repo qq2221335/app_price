@@ -154,6 +154,10 @@ function SelesctArea(){
     });
 }
 SelesctArea();
+//地区选择，点击阴影关闭
+$$(".areaSelect").on("click",function(){
+    $$(".areaSelect").css('display','none');
+});
 //地区选择----结束
 
 $$(document).on('pageBeforeAnimation', function(e) {
@@ -164,7 +168,6 @@ $$(document).on('pageBeforeAnimation', function(e) {
     });
     $$(".areaSelect li").on("click",function(){
         var area = $$(this).html();
-        //$$(this).parents(".page-content").find(".a-tackArea").html(area);
         $$(_thisArea).find(".a-tackArea").html(area);
         areaToChange();
     });

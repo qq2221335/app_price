@@ -21,7 +21,7 @@ html{font-size: 17px;}
 .content-block.taskBox{  margin: .5rem 0;  background: #fff;  padding: 0;  }
 .taskBox .taskList{}
 .taskBox .taskList li{border-bottom: 1px solid #eaeaea;}
-.taskBox .taskList li a{padding: .5rem .5rem; }
+.taskBox .taskList li a{padding: .5rem .5rem;}
 /*.taskBox .taskList li:nth-child(even){background: #e5f1fc;}*/
 .taskBox .taskList li .col-20{position:relative;}
 .taskBox .taskList li .col-20 i{  font-size: 3.5rem;line-height: normal;  }
@@ -48,15 +48,15 @@ html{font-size: 17px;}
 .taskBox .taskList li p.d-details i{margin:0 .2rem;font-size: 1rem;vertical-align: middle;}
 .taskBox .taskList.taskLine-3 li .col-80 p{margin-top: .3rem;width: 100%;}
 .taskBox .taskList li .col-80 p.col-50{width: 50%;  width: -webkit-calc((100% - 15px*1)/ 2);  width: calc((100% - 15px*1)/ 2);}
-/*ÈÎÎñÌîĞ´*/
+/*ä»»åŠ¡å¡«å†™*/
 .taskSwiperNav{margin-bottom:.5rem;padding: .5rem 0;background: #fff;color: #666;overflow: hidden;}
 .taskSwiperNav .swiper-slide{width: 25%;text-align: center;font-size: .8rem;}
 .taskSwiperNav .swiper-slide.active{color: #333;}
 .taskSwiperNav .swiper-slide.active:after{content: "";position: absolute;  bottom: -.5rem;  left: 30%;display: block;background: #1682dd;  height: .2rem;  width: 40%;}
 .taskToolbarBox{position: fixed;bottom: 0;left: 0;right:0;height: 3rem;z-index: 3;}
 .taskToolbarBox .taskToolbar{position: absolute;bottom: 0;left: 0;width: 100%;line-height: 2rem;text-align: center;background: #5E5E5E;color: #fff;font-size: 1rem;font-weight: normal;}
-.taskToolbarBox .taskList{position: absolute;bottom: 3rem;  left: 0;  top: -20rem;  width: 100%;  overflow: scroll;}
-.taskToolbarBox .taskList ul{    height: 20rem;  overflow: scroll;  background: #fff;  position: absolute;  left: 0;  bottom: 0;  right: 0;-webkit-animation: taskHeight20A .2s;animation: taskHeight20A .2s;}
+.taskToolbarBox .taskList{position: absolute;bottom: 3rem;  left: 0;  top: -20rem;  width: 100%;  overflow: hidden;}
+.taskToolbarBox .taskList ul{    height: 20rem;  overflow-y: scroll;  background: #fff;  position: absolute;  left: 0;  bottom: 0;  right: 0;-webkit-animation: Atranslate3d2 .5s;animation: Atranslate3d2 .5s;}
 .taskToolbarBox .taskList li{ padding: .5rem; border-bottom: 1px solid #eaeaea;  font-size: .8rem;text-align: center;}
 .taskToolbarBox .taskList li p.title{text-align: left;}
 .taskToolbarBox .taskToolbar .btn{position:relative;padding:.5rem 0;}
@@ -71,7 +71,7 @@ html{font-size: 17px;}
 .taskToolbarBox .taskToolbar .col-50.btn:nth-child(2){background: #F29715;}
 .d-fullscreen{position: fixed;top:0;bottom: 0;left: 0;right:0;z-index: 2;  background: rgba(0,0,0,.4);-webkit-animation: opacityA .2s;animation: opacityA .2s;}
 .z-index10{z-index: 10;}
-/*ÉÏ´«Í¼Æ¬*/
+/*ä¸Šä¼ å›¾ç‰‡*/
 .uploadBox, .remarksBox{position: absolute;  top: 20%;  left: 1rem;  right: 1rem;  z-index: 11;-webkit-animation: opacityA .2s;animation: opacityA .2s;}
 .uploadBox .uploadDiv{margin-bottom:2rem;height: 15rem;text-align: center;}
 .uploadBox .uploadDiv img{width: 100%;max-height: 100%;min-width: 60%;border: 2px solid #fff;box-sizing: border-box;}
@@ -88,7 +88,7 @@ html{font-size: 17px;}
 .swiperHidden{padding-bottom:4rem;overflow: hidden;}
 .swiperHidden .swiper-pages{overflow-y: scroll;height: calc( 100% - 3rem - 40px);}
 .swiperHidden .content-block.taskBox{margin: 0;}
-/*ÉóºË±í¸ñ*/
+/*å®¡æ ¸è¡¨æ ¼*/
 .taskTable{padding-bottom:4.5rem;background: #fff;}
 .taskTable table{padding-bottom:5.5rem;width: 100%;height:116%;border-collapse: collapse;border-spacing: 0;font-size: .8rem;color: #666;}
 .taskTable table tbody{ display: block; height: 100%; overflow-y: scroll;}
@@ -100,7 +100,7 @@ html{font-size: 17px;}
 .taskTable table tr td{padding: .5rem .1rem;text-align: center;}
 .submitBtn{position: absolute;bottom: 0;  left: 0;  right: 0;padding: 1rem 0;z-index: 2;background: #fff;}
 .submitBtn input[type="submit"], .submitBtn input[type="button"], .submitBtn button{display: block;margin: 0 auto;  width: 80%;  height: 2.5rem;  border: none;  background: #1682dd;  color: #fff;  font-size: 1rem;  border-radius: 5px;}
-/*½ø¶ÈÌõ*/
+/*è¿›åº¦æ¡*/
 .d-progress { display: inline-block;margin:0 .5rem;width: 60%; height: .8rem;  background: #eaeaea; border-radius: 10px; overflow: hidden }
 .d-progress > span {position: relative;  float: left;  margin: 0 -1px;  min-width: 30px;  height: .8rem;  line-height: .8rem;  text-align: right;  background: #cccccc;  border-radius: 10px;  vertical-align: text-top;}
 .d-progress .green {  background: #85c440;  }
@@ -114,12 +114,13 @@ html{font-size: 17px;}
 .taskProgress h3{ font-size: 1rem;  font-weight: normal;  }
 .taskProgress h3 span{margin-left: 1rem}
 .taskProgress .line{margin-top: .5rem; color: #666;}
-/*¸½¼ş*/
+/*é™„ä»¶*/
 .taskFileBox{padding:1rem .5rem;height: -webkit-calc(100% - 3rem);height: calc(100% - 3rem);background: #fff;box-sizing: border-box;font-size: .8rem;color: #333;}
 .taskFileBox p{margin-bottom: .2rem;}
 .taskFileBox .msg{margin-top:.5rem;padding: .5rem;border: 1px solid #eaeaea;  font-size: .8rem;  min-height: 20rem;  border-radius: 5px;}
-/*µØÇøÑ¡Ôñ*/
+/*åœ°åŒºé€‰æ‹©*/
 .areaSelect, .filtrateBox{ display: none; position: absolute;  top: 44px;  left: 0;  right: 0;  bottom: 0;  z-index: 200;   font-size: .8rem;  color: #333; background: rgba(0,0,0,0.4);overflow: hidden;-webkit-animation:opacityA .3s;animation: opacityA .3s; }
+.areaSelect::after, .filtrateBox::after{content:"ç‚¹å‡»é˜´å½±å…³é—­å¼¹çª—";position:absolute;top: 25rem;left:0;right:0;color: #fff;font-size: 1rem;text-align: center;}
 .areaSelect .box, .filtrateBox .box{padding-left:2rem;background: #fff;height: 22rem;overflow: hidden;-webkit-animation:Atranslate3d .5s;animation: Atranslate3d .5s;}
 .areaSelect .line{  padding: 1rem 0;  border-bottom: 1px solid #eaeaea;  }
 .areaSelect .line:last-child{border-bottom: none;}
@@ -127,7 +128,7 @@ html{font-size: 17px;}
 .areaSelect .line h3::before{content: "";position: absolute;  left: -1rem;top:0;bottom: 0;width: .3rem;background: #1682dd;}
 .areaSelect .line ul{ overflow: auto;zoom: 1;}
 .areaSelect .line li{  margin: .5rem 2rem 0 0;  float: left;  color: #666; }
-/*ËÑË÷¿ò*/
+/*æœç´¢æ¡†*/
 .dr-css{font-size: .8rem}
 .dr-css .a-filtrate i{font-size: .7rem;}
 .d-searchBox{padding: .5rem .5rem;}
@@ -144,30 +145,32 @@ html{font-size: 17px;}
 .filtrateBox .box .condition p label::after{content: ":";position: absolute;  right: .2rem;  top: 0;}
 .filtrateBox .box form input[type="submit"]{    display: block;  margin: 2rem auto 0;  width: 80%;  height: 2.5rem;  border: none;  background: #1682dd;  color: #fff;  font-size: 1rem;  border-radius: 5px;}
 .filtrateBox.active{display: block;}
-/*ÈÕÀú*/
+/*æ—¥å†*/
 .StimeBox{margin-bottom:.5rem;padding:.5rem .5rem;background: #fff; color: #666;font-size: .8rem;}
 .StimeBox span{ position: relative; display: inline-block; margin: 0 .3rem; padding: .2rem .5rem;max-width: 6rem;  overflow: hidden;  border: 1px solid #eaeaea;border-radius: 5px;box-sizing:border-box; vertical-align: middle;}
 .StimeBox span input{position:relative;width: 100%;border: none;color: #333;background:none;z-index: 2;font-size: .8rem;}
 .StimeBox span i{  position: absolute;top: 20%;right: .3rem;line-height: normal;z-index: 1;font-size: .8rem;}
 
-/*³¬¹ıÒş²Ø³¤¶È*/
+/*è¶…è¿‡éšè—é•¿åº¦*/
 .taskBox .taskList li .col-80 h3, .taskBox .taskList li .taskDetails p{text-overflow: ellipsis;  white-space: nowrap;  overflow: hidden;}
 .searchbar.d-FormFix{background: #fff; height:52px;border-bottom: .5rem solid #efeff4;}
 .d-FormFix .searchbar_form label{left: 51%;  margin-left: -3%;}
 .d-FormFix.searchbar input[type=search]{background-color: #eaeaea;  background-image: none;  padding: 0 28px 0 10px;}
 .d-FormFix .searchbar_form i{ left: 51%;  margin-left: -8%;}
-/*ÈÎÎñÌîĞ´¶¯»­*/
+/*ä»»åŠ¡å¡«å†™åŠ¨ç”»*/
 @-webkit-keyframes taskHeightA { from {height:0;} to {height:22rem;} }
 @-webkit-keyframes taskHeight20A { from {height:0;} to {height:20rem;} }
 @-webkit-keyframes opacityA { from {opacity:0;} to {opacity:1;} }
 @-webkit-keyframes Height100A { from {height:0;} to {height:100%;} }
-@-webkit-keyframes Atranslate3d{ from{transform: translate3d(0,-100%,0);} to{ transform: translate3d(0,0,0);} }/*´ÓÉÏµ½ÏÂ¶¯»­*/
+@-webkit-keyframes Atranslate3d{ from{transform: translate3d(0,-100%,0);} to{ transform: translate3d(0,0,0);} }/*ä»ä¸Šåˆ°ä¸‹åŠ¨ç”»*/
+@-webkit-keyframes Atranslate3d2{ from{transform: translate3d(0,100%,0);} to{ transform: translate3d(0,0,0);} }/*ä»ä¸‹åˆ°ä¸ŠåŠ¨ç”»*/
 
 @keyframes taskHeightA { from {height:0;} to {height:22rem;} }
 @keyframes taskHeight20A { from {height:0;} to {height:20rem;} }
 @keyframes opacityA { from {opacity:0;} to {opacity:1;} }
 @keyframes Height100A { from {height:0;} to {height:100%;} }
-@keyframes Atranslate3d{ from{transform: translate3d(0,-100%,0);} to{ transform: translate3d(0,0,0);} }/*´ÓÉÏµ½ÏÂ¶¯»­*/
+@keyframes Atranslate3d{ from{transform: translate3d(0,-100%,0);} to{ transform: translate3d(0,0,0);} }/*ä»ä¸Šåˆ°ä¸‹åŠ¨ç”»*/
+@keyframes Atranslate3d2{ from{transform: translate3d(0,100%,0);} to{ transform: translate3d(0,0,0);} }/*ä»ä¸‹åˆ°ä¸ŠåŠ¨ç”»*/
 
 
 @media screen and (max-width: 350px) {
