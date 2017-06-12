@@ -21,7 +21,7 @@ html{font-size: 17px;}
 .content-block.taskBox{  margin: .5rem 0;  background: #fff;  padding: 0;  }
 .taskBox .taskList{}
 .taskBox .taskList li{border-bottom: 1px solid #eaeaea;}
-.taskBox .taskList li a{padding: .5rem 15px; }
+.taskBox .taskList li a{padding: .5rem .5rem; }
 /*.taskBox .taskList li:nth-child(even){background: #e5f1fc;}*/
 .taskBox .taskList li .col-20{position:relative;}
 .taskBox .taskList li .col-20 i{  font-size: 3.5rem;line-height: normal;  }
@@ -42,7 +42,7 @@ html{font-size: 17px;}
 .taskBox .taskList.taskLine-2 li .col-80 h3{margin:.2rem 0;}
 .taskBox .taskList.taskLine-2 li .col-80 p{margin:.5rem 0;}
 .taskBox .taskList li .col-80 p:last-child{margin-bottom: 0;}
-.taskBox .taskList li .taskDetails{display:none;padding: .5rem; background: #f6f6f6;overflow: hidden; animation: Height100A .5s;}
+.taskBox .taskList li .taskDetails{display:none;padding: .5rem; background: #f6f6f6;overflow: hidden;-webkit-animation: Height100A .5s; animation: Height100A .5s;}
 .taskBox .taskList li .taskDetails p{margin:.2rem 0;color: #333;}
 .taskBox .taskList li p.d-details{color: #1682dd;}
 .taskBox .taskList li p.d-details i{margin:0 .2rem;font-size: 1rem;vertical-align: middle;}
@@ -56,7 +56,7 @@ html{font-size: 17px;}
 .taskToolbarBox{position: fixed;bottom: 0;left: 0;right:0;height: 3rem;z-index: 3;}
 .taskToolbarBox .taskToolbar{position: absolute;bottom: 0;left: 0;width: 100%;line-height: 2rem;text-align: center;background: #5E5E5E;color: #fff;font-size: 1rem;font-weight: normal;}
 .taskToolbarBox .taskList{position: absolute;bottom: 3rem;  left: 0;  top: -20rem;  width: 100%;  overflow: scroll;}
-.taskToolbarBox .taskList ul{    height: 20rem;  overflow: scroll;  background: #fff;  position: absolute;  left: 0;  bottom: 0;  right: 0;animation: taskHeight20A .2s;}
+.taskToolbarBox .taskList ul{    height: 20rem;  overflow: scroll;  background: #fff;  position: absolute;  left: 0;  bottom: 0;  right: 0;-webkit-animation: taskHeight20A .2s;animation: taskHeight20A .2s;}
 .taskToolbarBox .taskList li{ padding: .5rem; border-bottom: 1px solid #eaeaea;  font-size: .8rem;text-align: center;}
 .taskToolbarBox .taskList li p.title{text-align: left;}
 .taskToolbarBox .taskToolbar .btn{position:relative;padding:.5rem 0;}
@@ -69,10 +69,10 @@ html{font-size: 17px;}
 .taskToolbarBox .taskToolbar .btn:nth-child(3){background: #F29715;}
 .taskToolbarBox .taskToolbar .col-50.btn:nth-child(1){background: #1682dd;}
 .taskToolbarBox .taskToolbar .col-50.btn:nth-child(2){background: #F29715;}
-.d-fullscreen{position: fixed;top:0;bottom: 0;left: 0;right:0;z-index: 2;  background: rgba(0,0,0,.4);animation: opacityA .2s;}
+.d-fullscreen{position: fixed;top:0;bottom: 0;left: 0;right:0;z-index: 2;  background: rgba(0,0,0,.4);-webkit-animation: opacityA .2s;animation: opacityA .2s;}
 .z-index10{z-index: 10;}
 /*上传图片*/
-.uploadBox, .remarksBox{position: absolute;  top: 20%;  left: 1rem;  right: 1rem;  z-index: 11;animation: opacityA .2s;}
+.uploadBox, .remarksBox{position: absolute;  top: 20%;  left: 1rem;  right: 1rem;  z-index: 11;-webkit-animation: opacityA .2s;animation: opacityA .2s;}
 .uploadBox .uploadDiv{margin-bottom:2rem;height: 15rem;text-align: center;}
 .uploadBox .uploadDiv img{width: 100%;max-height: 100%;min-width: 60%;border: 2px solid #fff;box-sizing: border-box;}
 .uploadBox .uploadBtn{position: relative;text-align: center;}
@@ -107,7 +107,7 @@ html{font-size: 17px;}
 .d-progress .red {  background: #db3a27;  }
 .d-progress .orange {  background: #f2b63c;  }
 .d-progress .blue {  background: #5aaadb;  }
-.tackArea, .taskProgress{margin-bottom: .5rem;padding:.5rem 15px;background: #fff;font-size: .8rem;color: #333;}
+.tackArea, .taskProgress{margin-bottom: .5rem;padding:.5rem .5rem;background: #fff;font-size: .8rem;color: #333;}
 .tackArea .col-40 label, .tackArea .col-60 a{  border: 1px solid #eaeaea;  padding: .2rem .8rem;  border-radius: 5px;  color: #333;  }
 .tackArea .col-40 label i{ margin-left: .3rem; font-size: .7rem; vertical-align: middle;line-height: normal;}
 .tackArea .col-60 a i{margin-left: .3rem;font-size: .8rem;line-height: normal;}
@@ -115,12 +115,12 @@ html{font-size: 17px;}
 .taskProgress h3 span{margin-left: 1rem}
 .taskProgress .line{margin-top: .5rem; color: #666;}
 /*附件*/
-.taskFileBox{padding:1rem 15px;height: -webkit-calc(100% - 3rem);height: calc(100% - 3rem);background: #fff;box-sizing: border-box;font-size: .8rem;color: #333;}
+.taskFileBox{padding:1rem .5rem;height: -webkit-calc(100% - 3rem);height: calc(100% - 3rem);background: #fff;box-sizing: border-box;font-size: .8rem;color: #333;}
 .taskFileBox p{margin-bottom: .2rem;}
 .taskFileBox .msg{margin-top:.5rem;padding: .5rem;border: 1px solid #eaeaea;  font-size: .8rem;  min-height: 20rem;  border-radius: 5px;}
 /*地区选择*/
-.areaSelect, .filtrateBox{ display: none; position: absolute;  top: 44px;  left: 0;  right: 0;  bottom: 0;  z-index: 200;   font-size: .8rem;  color: #333; background: rgba(0,0,0,0.4);overflow: hidden;animation: opacityA .3s; }
-.areaSelect .box, .filtrateBox .box{padding-left:2rem;background: #fff;height: 22rem;overflow: hidden;animation: taskHeightA .3s;}
+.areaSelect, .filtrateBox{ display: none; position: absolute;  top: 44px;  left: 0;  right: 0;  bottom: 0;  z-index: 200;   font-size: .8rem;  color: #333; background: rgba(0,0,0,0.4);overflow: hidden;-webkit-animation:opacityA .3s;animation: opacityA .3s; }
+.areaSelect .box, .filtrateBox .box{padding-left:2rem;background: #fff;height: 22rem;overflow: hidden;-webkit-animation:Atranslate3d .5s;animation: Atranslate3d .5s;}
 .areaSelect .line{  padding: 1rem 0;  border-bottom: 1px solid #eaeaea;  }
 .areaSelect .line:last-child{border-bottom: none;}
 .areaSelect .line h3{ position: relative; font-size: 1rem;  font-weight: normal;  }
@@ -130,7 +130,7 @@ html{font-size: 17px;}
 /*搜索框*/
 .dr-css{font-size: .8rem}
 .dr-css .a-filtrate i{font-size: .7rem;}
-.d-searchBox{padding: .5rem 15px;}
+.d-searchBox{padding: .5rem .5rem;}
 .d-searchBox .d_search{    position: relative;  padding: .5rem 0;  background: #fff;  border-radius: 5px;  font-size: 1rem;  color: #666;}
 .d-searchBox .d_search i{position: absolute;  left: .5rem;  top: .3rem; }
 .d-searchBox .d_search input[type="text"]{border: 0;  padding-left: 2rem;  width: 100%;  box-sizing: border-box;}
@@ -138,13 +138,14 @@ html{font-size: 17px;}
 .filtrateBox .box .link{padding:.8rem 0;border-bottom:1px solid #eaeaea;overflow: auto;zoom: 1;}
 .filtrateBox .box .link a{display:block;width: 25%;text-align: center;float: left;color: #666;}
 .filtrateBox .box .link a i{display: block;font-size: 2.5rem;line-height: normal;}
-.filtrateBox .box .condition{padding: .5rem 15px;font-size: 1rem;}
+.filtrateBox .box .condition{padding: .5rem .5rem;font-size: 1rem;}
 .filtrateBox .box .condition p{margin-bottom: .5rem;}
 .filtrateBox .box .condition p label{position: relative; width: 4rem;display: inline-block;padding-right:.4rem;text-align-last: justify;}
 .filtrateBox .box .condition p label::after{content: ":";position: absolute;  right: .2rem;  top: 0;}
 .filtrateBox .box form input[type="submit"]{    display: block;  margin: 2rem auto 0;  width: 80%;  height: 2.5rem;  border: none;  background: #1682dd;  color: #fff;  font-size: 1rem;  border-radius: 5px;}
+.filtrateBox.active{display: block;}
 /*日历*/
-.StimeBox{margin-bottom:.5rem;padding:.5rem 15px;background: #fff; color: #666;font-size: .8rem;}
+.StimeBox{margin-bottom:.5rem;padding:.5rem .5rem;background: #fff; color: #666;font-size: .8rem;}
 .StimeBox span{ position: relative; display: inline-block; margin: 0 .3rem; padding: .2rem .5rem;max-width: 6rem;  overflow: hidden;  border: 1px solid #eaeaea;border-radius: 5px;box-sizing:border-box; vertical-align: middle;}
 .StimeBox span input{position:relative;width: 100%;border: none;color: #333;background:none;z-index: 2;font-size: .8rem;}
 .StimeBox span i{  position: absolute;top: 20%;right: .3rem;line-height: normal;z-index: 1;font-size: .8rem;}
@@ -156,10 +157,18 @@ html{font-size: 17px;}
 .d-FormFix.searchbar input[type=search]{background-color: #eaeaea;  background-image: none;  padding: 0 28px 0 10px;}
 .d-FormFix .searchbar_form i{ left: 51%;  margin-left: -8%;}
 /*任务填写动画*/
+@-webkit-keyframes taskHeightA { from {height:0;} to {height:22rem;} }
+@-webkit-keyframes taskHeight20A { from {height:0;} to {height:20rem;} }
+@-webkit-keyframes opacityA { from {opacity:0;} to {opacity:1;} }
+@-webkit-keyframes Height100A { from {height:0;} to {height:100%;} }
+@-webkit-keyframes Atranslate3d{ from{transform: translate3d(0,-100%,0);} to{ transform: translate3d(0,0,0);} }/*从上到下动画*/
+
 @keyframes taskHeightA { from {height:0;} to {height:22rem;} }
 @keyframes taskHeight20A { from {height:0;} to {height:20rem;} }
 @keyframes opacityA { from {opacity:0;} to {opacity:1;} }
 @keyframes Height100A { from {height:0;} to {height:100%;} }
+@keyframes Atranslate3d{ from{transform: translate3d(0,-100%,0);} to{ transform: translate3d(0,0,0);} }/*从上到下动画*/
+
 
 @media screen and (max-width: 350px) {
     .taskTabs a i{font-size: 2.2rem;}
@@ -189,20 +198,20 @@ html{font-size: 17px;}
     #Notice_Search .page-content{padding-top: 2rem;}
     #Notice_Search .page-content .head_title i{font-size: .8rem;}
     #Notice_Search .navbar .searchbar-input{height: 1.4rem;}
-    .c_con{    padding: 0 15px;  height: 2.5rem;  box-sizing: border-box;  align-items: center;}
+    .c_con{    padding: 0 .5rem;  height: 2.5rem;  box-sizing: border-box;  align-items: center;}
     .c_con .col-80 .c_search, .c_con .col-20 .c_region a, #Macro_data .navbar .btn{height: 1.4rem;line-height: 1.4rem;}
     .c_con .col-80 .c_search i, .c_con .col-80 .c_search{font-size: .7rem;}
-    .c_con .col-20 .c_region a{font-size: .7rem;text-align: center;}
+    .c_con .col-20 .c_region a{font-size: .7rem;}
     #Notice_Search .navbar  input{font-size: .8rem;}
     #Notice_Search .navbar span, .navbar .right .btnArea, #Task .navbar .center .buttons-row a{height:1.4rem;line-height: 1.4rem;}
     #Notice_Search .navbar  .back, .navbar a.back{width: 2rem;}
     #Notice_Search .navbar  .back i, .navbar a.back i{font-size: .8rem;}
-    #Farm_food .searchbar{padding:0 15px;height: 2.5rem;}
+    #Farm_food .searchbar{padding:0 .5rem;height: 2.5rem;}
     .navbar-fixed>.searchbar~.page-content{padding-top: 5rem;}
     .searchbar .searchbar-input{height: 1.4rem;}
     .navbar .right i{font-size: .8rem;}
     .dr-css .a-filtrate i{font-size: .7rem;}
-    .searchbar.d-FormFix{padding:0 15px;height: 2.5rem;border-bottom: none;}
+    .searchbar.d-FormFix{padding:0 .5rem;height: 2.5rem;border-bottom: none;}
     #Company .page-content ul{height: calc(100% - 2.5rem);}
     #Company .page-content ul,#Company .page-content h1{background: #fff;}
     #Company .page-content{background: none;}

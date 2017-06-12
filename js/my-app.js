@@ -223,23 +223,19 @@ $$(document).on('pageInit', function(e) {
 
     //数据查询-筛选
     if (page.name === 'DataQuery') {
-        $$(".a-filtrate").on("click", function () {
-            toggleSH()
+        $$(".a-filtrate , .filtrateBox").on("click", function () {
+            toggleSH();
         });
         $$(".filtrateBox .box").on("click", function (e) {
             e.stopPropagation();
-        });
-        //点击阴影隐藏
-        $$(".filtrateBox").on("click", function () {
-            $$(".filtrateBox").css('display', 'none');
         });
 
         function toggleSH() {
             var val = $$(".filtrateBox").css('display');
             if (val == 'none') {
-                $$(".filtrateBox").css('display', 'block');
+                $$(".filtrateBox").addClass("active");
             } else {
-                $$(".filtrateBox").css('display', 'none');
+                $$(".filtrateBox").removeClass("active");
             }
         }
     }

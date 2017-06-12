@@ -35,7 +35,7 @@ a {color: #000;}
 .swiper-wrapper.buttons-row .button.active:after{content: "";  position: absolute;  bottom: 0;  left: 40%;  width: 20%;  height: .2rem;  background: #1682dd;}
 #Company .searchbar_form input{color: #1682dd;}
 /*大宗商品和大宗商品通用样式*/
-.dftype .detail_box{padding: .5rem 15px;background-color: #fff;}
+.dftype .detail_box{padding: .5rem .5rem;background-color: #fff;}
 .dftype .detail_box .row{border: 1px solid #E9E9E9;}
 .dftype .detail_box h1{margin-bottom: .3rem;font-size: 1.4rem;font-weight: normal;}
 .dftype .detail_box h1:first-child{letter-spacing: 3px;}
@@ -46,7 +46,7 @@ a {color: #000;}
 .dftype .detail_box .col-40{text-align: right;}
 .dftype .detail_box .col-40 img{width:7.5rem;height: 5.7rem;padding: .6rem .9rem .6rem 0;}
 .dftype .detail_box .Chart{border: 1px solid #E9E9E9;height: 12rem;margin-top: 10px;}
-.dftype .type_new{background-color: #fff;margin-top: .5rem;padding:10px 15px;}
+.dftype .type_new{background-color: #fff;margin-top: .5rem;padding:10px .5rem;}
 .dftype .type_new h1{margin-bottom:.9rem; text-align:center;font-size: 1rem;color: #1682dd;}
 .dftype .type_new ul li{padding-left: .6rem; margin-bottom:.4rem;margin-left: .2rem; color:#999; font-size: 1rem;position: relative;}
 .dftype .type_new ul li a{color: #999;}
@@ -55,7 +55,7 @@ a {color: #000;}
 /*月报和定点单位月报通用页面*/
 ul.Report_list {width: 100%;height:100%;overflow: auto;}
 ul.Report_list li{background-color: #fff;display: block;margin-bottom: 1px;}
-ul.Report_list li a{padding: .5rem 15px;}
+ul.Report_list li a{padding: .5rem .5rem;}
 ul.Report_list li .col-20{height: 5rem;position: relative;}
 ul.Report_list li .col-20 i{font-size: 3.5rem;line-height: normal;}
 ul.Report_list .col-80 {height: 5rem;display: flex;flex-direction: column; align-content: center;justify-content: space-between;}
@@ -122,7 +122,7 @@ p{margin: 0;padding: 0;}
 #Farm_food .page-content .col-75 .row li  p{font-size: .8rem;margin: .3rem 0;}
 
 /*Farm_foodDetail 农贸产品详细*/
-#Farm_foodDetail .detail_box .col-50{padding:5px 10px 4px;font-size: 1.1rem;text-align: left;letter-spacing: 2px;}
+#Farm_foodDetail .detail_box .col-50{padding:5px 10px 4px;font-size: 1rem;text-align: left;letter-spacing: 2px;}
 #Farm_foodDetail .detail_box .row .col-50:nth-child(3){border-top: 1px solid #E9E9E9;border-right: 1px solid #E9E9E9;}
 #Farm_foodDetail .detail_box .row .col-50:nth-child(4){border-top: 1px solid #E9E9E9;color: red;}
 #Farm_foodDetail .detail_box .row .col-50:nth-child(5){border-right: 1px solid #E9E9E9;border-top: 1px solid #E9E9E9;}
@@ -161,7 +161,7 @@ p{margin: 0;padding: 0;}
 #Notice  .buttons-row .button:first-child{border-right:1px solid #eaeaea;}
 #Notice  ul.Notice_list {width: 100%;height:100%; overflow: auto;}
 #Notice  .Notice_list li{background-color: #fff;margin-bottom: 1px;}
-#Notice  .Notice_list li a{padding: .5rem 15px;}
+#Notice  .Notice_list li a{padding: .5rem .5rem;}
 #Notice  .Notice_list li .col-20{position: relative;height: 4rem;}
 #Notice  .Notice_list li .col-20 i{font-size: 3.5rem; color: #3da7ff;;line-height: normal;}
 #Notice  .Notice_list li .col-20::after{content:"";position: absolute;top:0;left: 3rem; display: block;width: .5rem;height: .5rem;border-radius: 50%;background-color: #FF0000;}
@@ -180,7 +180,7 @@ p{margin: 0;padding: 0;}
 #Notice_Search .navbar  input{background-color: #eaeaea;background-image: initial;padding: 0px 5px;}
 #Notice_Search .navbar span{font-size: .8rem;width: 15%;margin-left: .8rem;background-color: #1682dd;text-align: center;height:28px;line-height:28px;border-radius: 5px;color: #fff;}
 #Notice_Search .page-content{background-color: #fff;padding:44px 10px 0;}
-#Notice_Search .page-content .head_title{font-size: 1rem;padding: 15px 0;}
+#Notice_Search .page-content .head_title{font-size: 1rem;padding: .5rem 0;}
 #Notice_Search .page-content  ul li{margin-bottom:.8rem;margin-right:.8rem;font-size: .8rem;padding: .5rem;float: left;background-color: #f5f5f5;border-radius: 5px;line-height: normal;}
 
 /*Notie_News 公告详情*/
@@ -192,7 +192,7 @@ p{margin: 0;padding: 0;}
 #Notie_News p{font: 1rem 微软雅黑;text-indent: 2rem;}
 
 /*我的待办*/
-#ToWork li{background-color: #fff;padding: .7rem 15px;margin-bottom: 1px;}
+#ToWork li{background-color: #fff;padding: .7rem .5rem;margin-bottom: 1px;}
 #ToWork li i{font-size: 5.5rem;margin-top: -.05rem;}
 #ToWork li .details{font-size: 1rem;margin-left: 6.5rem;}
 #ToWork li .details p{font-size: 1.1rem; margin-bottom: 2px; white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
@@ -236,7 +236,7 @@ p{margin: 0;padding: 0;}
 
 /*Judgment 宏观研判*/
 #Judgment ul.Judgment_list li{background-color: #fff;display: block;margin-bottom: 1px;}
-#Judgment ul.Judgment_list li a{padding: .5rem 15px;}
+#Judgment ul.Judgment_list li a{padding: .5rem .5rem;}
 #Judgment ul.Judgment_list li .col-20{height: 4rem;position: relative;}
 #Judgment ul.Judgment_list li .col-20 i{font-size: 3.5rem;color: #3da7ff;line-height: normal;}
 #Judgment ul.Judgment_list li .col-80 {height: 4rem;position: relative;}
@@ -262,7 +262,7 @@ p{margin: 0;padding: 0;}
 #Macro_data .page-content .buttons-row .button:last-child{text-align: right;}
 #Macro_data .page-content .buttons-row .button i{font-size: .8rem;}
 #Macro_data .page-content .data_list ul{margin-top: .5rem;}
-#Macro_data .page-content .data_list ul li a{background-color: #fff;display: flex;justify-content: space-between;align-items: center;padding: .5rem .5rem 0 15px;margin-bottom: 1px;}
+#Macro_data .page-content .data_list ul li a{background-color: #fff;display: flex;justify-content: space-between;align-items: center;padding: .5rem .5rem 0 .5rem;margin-bottom: 1px;}
 #Macro_data .page-content .data_list ul li a>div{font-size: 1rem;display: flex;align-items: center;}
 #Macro_data .page-content .data_list ul li .iconf{flex-shrink: 0;}
 #Macro_data .page-content .data_list ul li .iconf i{font-size: 3.5rem;color: #3da7ff;display: block;line-height: normal;}
@@ -302,7 +302,7 @@ p{margin: 0;padding: 0;}
 #price_news .swiper-pages{height: calc( 100% - 60px);}
 /*普通li*/
 #price_news ul.pricenews_list{background-color: #fff;overflow: auto;height: 100%;}
-#price_news ul.pricenews_list li{padding: .5rem 15px;border-bottom: 1px solid #f0eff5;}
+#price_news ul.pricenews_list li{padding: .5rem .5rem;border-bottom: 1px solid #f0eff5;}
 #price_news ul.pricenews_list li.nomoral a{width: 100%;display: block;}
 #price_news ul.pricenews_list li.nomoral a img{position: relative;top: 50%;display: inline-block;float: left;height: 5rem;width: 25%;}
 #price_news ul.pricenews_list li.nomoral a>div.detail{padding-left:27%;}
@@ -369,7 +369,7 @@ p{margin: 0;padding: 0;}
 #aboutOur .page-content .detail div{margin-top: 5px;}
 #aboutOur .page-content .detail p{display: block;position: relative; width: auto;border: 1px solid #ccc;width: 5rem;margin: 0 auto;font-size: 1rem;padding: 5px;margin-top: 10px;border-radius: 5px;}
 #aboutOur .page-content .detail p span:last-child{position: absolute; display: block; width: 10px;height: 10px;border-radius: 50%;background-color:red;top: -3px;right: -3px;}
-#aboutOur .page-content .text{padding: 0 15px 20px;}
+#aboutOur .page-content .text{padding: 0 .5rem 20px;}
 #aboutOur .page-content .text p{font-size: 1rem;letter-spacing: 1px;text-indent: 2rem;}
 #aboutOur .page-content .text h3{font-size: 1rem;padding: 10px 0;}
 
@@ -397,7 +397,7 @@ p{margin: 0;padding: 0;}
 #InvestigateFill .list-block>ul>li.noMust .photo div span:last-child{display: inline-block;transform: translateY(-50%);width: 0;height: 2em;border-right:1px solid #f0eff5;}
 #InvestigateFill .list-block>ul>li.noMust .btnReport{text-align: center;width: 100%;height: 2.5rem;line-height: 2.5rem;border-radius: 5px;color: #fff;}
 #InvestigateFill .list-block ul.pull_list{position: absolute;right: 5px;bottom: 0;padding: 0;transform: translateY(95%);z-index: 999;border-radius: 5%;border: 1px solid #f0eff5;}
-#InvestigateFill .list-block ul.pull_list li{padding:5px 15px;border-bottom: 1px solid #f0eff5;}
+#InvestigateFill .list-block ul.pull_list li{padding:5px .5rem;border-bottom: 1px solid #f0eff5;}
 #InvestigateFill .list-block ul.pull_list li:last-child{border: none;}
 #InvestigateFill .list-block ul.pull_list li:hover{background-color: #ccc;}
 #InvestigateFill .swiper-pages{height: calc( 100% - 40px);}
