@@ -157,6 +157,19 @@ html{font-size: 17px;}
 .d-FormFix .searchbar_form label{left: 51%;  margin-left: -3%;}
 .d-FormFix.searchbar input[type=search]{background-color: #eaeaea;  background-image: none;  padding: 0 28px 0 10px;}
 .d-FormFix .searchbar_form i{ left: 51%;  margin-left: -8%;}
+/*登陆*/
+.d-login{position:relative;background: -webkit-gradient(linear, 0 0, 0 bottom, from(#09B1F2), to(#016AB3)); background: linear-gradient(#09B1F2, #016AB3);}
+.d-loginNav{background: none;}
+.d-loginNav::after{display: none;}
+.d-login .login-logo{text-align: center;padding:3rem 0;color: #fff;font-size: .8rem;}
+.d-login .login-logo img{width: 5rem;}
+.d-login .list-block {margin: 0 auto;}
+.d-login .list-block .item-content{margin-bottom:1rem;background:#fff;border-radius: 2rem;}
+.d-login .list-block i.iconfont{font-size: 1.2rem;color: #666;line-height: normal;}
+.d-login .list-block .item-inner:after{display: none;}
+.d-login .list-block input[type=text], .d-login .list-block input[type=password]{margin: 0 auto;font-size: .8rem;}
+.d-login input[type="submit"]{ margin-top: 3rem;   height: 44px;  background: #0050A5;  color: #fff;  border-radius: 2rem;  font-size: .8rem;  letter-spacing: 10px;  border: none;}
+.d-login .copyright{position: absolute;left: 0;right: 0;bottom: 0;color: #fff;font-size: .6rem;text-align: center;height: 1.2rem;}
 /*任务填写动画*/
 @-webkit-keyframes taskHeightA { from {height:0;} to {height:22rem;} }
 @-webkit-keyframes taskHeight20A { from {height:0;} to {height:20rem;} }
@@ -172,7 +185,9 @@ html{font-size: 17px;}
 @keyframes Atranslate3d{ from{transform: translate3d(0,-100%,0);} to{ transform: translate3d(0,0,0);} }/*从上到下动画*/
 @keyframes Atranslate3d2{ from{transform: translate3d(0,100%,0);} to{ transform: translate3d(0,0,0);} }/*从下到上动画*/
 
-
+@media screen and (max-width: 420px) {
+    .login-screen-content .list-block{max-width: 90%;}
+}
 @media screen and (max-width: 350px) {
     .taskTabs a i{font-size: 2.2rem;}
     .taskBox .taskList li a{padding: .5rem;}
@@ -180,8 +195,9 @@ html{font-size: 17px;}
     .taskBox .taskList.taskLine-2 li .col-80 h3{margin: 0;}
     .taskBox .taskList.taskLine-3 li .col-80 p{margin-top: .2rem;}
     .areaSelect .box, .filtrateBox .box{height: 20rem;}
-    @keyframes taskHeightA { from {height:0;} to {height:20rem;} }
+    @keyframes taskHeightA { from {height:0;} to {height:20rem;}}
 }
+
 @media screen and (min-width: 375px) {
     .uploadBox, .remarksBox{ left: 2rem;  right: 2rem;}
     .taskToolbarBox .taskToolbar .btn.col-40{padding-left: 4rem;}
@@ -224,6 +240,7 @@ html{font-size: 17px;}
     #Report_pull .btn_box{height: auto;}
     #Report_pull .pull_area{top:4.5rem;}
     .areaSelect, .filtrateBox{top:2rem;}
+    .d-login input[type="submit"]{height: 57px;}
 }
 
 
