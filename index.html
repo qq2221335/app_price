@@ -1,462 +1,518 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-status-bar-style" content="black">
-	<title>首页</title>
-	<link rel="stylesheet" href="css/framework7.ios.colors.min.css"/>
-	<link rel="stylesheet" href="css/framework7.ios.min.css"/>
-	<link rel="stylesheet" type="text/css" href="font/iconfont.css" />
-	<link rel="stylesheet" href="css/index.css" />
-	<link rel="stylesheet" href="css/c_style.css" />
-	<link rel="stylesheet" href="css/task.css" />
-</head>
-<body>
-<div class="panel-overlay"></div>
-<div class="statusbar-overlay"></div>
-<div class="views tabs" id="app">
-	<div id="index" class="view tab active">
-		<div class="pages">
-			<div data-page="index" class="page navbar-fixed toolbar-fixed">
-				<!--导航-->
-				<div class="navbar">
-					<div class="navbar-inner">
-						<div class="left">	
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>首页</title>
+		<link rel="stylesheet" href="css/framework7.ios.colors.min.css" />
+		<link rel="stylesheet" href="css/framework7.ios.min.css" />
+		<link rel="stylesheet" type="text/css" href="font/iconfont.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/c_style.css" />
+		<link rel="stylesheet" href="css/task.css" />
+	</head>
+
+	<body>
+		<div class="panel-overlay"></div>
+		<div class="statusbar-overlay"></div>
+		<div class="views tabs" id="app">
+			<div id="index" class="view tab active">
+				<div class="pages">
+					<div data-page="index" class="page navbar-fixed toolbar-fixed">
+						<!--导航-->
+						<div class="navbar">
+							<div class="navbar-inner">
+								<div class="left">
+								</div>
+								<div class="center">广东价格</div>
+								<div class="right">
+									<a href="mail_message.html"><i class="iconfont icon-duihua"></i></a>
+								</div>
+							</div>
 						</div>
-						<div class="center">广东价格</div>
-						<div class="right">
-							<a href="mail_message.html"><i class="iconfont icon-duihua"></i></a>
+						<!--内容-->
+						<div class="page-content">
+							<!--地区和搜索框-->
+							<div class="row c_con no-gutter">
+								<div class="col-20">
+									<div class="c_region">
+										<a href="#" onclick="areaToChange(this);"><span class="a-tackArea">广东</span><i class="iconfont icon-11"></i></a>
+									</div>
+								</div>
+								<div class="col-80">
+									<a href="SearchIndex.html">
+										<div class="c_search"><i class="iconfont icon-llhomesearch"></i>搜索商品</div>
+									</a>
+								</div>
+							</div>
+							<!--8个按钮-->
+							<div class="row c_row">
+								<div class="col-25">
+									<a href="Farm_food.html"><i class="iconfont icon-nongmaoshipin bule"></i><span>农贸食品</span></a>
+								</div>
+								<div class="col-25">
+									<a href="LoginPage.html" class="open-login-screen"><i class="iconfont icon-chaoshishipin red"></i><span>超市食品</span></a>
+								</div>
+								<div class="col-25">
+									<a href="Big_Commodity.html"><i class="iconfont icon-dazongshangpin yellow"></i><span>大众商品</span></a>
+								</div>
+								<div class="col-25">
+									<a href="#"><i class="iconfont icon-gongyechanpin green"></i><span>工业产品</span></a>
+								</div>
+								<div class="col-25">
+									<a href="Price_news.html"><i class="iconfont icon-jiagezixun yellow"></i><span>价格资讯</span></a>
+								</div>
+								<div class="col-25">
+									<a href="#"><i class="iconfont icon-jiagezhishu green"></i><span>价格指数</span></a>
+								</div>
+								<div class="col-25">
+									<a href="PriceWarning.html"><i class="iconfont icon-jiageyujing bule"></i><span>价格预警</span></a>
+								</div>
+								<div class="col-25">
+									<a href="my_application.html"><i class="iconfont icon-1 red"></i><span>全部</span></a>
+								</div>
+							</div>
+
+							<!--最新价格-->
+							<div class="row c_row c_margin-top no-gutter c_padding-bottom">
+								<div class="col-100 c_margin-bottom"><b>最新价格</b>
+									<a class="right" href="Farm_food.html">全部</a>
+								</div>
+								<div class="col-33">
+									<a href="#">
+										<p><i class="iconfont icon-liangshinew bule"></i><b>粮食</b></p>
+										<p><b class="red">20.00</b><samp class="red">元</samp></p>
+										<p><samp>环比:</samp><samp class="red">+0.15%</samp></p>
+									</a>
+								</div>
+								<div class="col-33">
+									<a href="#">
+										<p><i class="iconfont icon-liangshinew bule"></i><b>粮食</b></p>
+										<p><b class="red">20.00</b><samp class="red">元</samp></p>
+										<p><samp>环比:</samp><samp class="green">+0.15%</samp></p>
+									</a>
+								</div>
+								<div class="col-33">
+									<a href="#">
+										<p><i class="iconfont icon-liangshinew bule"></i><b>粮食</b></p>
+										<p><b class="red">20.00</b><samp class="red">元</samp></p>
+										<p><samp>环比:</samp><samp class="red">+0.15%</samp></p>
+									</a>
+								</div>
+							</div>
+
+							<!--最新咨询-->
+							<div class="row c_row c_padding-bottom">
+								<div class="col-100 c_clo-100 c_margin-bottom"><b>最新咨询</b>
+									<a class="right" href="Price_news.html">全部</a>
+								</div>
+								<div class="col-100 c_margin-bottom">
+									<a href="Notice_News.html">
+										<div class="row no-gutter">
+											<div class="col-25"><img src="images/11.png" /></div>
+											<div class="col-75">
+												<h1>本周广东省主要农产品零售价格平稳运行</h1>
+												<p class="text">我省粮食市场零售价格保持稳定，晚籼米、丝苗...</p>
+												<p class="left">广东省发改委价格监测中心</p>
+												<p class="right">2016-12-11</p>
+											</div>
+										</div>
+									</a>
+									<a href="Notice_News.html">
+										<div class="row no-gutter">
+											<div class="col-25"><img src="images/11.png" /></div>
+											<div class="col-75">
+												<h1>本周广东省主要农产品零售价格平稳运行</h1>
+												<p>我省粮食市场零售价格保持稳定，晚籼米、丝苗...</p>
+												<p class="left">广东省发改委价格监测中心</p>
+												<p class="right">2016-12-11</p>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+
 						</div>
+
+						<!--区域选择-->
+						<div class="areaSelect">
+							<div class="box">
+								<div class="line">
+									<h3>珠三角</h3>
+									<ul>
+										<li>广州</li>
+										<li>深圳</li>
+										<li>珠海</li>
+										<li>佛山</li>
+										<li>江山</li>
+										<li>中山</li>
+										<li>东莞</li>
+										<li>惠州</li>
+										<li>肇庆</li>
+									</ul>
+								</div>
+								<div class="line">
+									<h3>粤东</h3>
+									<ul>
+										<li>汕头</li>
+										<li>潮州</li>
+										<li>揭阳</li>
+										<li>汕尾</li>
+									</ul>
+								</div>
+								<div class="line">
+									<h3>粤西</h3>
+									<ul>
+										<li>湛江</li>
+										<li>茂名</li>
+										<li>阳江</li>
+										<li>云浮</li>
+									</ul>
+								</div>
+								<div class="line">
+									<h3>粤北</h3>
+									<ul>
+										<li>韶关</li>
+										<li>清远</li>
+										<li>河源</li>
+										<li>梅州</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!--结束-->
 					</div>
 				</div>
-				<!--内容-->
-				<div class="page-content">
-					<!--地区和搜索框-->
-					<div class="row c_con no-gutter">
-						<div class="col-20"><div class="c_region"><a href="#" onclick="areaToChange(this);"><span class="a-tackArea">广东</span><i class="iconfont icon-11"></i></a></div></div>
-						<div class="col-80"><a href="SearchIndex.html"><div class="c_search"><i class="iconfont icon-llhomesearch"></i>搜索商品</div></a></div>
-					</div>
-					<!--8个按钮-->
-					<div class="row c_row">
-					    	<div class="col-25"><a href="Farm_food.html"><i class="iconfont icon-nongmaoshipin bule"></i><span>农贸食品</span></a></div>
-					    	<div class="col-25"><a href="LoginPage.html" class="open-login-screen"><i class="iconfont icon-chaoshishipin red"></i><span>超市食品</span></a></div>
-					    	<div class="col-25"><a href="Big_Commodity.html"><i class="iconfont icon-dazongshangpin yellow"></i><span>大众商品</span></a></div>
-					    	<div class="col-25"><a href="#"><i class="iconfont icon-gongyechanpin green"></i><span>工业产品</span></a></div>
-					    	<div class="col-25"><a href="Price_news.html"><i class="iconfont icon-jiagezixun yellow"></i><span>价格资讯</span></a></div>
-					    	<div class="col-25"><a href="#"><i class="iconfont icon-jiagezhishu green"></i><span>价格指数</span></a></div>
-					    	<div class="col-25"><a href="PriceWarning.html"><i class="iconfont icon-jiageyujing bule"></i><span>价格预警</span></a></div>
-					    	<div class="col-25"><a href="my_application.html"><i class="iconfont icon-1 red"></i><span>全部</span></a></div>
-					</div>
-					
-					<!--最新价格-->
-					<div class="row c_row c_margin-top no-gutter c_padding-bottom">
-						<div class="col-100 c_margin-bottom"><b>最新价格</b> <a class="right" href="Farm_food.html">全部</a></div>
-					    	<div class="col-33">
-					    		<a href="#">
-					    		<p><i class="iconfont icon-liangshinew bule"></i><b>粮食</b></p>
-					    		<p><b class="red">20.00</b><samp class="red">元</samp></p>
-					    		<p><samp>环比:</samp><samp class="red">+0.15%</samp></p>
-					    		</a>
-					    	</div>
-					    	<div class="col-33">
-					    		<a href="#">
-					    		<p><i class="iconfont icon-liangshinew bule"></i><b>粮食</b></p>
-					    		<p><b class="red">20.00</b><samp class="red">元</samp></p>
-					    		<p><samp>环比:</samp><samp class="green">+0.15%</samp></p>
-					    		</a>
-					    	</div>
-					    	<div class="col-33">
-					    		<a href="#">
-					    		<p><i class="iconfont icon-liangshinew bule"></i><b>粮食</b></p>
-					    		<p><b class="red">20.00</b><samp class="red">元</samp></p>
-					    		<p><samp>环比:</samp><samp class="red">+0.15%</samp></p>
-					    		</a>
-					    	</div>
-					</div>
-					
-					<!--最新咨询-->
-					<div class="row c_row c_padding-bottom">
-						<div class="col-100 c_clo-100 c_margin-bottom"><b>最新咨询</b> <a class="right" href="Price_news.html">全部</a></div>
-					    	<div class="col-100 c_margin-bottom">
-					    		<a href="Notice_News.html">
-									<div class="row no-gutter">
-										<div class="col-25"><img src="images/11.png"/></div>
-										<div class="col-75">
-											<h1>本周广东省主要农产品零售价格平稳运行</h1>
-											<p class="text">我省粮食市场零售价格保持稳定，晚籼米、丝苗...</p>
-											<p class="left">广东省发改委价格监测中心</p>
-											<p class="right">2016-12-11</p>
+			</div>
+
+			<!--任务-->
+			<div id="index-Task" class="view tab">
+				<div class="pages">
+					<div data-page="TaskIndex" class="page navbar-fixed">
+						<!--导航-->
+						<div class="navbar">
+							<div class="navbar-inner">
+								<div class="left"></div>
+								<div class="center">任务</div>
+								<div class="right"></div>
+							</div>
+						</div>
+						<!--内容-->
+						<div class="page-content">
+							<!-- tabs控制面板 -->
+							<!--加class：d-tab4 一行四个-->
+							<div class="taskTabs">
+								<a href="#tab1" class="tab-link active "><i class="iconfont color-dblue">&#xe6a0;</i>待审核</a>
+								<a href="#tab2" class="tab-link "><i class="iconfont color-dred">&#xe69e;</i>待填报</a>
+								<a href="#tab3" class="tab-link "><i class="iconfont color-dgreen">&#xe69a;</i>审核中</a>
+								<a href="#tab4" class="tab-link "><i class="iconfont color-dorange">&#xe69b;</i>已退回</a>
+								<a href="#tab5" class="tab-link "><i class="iconfont color-dgreen">&#xe69d;</i>已完成</a>
+							</div>
+							<div class="content-block taskBox">
+								<div class="tabs">
+									<!--待审核-->
+									<div id="tab1" class="tab active">
+										<div class="taskList">
+											<ul>
+												<li>
+													<a href="checkTask/TaskOverview.html" class="row no-gutter">
+														<div class="col-20 new"><i class="iconfont color-dgreen">&#xe6a2;</i></div>
+														<div class="row col-80">
+															<h3>广东国际大宗商品价格监测日报（审核者）</h3>
+															<p class="col-50">实审/应审：<span>0/1</span></p>
+															<p class="col-50">实审/应审：<span>1/1</span></p>
+															<p>剩余时间：<span>3小时39分</span></p>
+															<p>报告期：<span>2016-12-12（第139期）</span></p>
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="task/TaskWrite.html" class="row no-gutter">
+														<div class="col-20"><i class="iconfont color-dblue">&#xe6a1;</i></div>
+														<div class="row col-80">
+															<h3>广东国际大宗商品价格监测日报（填报者）</h3>
+															<p class="col-50">实审/应审：<span>0/1</span></p>
+															<p class="col-50">实审/应审：<span>1/1</span></p>
+															<p>剩余时间：<span>3小时39分</span></p>
+															<p>报告期：<span>2016-12-12（第139期）</span></p>
+														</div>
+													</a>
+												</li>
+											</ul>
 										</div>
 									</div>
-        						</a>
-								<a href="Notice_News.html">
-									<div class="row no-gutter">
-										<div class="col-25"><img src="images/11.png"/></div>
-										<div class="col-75">
-											<h1>本周广东省主要农产品零售价格平稳运行</h1>
-											<p>我省粮食市场零售价格保持稳定，晚籼米、丝苗...</p>
-											<p class="left">广东省发改委价格监测中心</p>
-											<p class="right">2016-12-11</p>
+									<!--待填报-->
+									<div id="tab2" class="tab">
+										<div class="taskList taskLine-3">
+											<ul>
+												<li>
+													<a href="#" class="row no-gutter">
+														<div class="col-20"><i class="iconfont color-dgreen">&#xe6a2;</i></div>
+														<div class="row col-80">
+															<h3>广东国际大宗商品价格监测日报</h3>
+															<p>状态：<span>未完成</span></p>
+															<p>报告期：<span>2016-12-12（第139期）</span></p>
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="#" class="row no-gutter">
+														<div class="col-20"><i class="iconfont color-dblue">&#xe6a1;</i></div>
+														<div class="row col-80">
+															<h3>广东国际大宗商品价格监测日报</h3>
+															<p>状态：<span>未完成</span></p>
+															<p>报告期：<span>2016-12-12（第139期）</span></p>
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="#" class="row no-gutter">
+														<div class="col-20"><i class="iconfont color-dblue">&#xe6a1;</i></div>
+														<div class="row col-80">
+															<h3>广东国际大宗商品价格监测日报</h3>
+															<p>状态：<span>未完成</span></p>
+															<p>报告期：<span>2016-12-12（第139期）</span></p>
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="#" class="row no-gutter">
+														<div class="col-20"><i class="iconfont color-dgreen">&#xe6a2;</i></div>
+														<div class="row col-80">
+															<h3>广东国际大宗商品价格监测日报</h3>
+															<p>状态：<span>未完成</span></p>
+															<p>报告期：<span>2016-12-12（第139期）</span></p>
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="#" class="row no-gutter">
+														<div class="col-20"><i class="iconfont color-dblue">&#xe6a1;</i></div>
+														<div class="row col-80">
+															<h3>广东国际大宗商品价格监测日报</h3>
+															<p>状态：<span>未完成</span></p>
+															<p>报告期：<span>2016-12-12（第139期）</span></p>
+														</div>
+													</a>
+												</li>
+											</ul>
 										</div>
 									</div>
+									<!--审核中-->
+									<div id="tab3" class="tab">
+										<div class="taskList taskLine-2">
+											<ul>
+												<li>
+													<a href="#" class="row no-gutter">
+														<div class="col-20"><i class="iconfont color-dgreen">&#xe6a2;</i></div>
+														<div class="row col-80">
+															<h3>广东国际大宗商品价格监测日报</h3>
+															<p>报告期：<span>2016-12-12（第139期）</span></p>
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="#" class="row no-gutter">
+														<div class="col-20"><i class="iconfont color-dblue">&#xe6a1;</i></div>
+														<div class="row col-80">
+															<h3>广东国际大宗商品价格监测日报222</h3>
+															<p>报告期：<span>2016-12-12（第139期）</span></p>
+														</div>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<!--已退回-->
+									<div id="tab4" class="tab">
+										<div class="taskList">
+											<ul>
+												<li>
+													<a href="#" class="row no-gutter">
+														<div class="col-20"><i class="iconfont color-dgreen">&#xe6a2;</i></div>
+														<div class="row col-80">
+															<h3>广东国际大宗商品价格监测日报</h3>
+															<p class="col-50">实审/应审：<span>0/1</span></p>
+															<p class="col-50">实审/应审：<span>1/1</span></p>
+															<p>剩余时间：<span>3小时39分</span></p>
+															<p>报告期：<span>2016-12-12（第139期）</span></p>
+														</div>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<!--已完成-->
+									<div id="tab5" class="tab">
+										<div class="taskList taskLine-3">
+											<ul>
+												<li>
+													<a href="#" class="row no-gutter">
+														<div class="col-20"><i class="iconfont color-dgreen">&#xe6a2;</i></div>
+														<div class="row col-80">
+															<h3>广东国际大宗商品价格监测日报</h3>
+															<p>报告期：<span>2016-12-12</span></p>
+															<p>完成时间：<span>2016-12-12 11:21</span></p>
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="#" class="row no-gutter">
+														<div class="col-20"><i class="iconfont color-dblue">&#xe6a1;</i></div>
+														<div class="row col-80">
+															<h3>广东国际大宗商品价格监测日报222</h3>
+															<p>报告期：<span>2016-12-12</span></p>
+															<p>完成时间：<span>2016-12-12 11:21</span></p>
+														</div>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--结束-->
+					</div>
+				</div>
+
+			</div>
+			<!--结束-->
+
+			<!--查询-->
+			<div id="index-Search" class="view tab">
+				<div class="pages">
+					<div data-page="SearchIndex" class="page navbar-fixed">
+						<div class="navbar">
+							<div class="navbar-inner">
+								<div class="left"></div>
+								<div class="center">查询</div>
+								<div class="right"></div>
+							</div>
+						</div>
+						<div class="page-content c_body">
+							<div class="c_seeks">
+								<a href="DataQuery.html">
+									<i class="iconfont icon-shujuchaxun_ green"></i>
+									<p>数据查询</p>
 								</a>
-					    	</div>
-					</div>
-
-				</div>
-
-				<!--区域选择-->
-				<div class="areaSelect">
-					<div class="box">
-						<div class="line">
-							<h3>珠三角</h3>
-							<ul>
-								<li>广州</li>
-								<li>深圳</li>
-								<li>珠海</li>
-								<li>佛山</li>
-								<li>江山</li>
-								<li>中山</li>
-								<li>东莞</li>
-								<li>惠州</li>
-								<li>肇庆</li>
-							</ul>
-						</div>
-						<div class="line">
-							<h3>粤东</h3>
-							<ul>
-								<li>汕头</li>
-								<li>潮州</li>
-								<li>揭阳</li>
-								<li>汕尾</li>
-							</ul>
-						</div>
-						<div class="line">
-							<h3>粤西</h3>
-							<ul>
-								<li>湛江</li>
-								<li>茂名</li>
-								<li>阳江</li>
-								<li>云浮</li>
-							</ul>
-						</div>
-						<div class="line">
-							<h3>粤北</h3>
-							<ul>
-								<li>韶关</li>
-								<li>清远</li>
-								<li>河源</li>
-								<li>梅州</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<!--结束-->
-			</div>
-		</div>
-	</div>
-
-
-	<!--任务-->
-	<div id="index-Task" class="view tab">
-		<div class="pages">
-			<div data-page="TaskIndex" class="page navbar-fixed">
-				<!--导航-->
-				<div class="navbar">
-					<div class="navbar-inner">
-						<div class="left"></div>
-						<div class="center">任务</div>
-						<div class="right"></div>
-					</div>
-				</div>
-				<!--内容-->
-				<div class="page-content">
-					<!-- tabs控制面板 -->
-					<!--加class：d-tab4 一行四个-->
-					<div class="taskTabs">
-						<a href="#tab1" class="tab-link active "><i class="iconfont color-dblue">&#xe6a0;</i>待审核</a>
-						<a href="#tab2" class="tab-link "><i class="iconfont color-dred">&#xe69e;</i>待填报</a>
-						<a href="#tab3" class="tab-link "><i class="iconfont color-dgreen">&#xe69a;</i>审核中</a>
-						<a href="#tab4" class="tab-link "><i class="iconfont color-dorange">&#xe69b;</i>已退回</a>
-						<a href="#tab5" class="tab-link "><i class="iconfont color-dgreen">&#xe69d;</i>已完成</a>
-					</div>
-					<div class="content-block taskBox">
-						<div class="tabs">
-							<!--待审核-->
-							<div id="tab1" class="tab active">
-								<div class="taskList">
-									<ul>
-										<li><a href="checkTask/TaskOverview.html" class="row no-gutter">
-											<div class="col-20 new"><i class="iconfont color-dgreen">&#xe6a2;</i></div>
-											<div class="row col-80">
-												<h3>广东国际大宗商品价格监测日报（审核者）</h3>
-												<p class="col-50">实审/应审：<span>0/1</span></p>
-												<p class="col-50">实审/应审：<span>1/1</span></p>
-												<p>剩余时间：<span>3小时39分</span></p>
-												<p>报告期：<span>2016-12-12（第139期）</span></p>
-											</div>
-										</a></li>
-										<li><a href="task/TaskWrite.html"  class="row no-gutter">
-											<div class="col-20"><i class="iconfont color-dblue">&#xe6a1;</i></div>
-											<div class="row col-80">
-												<h3>广东国际大宗商品价格监测日报（填报者）</h3>
-												<p class="col-50">实审/应审：<span>0/1</span></p>
-												<p class="col-50">实审/应审：<span>1/1</span></p>
-												<p>剩余时间：<span>3小时39分</span></p>
-												<p>报告期：<span>2016-12-12（第139期）</span></p>
-											</div>
-										</a></li>
-									</ul>
-								</div>
 							</div>
-							<!--待填报-->
-							<div id="tab2" class="tab">
-								<div class="taskList taskLine-3">
-									<ul>
-										<li><a href="#" class="row no-gutter">
-											<div class="col-20"><i class="iconfont color-dgreen">&#xe6a2;</i></div>
-											<div class="row col-80">
-												<h3>广东国际大宗商品价格监测日报</h3>
-												<p>状态：<span>未完成</span></p>
-												<p>报告期：<span>2016-12-12（第139期）</span></p>
-											</div>
-										</a></li>
-										<li><a href="#" class="row no-gutter">
-											<div class="col-20"><i class="iconfont color-dblue">&#xe6a1;</i></div>
-											<div class="row col-80">
-												<h3>广东国际大宗商品价格监测日报</h3>
-												<p>状态：<span>未完成</span></p>
-												<p>报告期：<span>2016-12-12（第139期）</span></p>
-											</div>
-										</a></li>
-										<li><a href="#" class="row no-gutter">
-											<div class="col-20"><i class="iconfont color-dblue">&#xe6a1;</i></div>
-											<div class="row col-80">
-												<h3>广东国际大宗商品价格监测日报</h3>
-												<p>状态：<span>未完成</span></p>
-												<p>报告期：<span>2016-12-12（第139期）</span></p>
-											</div>
-										</a></li>
-										<li><a href="#" class="row no-gutter">
-											<div class="col-20"><i class="iconfont color-dgreen">&#xe6a2;</i></div>
-											<div class="row col-80">
-												<h3>广东国际大宗商品价格监测日报</h3>
-												<p>状态：<span>未完成</span></p>
-												<p>报告期：<span>2016-12-12（第139期）</span></p>
-											</div>
-										</a></li>
-										<li><a href="#" class="row no-gutter">
-											<div class="col-20"><i class="iconfont color-dblue">&#xe6a1;</i></div>
-											<div class="row col-80">
-												<h3>广东国际大宗商品价格监测日报</h3>
-												<p>状态：<span>未完成</span></p>
-												<p>报告期：<span>2016-12-12（第139期）</span></p>
-											</div>
-										</a></li>
-									</ul>
-								</div>
-							</div>
-							<!--审核中-->
-							<div id="tab3" class="tab">
-								<div class="taskList taskLine-2">
-									<ul>
-										<li><a href="#" class="row no-gutter">
-											<div class="col-20"><i class="iconfont color-dgreen">&#xe6a2;</i></div>
-											<div class="row col-80">
-												<h3>广东国际大宗商品价格监测日报</h3>
-												<p>报告期：<span>2016-12-12（第139期）</span></p>
-											</div>
-										</a></li>
-										<li><a href="#"  class="row no-gutter">
-											<div class="col-20"><i class="iconfont color-dblue">&#xe6a1;</i></div>
-											<div class="row col-80">
-												<h3>广东国际大宗商品价格监测日报222</h3>
-												<p>报告期：<span>2016-12-12（第139期）</span></p>
-											</div>
-										</a></li>
-									</ul>
-								</div>
-							</div>
-							<!--已退回-->
-							<div id="tab4" class="tab">
-								<div class="taskList">
-									<ul>
-										<li><a href="#" class="row no-gutter">
-											<div class="col-20"><i class="iconfont color-dgreen">&#xe6a2;</i></div>
-											<div class="row col-80">
-												<h3>广东国际大宗商品价格监测日报</h3>
-												<p class="col-50">实审/应审：<span>0/1</span></p>
-												<p class="col-50">实审/应审：<span>1/1</span></p>
-												<p>剩余时间：<span>3小时39分</span></p>
-												<p>报告期：<span>2016-12-12（第139期）</span></p>
-											</div>
-										</a></li>
-									</ul>
-								</div>
-							</div>
-							<!--已完成-->
-							<div id="tab5" class="tab">
-								<div class="taskList taskLine-3">
-									<ul>
-										<li><a href="#" class="row no-gutter">
-											<div class="col-20"><i class="iconfont color-dgreen">&#xe6a2;</i></div>
-											<div class="row col-80">
-												<h3>广东国际大宗商品价格监测日报</h3>
-												<p>报告期：<span>2016-12-12</span></p>
-												<p>完成时间：<span>2016-12-12 11:21</span></p>
-											</div>
-										</a></li>
-										<li><a href="#"  class="row no-gutter">
-											<div class="col-20"><i class="iconfont color-dblue">&#xe6a1;</i></div>
-											<div class="row col-80">
-												<h3>广东国际大宗商品价格监测日报222</h3>
-												<p>报告期：<span>2016-12-12</span></p>
-												<p>完成时间：<span>2016-12-12 11:21</span></p>
-											</div>
-										</a></li>
-									</ul>
-								</div>
+							<div class="c_seeks">
+								<a href="#">
+									<i class="iconfont icon-shujuchaxun bule"></i>
+									<p>信息查询</p>
+								</a>
 							</div>
 						</div>
-					</div>
-				</div>
-				<!--结束-->
-			</div>
-		</div>
-
-	</div>
-	<!--结束-->
-
-	<!--查询-->
-	<div id="index-Search" class="view tab">
-		<div class="pages">
-			<div data-page="SearchIndex" class="page navbar-fixed">
-				<div class="navbar">
-					<div class="navbar-inner">
-						<div class="left"></div>
-						<div class="center">查询</div>
-						<div class="right"></div>
-					</div>
-				</div>
-				<div class="page-content c_body">
-					<div class="c_seeks">
-						<a href="DataQuery.html">
-							<i class="iconfont icon-shujuchaxun_ green"></i>
-							<p>数据查询</p>
-						</a>
-					</div>
-					<div class="c_seeks">
-						<a href="#">
-							<i class="iconfont icon-shujuchaxun bule"></i>
-							<p>信息查询</p>
-						</a>
 					</div>
 				</div>
 			</div>
-		</div>
-	</div>
-	<!--结束-->
+			<!--结束-->
 
-	<!--我的-->
-	<div id="index-Wo" class="view tab">
-		<div class="pages">
-			<div data-page="woIndex" class="page navbar-fixed">
+			<!--我的-->
+			<div id="index-Wo" class="view tab">
+				<div class="pages">
+					<div data-page="woIndex" class="page navbar-fixed">
 
-				<div class="navbar">
-					<div class="navbar-inner">
-						<div class="left"></div>
-						<div class="center">我的</div>
-						<div class="right">
+						<div class="navbar">
+							<div class="navbar-inner">
+								<div class="left"></div>
+								<div class="center">我的</div>
+								<div class="right">
+								</div>
+							</div>
 						</div>
-					</div>
-				</div>
-				<!--内容-->
-				<div class="page-content">
-						<!--登陆状态-->
-						<div class="user_box">
-							<div  class="login-after">
+						<!--内容-->
+						<div class="page-content">
+							<!--登陆状态-->
+							<div class="user_box">
+								<div class="login-after">
+									<div class="list-block">
+										<ul>
+											<li>
+												<a href="index-woDetail.html" class="item-link item-content">
+													<div class="item-media">
+														<div class="navbar-inner-img"><img src="images/images.png" alt=""></div>
+													</div>
+													<div class="item-inner">
+														<p class="userName">陈志辉</p>
+														<p class="userCompany">广东省监测中心</p>
+
+													</div>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div id="login-before" style="display: none">
+									<div class="list-block user-margin">
+										<ul>
+											<li>
+												<a href="#" class="item-link item-content open-login-screen">
+													<div class="item-media">
+														<div class="navbar-inner-img"><img src="images/我的_06.png" alt=""></div>
+													</div>
+													<div class="item-inner">
+														<div class="item-title">
+															<p id="user-title">您还没有登录</p>
+														</div>
+														<div class="user-box-btn">点击登录</div>
+													</div>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!--结束-->
+
+							<!--栏目1-->
+							<div class="wo_box1">
 								<div class="list-block">
 									<ul>
 										<li>
-											<a href="index-woDetail.html" class="item-link item-content">
-												<div class="item-media"><div class="navbar-inner-img"><img src="images/images.png" alt=""></div></div>
+											<a href="Company.html" class="item-link item-content a-width">
+												<div class="item-media"><i class="iconfont icon-shigongdanweisel color-dblue"></i></div>
 												<div class="item-inner">
-													<p class="userName">陈志辉</p>
-													<p class="userCompany">广东省监测中心</p>
-
+													<div class="item-title">定点单位</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="InvestigateFill.html" class="item-link item-content a-width">
+												<div class="item-media"><i class="iconfont icon-lishihuiyijilu color-dorange"></i></div>
+												<div class="item-inner">
+													<div class="item-title">明察暗访</div>
 												</div>
 											</a>
 										</li>
 									</ul>
 								</div>
 							</div>
-							<div  id="login-before" style="display: none">
-								<div class="list-block user-margin">
+							<!--结束-->
+
+							<!--栏目2-->
+							<div class="wo_box2">
+								<div class="list-block">
 									<ul>
 										<li>
-											<a href="#" class="item-link item-content open-login-screen">
-												<div class="item-media"><div class="navbar-inner-img"><img src="images/我的_06.png" alt=""></div></div>
+											<a href="javascript:void(0)" class="item-link item-content a-width">
+												<div class="item-media"><i class="iconfont icon-yjgl-a2 color-dgreen"></i></div>
 												<div class="item-inner">
-													<div class="item-title">
-														<p id="user-title">您还没有登录</p>
-													</div>
-													<div class="user-box-btn">点击登录</div>
+													<div class="item-title">主动预警</div>
 												</div>
 											</a>
 										</li>
 									</ul>
 								</div>
 							</div>
-						</div>
-						<!--结束-->
-						
-						<!--栏目1-->
-						<div class="wo_box1">
+							<!--结束-->
+
+							<!--关于我们-->
 							<div class="list-block">
-								<ul>
-									<li>
-										<a href="Company.html" class="item-link item-content a-width">
-											<div class="item-media"><i class="iconfont icon-shigongdanweisel color-dblue"></i></div>
-											<div class="item-inner">
-												<div class="item-title">定点单位</div>
-											</div>
-										</a>
-									</li>
-									<li>
-										<a href="InvestigateFill.html" class="item-link item-content a-width">
-											<div class="item-media"><i class="iconfont icon-lishihuiyijilu color-dorange"></i></div>
-											<div class="item-inner">
-												<div class="item-title">明察暗访</div>
-											</div>
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<!--结束-->
-						
-						<!--栏目2-->
-						<div class="wo_box2">
-							<div class="list-block">
-								<ul>
-									<li>
-										<a href="javascript:void(0)" class="item-link item-content a-width">
-											<div class="item-media"><i class="iconfont icon-yjgl-a2 color-dgreen"></i></div>
-											<div class="item-inner">
-												<div class="item-title">主动预警</div>
-											</div>
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<!--结束-->
-				
-						<!--关于我们-->
-						<div class="list-block">
 								<ul>
 									<li>
 										<a href="aboutOur.html" class="item-link item-content a-width">
@@ -468,41 +524,40 @@
 									</li>
 								</ul>
 							</div>
-						
-						
+
+							<!--结束-->
+						</div>
 						<!--结束-->
+					</div>
+
 				</div>
-				<!--结束-->
 			</div>
 
+			<!--尾部-->
+			<div class="toolbar tabbar tabbar-labels">
+				<div class="toolbar-inner">
+					<a href="#index" class="tab-link active">
+						<i class="iconfont icon-shouye1"></i>
+						<span class="tabbar-label">首页</span>
+					</a>
+					<a href="#index-Task" class="tab-link">
+						<i class="iconfont icon-renwu2"></i>
+						<span class="tabbar-label">任务</span>
+					</a>
+					<a href="#index-Search" class="tab-link">
+						<i class="iconfont icon-chaxun2"></i>
+						<span class="tabbar-label">查询</span>
+					</a>
+					<a href="#index-Wo" class="tab-link">
+						<i class="iconfont icon-wo1"></i>
+						<span class="tabbar-label">我的</span>
+					</a>
+				</div>
+			</div>
 		</div>
-	</div>
 
-	<!--尾部-->
-	<div class="toolbar tabbar tabbar-labels">
-		<div class="toolbar-inner">
-			<a href="#index" class="tab-link active">
-				<i class="iconfont icon-shouye1"></i>
-				<span class="tabbar-label">首页</span>
-			</a>
-			<a href="#index-Task" class="tab-link">
-				<i class="iconfont icon-renwu2"></i>
-				<span class="tabbar-label">任务</span>
-			</a>
-			<a href="#index-Search" class="tab-link">
-				<i class="iconfont icon-chaxun2"></i>
-				<span class="tabbar-label" >查询</span>
-			</a>
-			<a href="#index-Wo" class="tab-link">
-				<i class="iconfont icon-wo1"></i>
-				<span class="tabbar-label">我的</span>
-			</a>
-		</div>
-	</div>
-</div>
-
-<!--登录窗口-->
-<!--<div class="login-screen modal-in">
+		<!--登录窗口-->
+		<!--<div class="login-screen modal-in">
 	<div class="view">
 		<div class="page">
 			<div class="page-content login-screen-content d-login">
@@ -543,12 +598,13 @@
 		</div>
 	</div>
 </div>-->
-<!--登录窗口结束-->
+		<!--登录窗口结束-->
 
-<script type="text/javascript" src="js/framework7.min.js"></script>
-<script type="text/javascript" src="js/vue.js" ></script>
-<script type="text/javascript" src="js/index_vue.js"></script>
-<script type="text/javascript" src="js/my-app.js"></script>
-<script type="text/javascript" src="js/c_style.js"></script>
-</body>
+		<script type="text/javascript" src="js/framework7.min.js"></script>
+		<script type="text/javascript" src="js/vue.js"></script>
+		<script type="text/javascript" src="js/index_vue.js"></script>
+		<script type="text/javascript" src="js/my-app.js"></script>
+		<script type="text/javascript" src="js/c_style.js"></script>
+	</body>
+
 </html>
