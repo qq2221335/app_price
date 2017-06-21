@@ -23,10 +23,10 @@ html{font-size: 17px;}
 .taskBox .taskList li{border-bottom: 1px solid #eaeaea;}
 .taskBox .taskList li a{padding: .5rem .5rem;}
 /*.taskBox .taskList li:nth-child(even){background: #e5f1fc;}*/
-.taskBox .taskList li .col-20{position:relative;}
+.taskBox .taskList li .col-20{position:relative;padding-right:.5rem;text-align: center;}
 .taskBox .taskList li .col-20 i{  font-size: 3.5rem;line-height: normal;  }
 .taskBox .taskList li .col-20 img{width: 100%;}
-.taskBox .taskList li .col-20.new::before{content: "";position: absolute;top: 0;left: 3rem;width: .5rem;height: .5rem;border-radius: 50%;background: #FF0000;}
+.taskBox .taskList li .col-20.new i::before{content: "";position: absolute;top: 0;right: .2em;width: .5rem;height: .5rem;border-radius: 50%;background: #FF0000;}
 .taskBox .taskList li .col-80{}
 .taskBox .taskList li .col-80 h3{  width:100%;font-size: 1rem;  color: #333;  font-weight: normal;  }
 .taskBox .taskList li .col-80 h3 label.right{    font-size: .8rem;  font-weight: normal;  color: #666;  padding: .1rem .5rem;  border: 1px solid #eaeaea;  border-radius: 3px;}
@@ -191,10 +191,11 @@ html{font-size: 17px;}
 @media screen and (max-width: 350px) {
     .taskTabs a i{font-size: 2.2rem;}
     .taskBox .taskList li a{padding: .5rem;}
-    .taskBox .taskList li .col-20 i{font-size: 4rem;}
+    .taskBox .taskList li .col-20 i{font-size: 3rem;}
+    .taskBox .taskList li .col-20.new::before{left: 2.5rem}
     .taskBox .taskList.taskLine-2 li .col-80 h3{margin: 0;}
     .taskBox .taskList.taskLine-3 li .col-80 p{margin-top: .2rem;}
-    .areaSelect .box, .filtrateBox .box{height: 20rem;}
+    .areaSelect .box, .filtrateBox .box{height: 23rem;}
     @keyframes taskHeightA { from {height:0;} to {height:20rem;}}
 }
 

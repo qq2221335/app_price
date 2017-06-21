@@ -32,7 +32,7 @@
 .c_row .col-100 a{display: block;}
 .c_row .col-100 .row{padding: 10px 0;border-bottom: solid 1px #efeff4;}
 .c_con{padding: .7rem .5rem;}
-.c_con .col-20 .c_region a{color: #666; display: block;padding: 0;height: 28px;line-height: 28px;text-align: center;}
+.c_con .col-20 .c_region>a{color: #666; display: block;padding: 0;height: 28px;line-height: 28px;text-align: center;}
 .c_con .col-80 .c_search{background: #fff; text-align: center;border-radius:5px;padding:0; color: #666;height: 28px;line-height: 28px;}
 .c_con .col-80 .c_search i{margin-right: .3rem;}
 .c_con .col-20 .c_region a i{margin-left: .3rem;line-height: normal;vertical-align: middle;font-size: .7rem;}
