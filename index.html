@@ -557,54 +557,100 @@
 		</div>
 
 		<!--登录窗口-->
-		<!--<div class="login-screen modal-in">
-	<div class="view">
-		<div class="page">
-			<div class="page-content login-screen-content d-login">
-				<div class="login-logo">
-					<img src="images/images.png" alt="logo"/>
-					<p>广东价格</p>
-				</div>
-				<form>
-					<div class="list-block">
-						<ul>
-							<li class="item-content">
-								<div class="item-media"><i class="iconfont">&#xe606;</i></div>
-								<div class="item-inner">
-									<div class="item-input">
-										<input type="text" name="username" placeholder="请输入用户名">
-									</div>
-								</div>
-							</li>
-							<li class="item-content">
-								<div class="item-media"><i class="iconfont">&#xe629;</i></div>
-								<div class="item-inner">
-									<div class="item-input">
-										<input type="password" name="password" placeholder="请输入登录密码">
-									</div>
-								</div>
-							</li>
-						</ul>
-						<input class="button" type="submit" name="submit" value="登录">
-					</div>
-					<div class="list-block">
-						<div class="list-block-label">
-							<p><a href="#" class="close-login-screen">Close Login Screen</a></p>
+		<div class="login-screen modal-in">
+			<div class="view">
+				<div class="page">
+					<div class="page-content login-screen-content d-login">
+						<div class="login-logo">
+							<img src="images/images.png" alt="logo"/>
+							<p>广东价格</p>
 						</div>
+						<form>
+							<div class="list-block">
+								<ul>
+									<li class="item-content">
+										<div class="item-media"><i class="iconfont">&#xe606;</i></div>
+										<div class="item-inner">
+											<div class="item-input">
+												<input type="text" name="username" id="userName" placeholder="请输入用户名">
+											</div>
+										</div>
+									</li>
+									<li class="item-content">
+										<div class="item-media"><i class="iconfont">&#xe629;</i></div>
+										<div class="item-inner">
+											<div class="item-input">
+												<input type="password" name="password" id="password" placeholder="请输入登录密码">
+											</div>
+										</div>
+									</li>
+								</ul>
+								<input class="button"  name="submit" value="登录"  id="login">
+							</div>
+							<div class="list-block">
+								<div class="list-block-label">
+									<p><a href="#" class="close-login-screen">Close Login Screen</a></p>
+								</div>
+							</div>
+						</form>
+						<div class="copyright">广东省价格监测中心</div>
 					</div>
-				</form>
-				<div class="copyright">广东省价格监测中心</div>
+				</div>
 			</div>
-		</div>
-	</div>
-</div>-->
+</div>
 		<!--登录窗口结束-->
 
 		<script type="text/javascript" src="js/framework7.min.js"></script>
-		<script type="text/javascript" src="js/vue.js"></script>
-		<script type="text/javascript" src="js/index_vue.js"></script>
 		<script type="text/javascript" src="js/my-app.js"></script>
-		<script type="text/javascript" src="js/c_style.js"></script>
+		<script type="text/javascript" src="js/base64.js"></script>
+		<script type="text/javascript" src="js/jsbn.js"></script>
+		<script type="text/javascript" src="js/prng4.js"></script>
+		<script type="text/javascript" src="js/rng.js"></script>
+		<script type="text/javascript" src="js/rsa.js"></script>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script>
+			$$("#login").click(function(e){
+				
+				$$.ajax({
+					url : "http://192.168.1.251:8034/warnapps/app/common/getPublicKey",
+					type : "GET",
+					dataType : "json",
+					async : false,
+					success : function(data) {
+						var password = $$("#password").val();
+						var rsaKey = new RSAKey();
+		
+						rsaKey.setPublic(b64tohex(data.modulus), b64tohex(data.exponent));
+		
+						var enPassword = hex2b64(rsaKey.encrypt(password));
+						var loginName = $$("#userName").val();
+						var onlyCode = data.onlyCode;
+						var Url = '';
+						console.log(data);
+						Url +="http://192.168.1.251:8034/warnapps/app/framework/loginAppUser?loginName=";
+						Url += loginName + "&password=" + enPassword + "&onlyCode=" + onlyCode;
+						console.log(Url);
+						console.log('enPassword ='+enPassword);
+						$$.ajax({
+							url : Url,
+							type : "GET",
+							dataType : "json",
+							async : false,
+							success : function(data){
+								console.log(data);
+								
+							}
+						});
+						
+						return true;
+					},
+					error:function(xhr,status){
+						console.log(xhr);
+					}
+				});
+				e.preventDefault();
+			})
+		</script>
 	</body>
 
 </html>
