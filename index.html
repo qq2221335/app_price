@@ -609,40 +609,76 @@
 		<script type="text/javascript" src="js/rsa.js"></script>
 		<script type="text/javascript" src="js/jquery.min.js"></script>
 		<script>
-			$$("#login").click(function(e){
+			$("#login").click(function(e){
+					var pjson = {
+						"objectId":"2028",
+					    "taskDireId":"195",
+					    "taskReportedId":"37393",
+					    "dataList":[
+					        {
+					            "dataValue":"13.57",
+					            "firstAckValue":"110",
+					            "secondAckValue":"110",
+					            "lastAckValue":"",
+					            "indicatorId":"",
+					            "mercId":"8",
+					            "mercName":"晚籼米",
+					            "mercSpec":"优质",
+					            "mercGrade":"一等品",
+					            "unitName":"500克/元",
+					            "unitId":"38",
+					            "waveReason":"1",
+					            "waveReasonRemark":"超市促销",
+					            "dataValueLast":"118",
+					            "isProblem":"1",
+					            "isError":""
+					        }
+					    ]
+					};
+				console.log(typeof pjson);
+				pjson=JSON.stringify(pjson);
 				
-				$$.ajax({
-					url : "http://192.168.1.251:8034/warnapps/app/common/getPublicKey",
-					type : "GET",
-					dataType : "json",
+				pjson.token = localStorage.getItem('token');
+				console.log(typeof pjson);
+				$.ajax({
+					url : "http://192.168.1.251:8034/warnapps/app/support/temporarySave.do",
+					type : "POST",
+					data:{"json" : pjson},
 					async : false,
 					success : function(data) {
-						var password = $$("#password").val();
-						var rsaKey = new RSAKey();
-		
-						rsaKey.setPublic(b64tohex(data.modulus), b64tohex(data.exponent));
-		
-						var enPassword = hex2b64(rsaKey.encrypt(password));
-						var loginName = $$("#userName").val();
-						var onlyCode = data.onlyCode;
-						var Url = '';
 						console.log(data);
-						Url +="http://192.168.1.251:8034/warnapps/app/framework/loginAppUser?loginName=";
-						Url += loginName + "&password=" + enPassword + "&onlyCode=" + onlyCode;
-						console.log(Url);
-						console.log('enPassword ='+enPassword);
-						$$.ajax({
-							url : Url,
-							type : "GET",
-							dataType : "json",
-							async : false,
-							success : function(data){
-								console.log(data);
-								
-							}
-						});
-						
-						return true;
+//						var password = $$("#password").val();
+//						var rsaKey = new RSAKey();
+//		
+//						rsaKey.setPublic(b64tohex(data.modulus), b64tohex(data.exponent));
+//		
+//						var enPassword = hex2b64(rsaKey.encrypt(password));
+//						var loginName = $$("#userName").val();
+//						var onlyCode = data.onlyCode;
+//						var Url = '';
+//						console.log(data);
+//						Url +="http://192.168.1.251:8034/warnapps/app/framework/loginAppUser";
+////						Url += loginName + "&password=" + enPassword + "&onlyCode=" + onlyCode;
+//						console.log(Url);
+//						console.log('enPassword ='+enPassword);
+//						$.ajax({
+//							url : Url,
+//							type : "GET",
+//							dataType : "json",
+//							data:{
+//								loginName: loginName,
+//								password: enPassword,
+//								onlyCode: onlyCode
+//							},
+//							async : false,
+//							success : function(data){
+//								if('token' in  data){
+//									localStorage.setItem('token',data.token);
+//								}
+//							}
+//						});
+//						
+//						return true;
 					},
 					error:function(xhr,status){
 						console.log(xhr);
